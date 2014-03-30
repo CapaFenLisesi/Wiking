@@ -1,0 +1,61 @@
+% \documentclass{article}
+% \usepackage{xltxtra} 
+% \usepackage{tikz}
+% \usetikzlibrary{decorations.markings}
+% \usetikzlibrary{intersections}
+% \usepackage{subfig} 
+% \usetikzlibrary{calc}
+% \usepackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
+% 
+% \newcommand{\abs}[1]{\left\lvert#1\right\rvert} 
+% \newcommand{\MyXYcross}{%
+%           \draw[name path=axeX,->] (\xmin,\zero) -- (\xmax,\zero)   node[right] {$x$} coordinate(x axis);
+%           \draw[name path=axeY,->] (\phase,\ymin) -- (\phase,\ymax) node[left]  {$y$} coordinate(y axis);
+%           \path[name intersections={of=axeX and axeY, name=pocatek}]; 
+%           \node[below left] at (pocatek-1) {$0$};
+%           \draw[fill=white] (pocatek-1) circle(2pt);  
+% }
+% \begin{document}
+
+  \begin{figure}[htb]  
+    \centering
+        \def\xmin{-80}
+        \def\xmax{80}
+        \def\ymin{-100}
+        \def\ymax{+120}
+        \def\zero{0}
+        \def\phase{0}
+    \subfloat[sudá funkce]{     
+      \begin{tikzpicture}
+        \begin{scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt,y=1pt,x=1pt] 
+          \MyXYcross;   
+        \end{scope}
+        
+        \begin{scope}[domain=-1.2:1.2, line join=round, miter limit=4.00,line width=0.5pt, 
+                      x=50pt,y=50pt, xshift=0, yshift=0]    
+          \node at(1.9,1.6) [left, fill=white] {$f(x): y=x^2$}; %                         
+          \draw[color=red] plot[id=myfce, samples=2000, smooth] function{x*x}; %          
+          \foreach \x/\xtext in {-1/1, 1/1}
+            \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};                 
+        \end{scope}  
+      \end{tikzpicture}
+    }
+    \subfloat[lichá funkce]{    
+      \begin{tikzpicture}
+        \begin{scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt,y=1pt,x=1pt] 
+          \MyXYcross;   
+        \end{scope}
+        
+        \begin{scope}[domain=-1.2:1.2, line join=round, miter limit=4.00,line width=0.5pt, 
+                      x=50pt,y=50pt, xshift=0, yshift=0]    
+          \node at(1.8,1.9) [left, fill=white] {$g(x): y=x^3$}; %                         
+          \draw[color=red] plot[id=myfce, samples=2000, smooth] function{x*x*x}; %        
+          \foreach \x/\xtext in {-1/1, 1/1}
+            \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};                 
+        \end{scope}  
+      \end{tikzpicture}
+    }   
+    \caption{Příklad sudé a liché funkce}\label{MAI:fig_diff_app_06}
+  \end{figure}
+  
+%\end{document}

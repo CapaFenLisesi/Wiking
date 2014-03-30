@@ -1,0 +1,38 @@
+%===========================Kapitola: Úvod do tříd========================================================
+\chapter{Úvod do tříd}
+\minitoc
+\newpage´
+  \section{Funkce konstruktor a destruktor}
+    Je zcela běžné, že některé části programu vyžadují inicializaci. Potřeba inicializace je mnohem častější, když se pracuje s objekty. K ošetření této situace poskytuje C++ funkci konstruktor, která může být vložena do deklarace třídy. Všechny inicializace, které je nutno na objektu provést, může automaticky vykonat konstruktor.
+    Konstruktor má stejné jméno jako třída, jejíž je součástí a nemá návratový typ (není to ani povoleno). Následující příklad ukazuje krátkou třídu, jež obsahuje konstruktor.
+
+    %---------------------------------------------------------------
+    \lstinputlisting{../src/CPP/file/HS_55_myclass.cpp}
+    %---------------------------------------------------------------
+
+    V tomto jednoduchém příkladě je hodnota \lstinline[basicstyle=\ttfamily]!a! inicializována konstruktorem \lstinline[basicstyle=\ttfamily]!myclass()!. Konstruktor je volán při vytváření objektu \lstinline[basicstyle=\ttfamily]!ob!. Objekt je vytvářen tehdy, když se provádí jeho deklarační příkaz. V C++ je deklarační příkaz proměnné vlastně "příkazem činnosti". Když se programuje v C, lze deklarační příkazy považovat za zavádění proměnných. Ovšem v C++, poněvadž objekt může mít konstruktor, bude ve skutečnosti příkaz pro deklaraci proměnné vyvolávat celou řadu činností.
+
+    Pro globální objekty je konstruktor objektu volán jen jednou, když se program začíná poprvé spouštět. Pro lokální objekty je konstruktor volán pokaždé, když je prováděn deklarační příkaz.
+    Doplňkem konstruktoru je destruktor. Tato funkce volána, když je objekt rušen. Když se pracuje s objekty, je běžné, že se musí provést v souvislosti s rušením objektu určité akce (např. uvolnění zabrané paměti). Následující třída již destruktor obsahuje:
+    %---------------------------------------------------------------
+    \lstinputlisting{../src/CPP/file/HS_56_myclass.cpp}
+    %---------------------------------------------------------------
+
+    Destruktor třídy je volán, když je objekt rušen. Lokální objekty jsou rušeny, když odcházejí mimo oblast. Globální objekty jsou rušeny, když
+    program končí.
+
+    Není možné získat adresu konstruktoru nebo destruktoru.
+    \begin{example}
+      Třída \lstinline[basicstyle=\ttfamily]!stack! vytvořená v příkladu \ref{stack1} vyžadovala inicializační funkci k nastavení proměnné pro index zásobníku. To je přesně ten druh operací, pro něž byl konstruktor navržen. Zde je vylepšení verze třídy \lstinline[basicstyle=\ttfamily]!stack!, která používá konstruktor pro automatickou inicializaci zásobníkového objektu po jeho vytvoření:
+      %---------------------------------------------------------------
+      \lstinputlisting{../src/CPP/file/HS_57_stack.cpp}
+      %---------------------------------------------------------------
+      Je Vidět, že úloha inicializace je konstruktorem provedena automaticky lépe, než pomocí samostatné funkce, která by musela být explicitně volána programem. Když je inicializace provedena automaticky při vytváření objektu, eliminuje to možnost, že by kvůli výskytu chyby inicializace neproběhla. Je to další cesta, jak omezit složitost programu.
+    \end{example}
+    \begin{example}
+      Tento příklad předvádí nutnost existence nejen konstruktoru, ale i destruktoru. Vytváří se zde jednoduchá řetězcová třída, nazvaná \lstinline[basicstyle=\ttfamily]!strtype!, která obsahuje řetězec a jeho délku. Když je objekt \lstinline[basicstyle=\ttfamily]!strtype! vytvořen, je mu přidělena paměť pro uložení řetězce a jeho počáteční hodnota je nastavena na \lstinline[basicstyle=\ttfamily]!0!. Když je objekt \lstinline[basicstyle=\ttfamily]!strtype! zrušen, je paměť uvolněna.
+      %---------------------------------------------------------------
+      \lstinputlisting{../src/CPP/file/HS_59_string.cpp}
+      %---------------------------------------------------------------
+    \end{example}
+    Tento program používá pro přidělení a uvolnění paměti funkce \lstinline[basicstyle=\ttfamily]!malloc! a \lstinline[basicstyle=\ttfamily]!free! Přestože to funguje perfektně, dále je ukázáno, že v C++ se používá jiný způsob pro dynamickou správu paměti.   

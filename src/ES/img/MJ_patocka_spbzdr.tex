@@ -1,0 +1,61 @@
+﻿% \documentclass{article}
+%   \usepackage{circuitikz}  
+%   \usepackage{tikz}
+%     \usetikzlibrary{decorations.markings}
+% 	\usetikzlibrary{arrows.new}  
+%   \usepackage{wrapfig}
+%   \usepackage{subfig}
+%   
+% \begin{document}
+  \begin{figure}[htp]
+    \centering
+    \subfloat[ ]   {
+        \begin{circuitikz}[scale=1, every node/.style={scale=1}]
+          \draw (0,0) node[ocirc] {} --+ (1,0) coordinate(A); 
+          \coordinate (B) at ([yshift=-2.5cm]A);
+          \draw (A) to[R] (B) --+ (-1,0) coordinate(D) node[ocirc] {}; 
+		  
+		  \begin{scope}[shorten >= 10pt,shorten <= 10pt]
+		  
+            \draw[-open triangle 45 new,arrow head=5pt]
+			     ([xshift=.6cm,yshift=-0.5cm]A) -- node[right] {$i(t)$} 
+			     ([xshift=.6cm,yshift=0.5cm]B); 
+	        \draw[->]  (0,0) -- node[left] {$u(t)$} (D);			
+	      \end{scope}		  
+        \end{circuitikz}    
+    }
+    \subfloat[ ]   {
+        \begin{circuitikz}[scale=1, every node/.style={scale=1}]
+          \draw (0,0) node[ocirc] {} --+ (1,0) coordinate(A); 
+          \coordinate (B) at ([yshift=-2.5cm]A);
+          \draw (A) to[L] (B) --+ (-1,0) coordinate(D) node[ocirc] {}; 
+	      
+		  \begin{scope}[shorten >= 10pt,shorten <= 10pt]
+	        \draw[-open triangle 45 new,arrow head=5pt] 
+  			     ([xshift=.6cm,yshift=-0.5cm]A) -- node[right] {$i(t)$} 
+  			     ([xshift=.6cm,yshift=0.5cm]B); 
+	        \draw[->]  (0,0) -- node[left] {$u(t)$} (D);
+	      \end{scope}		  
+        \end{circuitikz}
+    }  
+    \subfloat[ ]   {
+        \begin{circuitikz}[scale=1, every node/.style={scale=1}]
+          \draw (0,0) node[ocirc] {} --+ (1,0) coordinate(A); 
+          \coordinate (B) at ([yshift=-2.5cm]A);
+          \draw (A) to[L] (B) --+ (-1,0) coordinate(D) node[ocirc] {}; 
+	      
+		  \begin{scope}[shorten >= 10pt,shorten <= 10pt]
+	        \draw[open triangle 45 new-,arrow head=5pt]  
+			     ([xshift=.6cm,yshift=-0.5cm]A) -- node[right] {$i(t)$} 
+			     ([xshift=.6cm,yshift=0.5cm]B); 
+	        \draw[->]  (0,0) -- node[left] {$u(t)$} (D);
+	      \end{scope}		  
+        \end{circuitikz}
+    } 	 
+
+	\caption{Vzájemná orientace okamžité hodnoty proudu a napětí ve spotřebičovém a
+             zdrojovém režimu: a) Odpor je vždy spotřebičem. b) Cívka ve spotřebičovém režimu. 
+             c) Cívka ve zdrojovém režimu.}
+    \label{es:fig_MJ_patocka_spbzdr}
+  \end{figure} 
+% \end{document} 

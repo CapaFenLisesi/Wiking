@@ -1,0 +1,21 @@
+t = 0:0.1:25;
+R = 2;
+r = 1;
+omega= 1;
+x = omega*R.*t + r*sin(omega.*t);
+y = R+r*cos(omega.*t);
+p1 = plot(x,y);
+set(p1,'Color','blue','LineWidth',1);
+hold all
+R = 2;
+r = 2;
+x = omega*R.*t + r*sin(omega.*t);
+y = R+r*cos(omega.*t);
+p2 = plot(x,y);
+set(p2,'Color','red','LineWidth',1);
+R = 2;
+r = 3;
+x = omega*R.*t + r*sin(omega.*t);
+y = R+r*cos(omega.*t);
+p3 = plot(x,y);
+set(p3,'Color','black','LineWidth',1);

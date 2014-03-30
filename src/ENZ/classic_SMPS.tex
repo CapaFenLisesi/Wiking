@@ -1,0 +1,159 @@
+%===========Kapitola: Impulzně regulované napájecí zdroje=========================================== 
+\chapter{Impulzně regulované napájecí zdroje}
+\minitoc
+\newpage
+  \section{Úvod}
+    Spínané napájecí zdroje plní funkci stejnou jako zdroje se spojitou regulací. Vý\-ko\-no\-vý
+    člen spínacích zdrojů je však zatěžován impulzně, tj. střídavě spínán a rozepínán. Lze tedy
+    využít výhody impulzního režimu, tj. odebírat impulzní výkon podstatně větší, než je trvalý
+    výkon při lineárním režimu regulátoru s týmž výkonovým členem. Spínací zdroje mají obecně větší
+    účinnost než zdroje se spojitou regulací. Jsou výhodné zvláště tam, kde je velký rozdíl napětí
+    na vstupu a výstupu regulátoru a kde jsou požadované malé rozměry. Impulzní regulace zajistí
+    stabilizované výstupní napětí i pro velké změny vstupního napětí; účinnost zdroje se při tom
+    téměř nemění. I přes větší obvodovou složitost jsou ekonomicky výhodnější, neboť jejich použití
+    vede k podstatné energetické úspoře.
+  
+    Impulzně regulované zdroje však mají v porovnání se zdroji s lineární regulací i některé
+    nevýhodné vlastnosti, například pomalejší reakci výstupního napětí na rychlé změny zatěžovacího
+    výstupního proudu. Při požadavku malého zvlnění výstupního napětí se nesmí zanedbat vliv
+    impulzního charakteru těchto zdrojů. Impulzně regulované zdroje jsou také zdrojem rušivých
+    signálů, které jsou generovány spínacími prvky \cite[s.~112]{Hammembauer}.
+       
+    % \begin{table}[ht!]
+      % \centering
+      % \setlength{\tabcolsep}{5pt}
+      % \begin{tabular}{p{1.2cm}p{7cm}}
+        % \hline
+        % \multirow{2}{*}{\googlepdflink{AN556}{https://docs.google.com/file/d/0BzP8spWKnOvnLXZBV3YzLWloR0U/edit}}
+         % &  \textbf{Introduction to Power Supplies} \pdfcomment[icon=Note, color=Melon]{ahoj}\\
+         % &  2002 National Semiconductor    \\
+         % \hline
+       % \end{tabular}
+    % \end{table}    
+   
+  \section{Impulzní regulace ve výkonové elektronice}\label{ENZ:kap_Imp_Reg}
+    Základním principem a současně odlišností impulzní regulace od regulace klasické je v její
+    \emph{nespojitosti}. To znamená, že nehledě na detailní realizaci, je výstupní napětí 
+    stabilizováno zásahy regulačního členu pouze v určitých, časově omezených intervalech. Podstata 
+    regulačního členu (regulátoru) tedy spočívá v řízení vzájemných časových relací aktivního a 
+    pasivního intervalu pracovního cyklu v závislosti na velikosti zesílené regulační odchylky.
+    
+    Akční člen je tedy řízen dvouhodnotovým signálem, mající význam \emph{zapnutí} nebo 
+    \emph{vypnutí} výkonové součástky. Následující příklad demonstruje, jak lze tento signál 
+    vytvořit pomocí \textbf{pulzně-šířkové modulace} v simulátoru \ltLtspiceSW. V simulacích 
+    některých topologií spínaných zdrojů bude místo zdroje s lineárně narůstajícím výstupním napětím 
+    viz obr. \ref{enz:fig_pwm_wave} použita regulační odchylka.
+    
+    \begin{figure}[ht!]
+      \centering
+      \includegraphics[width=\linewidth]{hamm_schema_imp_reg.pdf}
+      \caption[Schéma impulzního regulátoru]{Základní schéma impulzního regulátoru}
+      \label{enz:fig_imp_reg_basic}
+    \end{figure}
+    
+    Srovnáme-li pro názornost klasický a impulzní regulátor na úrovni blokových schémat, vidíme, že 
+    obě jsou formálně dosti podobná. U obou nacházíme napěťový normál \texttt{Uref}, zesilovač 
+    regulační odchylky \texttt{Au}, budící obvod i výkonový regulační člen a samozřejmě i 
+    zpětnovazební smyčku. Tím však, snad až na základní podstatu regulační smyčky podobnost končí. 
+    Funkčně jsou oba regulátory naprosto odlišné.
+    
+    U spojitého lineárního regulátoru ovládá odchylka výstupního napětí od jmenovité velikosti 
+    spojitě okamžitý odpor výkonového regulačního členu v libovolném o\-kam\-ži\-ku tak, aby 
+    výstupní napětí bylo konstantní. Z toho, jak je již známo, vyplývá velká poměrná výkonová ztráta 
+    na regulačním členu a tedy i malá účinnost spojité regulace za běžných provozních podmínek.
+    
+    Impulzní regulace obr. \ref{enz:fig_imp_reg_basic} umožňuje výrazně snížit výkonovou ztrátu na
+    regulačním členu. V tomto případě pracuje regulační prvek (tranzistor) jako řízený spínač. Proud 
+    jím tedy prochází pouze po určitý interval pracovního cyklu. Přitom okamžitá výkonová ztráta v 
+    aktivním (sepnutém) stavu je vzhledem k $U_{CES}\rightarrow 0$ řádově menší, než u lineárního 
+    regulátoru. Další předností je, že velikost ztráty v podstatě nezávisí na rozdílu vstupního a 
+    výstupního napětí, ale prakticky pouze na kolektorovém proudu tranzistoru.
+    
+    Možnost použít spínací regulační člen při stabilizaci stejnosměrného napětí je podmíněna jeho 
+    vzájemnou součinností s filtračním členem, který na rozdíl od aplikace ve spojitém regulátoru 
+    musí mít výrazný akumulační charakter. Uspořádání filtru, který je pro větší výkony vždy typu 
+    LC, je podřízeno topologii měniče. Princip činnosti nerozlučně vázané dvojice spínač - 
+    akumulační výstupní filtr spočívá v akumulaci energie, která je v aktivním intervalu odebrána ze 
+    zdroje, aby mohla být v následujícím pasivním intervalu (spínač vypnut) dodávána z filtru do 
+    zátěže \cite[s.~121]{Hammembauer}.
+           
+    \begin{example} 
+      Na obr. \ref{enz:fig_pwm_gen} je realizován generátor šířkově modulovaného signálu pro
+      simulátor \texttt{LTSpice}, jenž s výhodou využívá komponenty \texttt{B-source}, umožňující
+      behaviorální popis požadovaného průběhu.
+      \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=\linewidth]{LTspice_pwm_gen.pdf}
+        \caption[LTSpice - PWM generátor]{Realizace PWM generátoru pomocí komponenty B-source
+                \emph{(Arbitrary behavioral voltage or current source)} v LTSpice (soubor
+                \texttt{pwm.asc})}
+        \label{enz:fig_pwm_gen}
+      \end{figure}
+      Podrobnějším pohledem na zápis rovnic dle obr. \ref{enz:fig_pwm_gen}, lze dojít k závěru, že
+      zdroj \texttt{B1} na svůj výstup vnutí hodnotu parametru \texttt{Vhigh}, nebo \texttt{Vlow},
+      podle výsledku rozhodovací funkce \texttt{if}. Tj. jeli
+      \texttt{Time-floor(Time*f)/f)*Range*f)} větší než \texttt{V(input)}, bude na výstupu $V_{high}
+      = 5V$, v opačném případě $V_{low} = 0V$. Funkce \texttt{floor} zaokrouhluje hodnotu svého
+      argumentu na celé číslo (\texttt{integer}), což vede na schodovitý průběh a funkce
+      \texttt{Time} umožňuje do vztahu vnést okamžitou hodnotu simulačního času. Vzájemný odečtením
+      získáme pilový průběh, kterým se komparuje s okamžitou hodnotou zdroje \texttt{V(input)}.
+       
+       \begin{figure}[ht!]
+         \centering
+         \includegraphics[width=1\linewidth]{LTspice_pwm_wave.pdf}
+         \caption[LTSpice - PWM generátor: průběhy]{Výstupní signál \texttt{V(pwm)} z PWM
+                  generátoru na obr. \ref{enz:fig_pwm_gen}  má-li rozhodovací napětí \texttt{V(in)}
+                  lineární charakter}
+         \label{enz:fig_pwm_wave}
+       \end{figure}       
+    \end{example} 
+   
+    \newpage
+    %------------------------------------------------------
+    % Section: DC/DC měniče s transformátorem
+      \input{../src/ENZ/section/DC_DC_converter.tex}
+    %------------------------------------------------------
+    \newpage
+    %------------------------------------------------------
+    % Section: DC/DC měniče s transformátorem
+      \input{../src/ENZ/section/DC_DC_with_transformer.tex}
+    %------------------------------------------------------
+    %------------------------------------------------------
+    % Section: Metody regulace spínanich zdrojů
+      \input{../src/ENZ/section/Control_Techniques.tex}
+    %------------------------------------------------------
+
+  \section{Sbírka katalogových zapojení neizolo\-va\-ných měničů}
+    Existují dvě možnosti, jak provádět řízení pomocí PWM odlišující se \emph{typem zpětné
+    vazby}, která je buď čistě \textbf{napěťovou vazbou} (\emph{voltage mode control}), nebo
+    \emph{napěťovou vazbou s vnitřní proudovou smyčkou} (\emph{current mode control}). V
+    následující diskusi se pokusíme konzistentním způsobem vysvětlit vlastnosti obou řídících
+    algoritmů (slua119)
+    
+    \subsection{Zdroj symetrického napětí s jedním induktorem}
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{LT1376_dual_output_reg.pdf}
+        \caption[Spínaný zdroj napětí $\pm5 V$ vystačí s jedinou indukčností s dvojím
+                 vinutím]{Spínaný zdroj napětí $\pm5 V$ vystačí s jedinou indukčností s dvojím
+                 vinutím. \cite{DN100}. Linear Technology Corp. (Dual Output Regulator Uses Only
+                 One Inductor)}
+        \label{enz:fig_LT1376_cir1}
+      \end{figure}
+      Toto řešení na obr. \ref{enz:fig_LT1376_cir1} nabízí spínaný zdroj symetrického napětí za
+      použití několika dalších součástek a induktoru s dvojím vinutím. Základní části zdroje je
+      napěťový regulátor snižující vstupní kladné napětí založený na obvodu \emph{LT1376-5} se
+      spínacím kmitočtem 500 kHz a možností zatížení proudem až 1,5 A.
+
+      \begin{figure}
+        \centering
+        \includegraphics[width=\linewidth]{LT1376_dual_output_reg_performance.pdf}
+        \caption{Zatěžovací charakteristika záporné větve.}
+        \label{enz:fig_LT1376_cir1_perform}
+      \end{figure}
+
+      Druhá polovina induktoru $L_1$ společně s $D_3$, $C_5$ a $C_4$ je určena pro tvorbu
+      záporného napětí pomocí \textbf{SEPIC topologie} - \emph{Single Ended Primary Inductance
+      Converter}. Kondenzátor $C_4$ vnucuje oběma vinutím stejné napětí. Bez něho pracuje tato
+      část jako blokující měnič (\textbf{flyback}), která by sice poskytla -5V, ale jen naprázdno
+      se značnou závislostí na zátěži (nedokonalá vazba mezi vinutími).

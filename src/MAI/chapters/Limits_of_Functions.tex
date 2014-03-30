@@ -1,0 +1,369 @@
+%     Differential calculus
+%--------------------------------------------------------------------------------------------------
+% file Diff_calc.tex
+%--------------------------------------------------------------------------------------------------
+\chapter{Limita a spojitost funkce}\label{MA1:chap_Limita}
+\minitoc
+\newpage
+  %================Podkapitola: Reálná funkce =====================================================
+  \section{Reálná funkce}
+    %----------------------------------------------------------------------------------------------
+    \subsection{Pojem funkce}
+    %----------------------------------------------------------------------------------------------
+    \subsection{Graf funkce. Různé způsoby zadání funkce}
+      Každé funkci můžeme přiřadit její graf. 
+      \textbf{Grafem funkce} $f:A\rightarrow\realset,\ A\subset\realset$, rozumíme množinu všech bodů 
+      euklidovské roviny, jejíž souřadnice $x$, $y$ v dané kartézské soustavě souřadnic vyhovuje rovnice 
+      \begin{equation}\label{MAI:eq_graf04}
+        y=f(x). 
+      \end{equation}  
+      
+      Grafem funkce může v jednodušších případech posloužit jako prostředek k získání názorné       
+      \textquotedblleft představy\textquotedblright. Grafy některých funkcí jsou \textquotedblleft 
+      křivky\textquotedblright\, (intuitivním smyslu tohoto slova). Avšak u některých funkcí názorná 
+      představa grafu selhává. Vezmeme-li např. Dirichletovu funkci z odst. **, snadno zjistíme, že její graf 
+      nemůžeme sestrojit (byly by to \textquotedblleft dvě rovnoběžné přímky $y=0$ a $y=1$ s nekonečným 
+      množstvím mezer\textquotedblright)
+      
+      Zadat funkci znamená udat její definiční obor a \textquotedblleft zobrazovací předpis 
+      \textquotedblright, tj pravidlo (formulované slovně či v používaném matematickém jazyku), 
+      podle něhož můžeme jednoznačným způsobem rozhodnout, jaká funkční hodnota odpovídá libovolně 
+      zvolenému číslu z definičního oboru. Definičním oborem bývá často interval nebo sjednocení 
+      intervalů. Není-li definiční obor udán, rozumíme jím množinu všech reálných čísel, pro něž je 
+      příslušný předpis definován. Tuto množinu nazýváme \textbf{přirozeným (též maximálním) 
+      definičním oborem funkce}. Je to tzv. \emph{existenční obor} výrazu, jímž je funkce definována 
+      \cite[s.~84]{Brabec1989}.
+      
+      Například funkce $f: \realset\rightarrow\realset,\ f(x)=x^2$, můžeme vyjádřit bez udání definičního  
+      oboru 
+      $\realset$ vztahem 
+      \begin{equation*}
+        f: y=x^2,
+      \end{equation*}
+      neboť předpis $y=x^2$ má smysl pro každé reálné číslo $x$. Avšak u funkce 
+      $g:\langle0,1\rangle\rightarrow\realset,\ g(x)=x^2,$ je nutné v zápisu funkce definiční obor 
+      $\langle0,1\rangle$ uvést, píšeme tedy   
+      \begin{equation*}
+        g: y=x^2, \quad x\in\langle0,1\rangle.
+      \end{equation*}
+      Zobrazovací předpis, kterým je funkce zadána, může být rozmanitý. Nejčastěji a pro účely matematické 
+      analýzy nejvhodnější je \emph{analytické zadání vzorcem}, tj. rovnicí tvaru $y=f(x)$ nebo několika 
+      takovými rovnicemi platnými pro různé části definičního oboru. Přitom v rovnici $y=f(x)$ je na pravé 
+      straně nějaký správně definovaný výraz obsahující nejvýše poměnnou $x$ a nabývající jednoznačné hodnoty 
+      pro danou hodnotu proměnné $x$.
+
+      \begin{example}\label{MAI:exam01} 
+        Vzorcem $f(x)=\sqrt{1-x}$ je dána funkce, jejímž přirozeným oborem je interval $(-\infty,1\rangle$ 
+        (uvažme, že výraz $\sqrt{1-x}$ je definován v reálném oboru, je-li $1-x\geq0$). Graf této funkce 
+        je část paraboly, jejíš osou je osa $x$, viz obr. \ref{MAI:fig_diff_app_03}.
+        %----------------------------------
+        % image: MAI_diff_app_03.tex label: \label{MAI:fig_diff_app_03}
+           \input{../src/MAI/img/MAI_diff_app_03.tex}  
+        %----------------------------------         
+      \end{example}   
+      \begin{example}\label{MAI:exam07} 
+        Funkce je dána vzorcem 
+        \begin{equation*}
+          f(x):y=\abs{x}.
+        \end{equation*} 
+        Přirozeným definičním oborem této funkce je množina $\realset$. Táž funkce může být dána i vzorcem
+        \begin{equation*}
+          f(x):y=\sqrt{x},
+        \end{equation*}    
+        nebo dvěma rovnicemi
+        \begin{equation*}
+          f(x):y=
+             \begin{cases}
+                 x & \text{je-li} x \geq 0. \\
+                -x & \text{je-li} x < 0,
+             \end{cases}                 
+        \end{equation*}  
+        což je zřejmé, uvědomíme-li si jak je definována absolutní hodnota. Graf funkce je na obr. 
+        \ref{MAI:fig_diff_app_05}.
+        %----------------------------------
+        % image: MAI_diff_app_05.tex label: \label{MAI:fig_diff_app_05}
+           \input{../src/MAI/img/MAI_diff_app_05.tex}  
+        %----------------------------------         
+      \end{example}  
+      Funkce může být analyticky zadána i jinak než vzorcem $y=f(x)$. časté je \textbf{parametrické 
+      vyjadřování}, tj. vyjádření dvojicí rovnic 
+      \begin{equation}\label{MAI:eq_graf02}
+        x=\varphi(t),\ y=\psi(t),\ t\in J,
+      \end{equation}
+      kde $\varphi, \psi$ jsou funkce definované na množině $J$ ($\ J$ bývá obvykle interval). Proměnná $t$ 
+      se nazývá \emph{parametr}: má zde pomocný význam. Zajímá nás totiž vztah mezi $x$ a $y$. Rovnice 
+      \ref{MAI:eq_graf02} definuje relaci $f\subset\realset\times\realset=\realset^2$:
+      \begin{equation}\label{MAI:eq_graf03}
+        f = \{(x,y)\in\realset^2; \text{ existuje } t\in J \text{ tak, že } x=\varphi(t),\ y=\psi(t)\}.
+      \end{equation}      
+      Tato relace může být za určitých podmínek jednoznačná tj. je funkcí z $\realset$ do $\realset$. 
+      V tomto případě říkáme, že funkce $f$ je \emph{definována parametricky rovnicemi \ref{MAI:eq_graf02}}
+      
+      \begin{example}\label{MAI:exam02}
+        Rovnice $x=\cos t,\ y=\sin t\quad t\in\langle0,\pi\rangle$, definují parametricky funkci 
+        \begin{equation}
+          f: y= \sqrt{1-x^2}, \quad x\in\langle-1,1\rangle,
+        \end{equation}
+        jejíž grafem je polokružnice, ležící v horní polorovině $\{(x,y)\in\realset^2, y\geq0\}$.
+        %----------------------------------
+        % image: MAI_diff_app_04.tex label: \label{MAI_fig_diff_app_04}
+           \input{../src/MAI/img/MAI_diff_app_04.tex}  
+        %----------------------------------         
+      \end{example}
+      Blíže se parametrickým zadáním funkce budeme zabívat v kapitole \ref{chap:Apl_dif_poc} (Aplikace 
+      diferenciálního počtu).
+      
+      Funkce může být někdy zadána též rovnicí tvaru 
+      \begin{equation}\label{MAI:eq_graf01}
+        F(x,y) = 0.
+      \end{equation}
+      Přitom $F$ je funkce dvou proměnných, tj. zobrazení z $\realset^2\rightarrow\realset$. Kromě rovnice 
+      \ref{MAI:eq_graf01} může být dána ještě podmínka, aby bod $(x,y)$ patřil k některé množině 
+      $M\subset\realset^2$. Rovnicí \ref{MAI:eq_graf01} je definován opět jakási relace 
+      $f\subset\realset\times\realset$,
+      \begin{equation}
+        f = \{(x,y)\in\realset^2,\quad F(x,y)=0 \}
+      \end{equation}
+      (případně $f = \{(x,y)\in\realset^2,\ F(x,y)=0,\ (x,y)\in M \}$), zajímá nás, kdy tato relace je 
+      funkcí z $\realset$ do $\realset$. Říkáme pak, že funke $f$ je dána \textbf{implicitně} uvedenou 
+      rovnicí \ref{MAI:eq_graf01} (příp. rovnicí \ref{MAI:eq_graf01} a podmínkou $(x,y)\in M$). 
+      Naproti tomu zadání funkce ve tvaru 
+      $y=f(x)$ nazýváme \textbf{explicitním}.
+      
+      \begin{example}\label{MAI:exam03} 
+        Rovnicí $x+2y-3=0$ je implicitně definována funkce $f:y=-\dfrac{1}{2}x+\dfrac{3}{2}$.
+      \end{example}
+      \begin{example}\label{MAI:exam04} 
+        Rovnicí $x^2+y^2=1$ a podmínkou $y\geq0$ je definována implicitní funkce z příkladu \ref{MAI:exam02}. 
+        Relace $\{(x,y)\in\realset^2;\ x^2+y^2=1\}$ není ovšem jednoznačná, každé hodnotě $x\in(-1,1)$ 
+        odpovídají dvě hodnoty $y: y_1=\sqrt{1-x^2}$, $y: y_2=-\sqrt{1-x^2}$. Podmínkou $y\geq0$ druhou 
+        hodnotu vylučujeme. Místo podmínky $y\geq0$ bychom mohli uvést i jiné podmínky, aby rovnice 
+        $x^2+y^2=1$ určovala implicitní funkci.   
+      \end{example}
+      
+      Vyšetřování podminek, při nichž rovnice $F(x,y)=0$ je definována funkce $f$, se obvykle provádí 
+      metodami matematické analýzy funkce více proměnných. 
+      
+      Funkce může být někdy dána tabulkou, tj. dvojicemi hodnot argumentu a funkce, což bývá obvyklé při 
+      zjišťování závislosti veličin měřením. Proměnná $x$ se v tomto případě mění \textquotedblleft 
+      diskrétně\textquotedblright. Je zřejmé, že tímto způsobem můžeme definovat úplně jen tehdy, je-li 
+      definiční obor konečná množina. Tabulku však používáme i v jiných případech, zejména chceme-li vyznačit 
+      pomocí ní, některé hodnoty, 
+      které nás z nějakého důvodu přednostně zajímají. 
+      
+      V technických aplikacích bývá funkce dána graficky. Z grafu můžeme ovšem funkční hodnoty určit pouze 
+      přibližně. Pro další matematické zpracování je grafické zadání nejméně vhodné, i když jeho praktický 
+      význam nelze popřít. 
+      
+      Speciálním případem reálných funkcí jedné realné proměnné jsou \emph{posloupnosti reálných čísel}. 
+         
+    %----------------------------------------------------------------------------------------------        
+    \subsection{Některé zvláštní vlastnosti funkcí}\label{MA1:subsec_vlastnosti_funkce}
+      \subsubsection{Omezená funkce}
+        \begin{definition}\label{MA1:def_lim01}
+          Funkci $f$ nazýváme shora (zdola) omezenou na množině $A\subset D(f)$, je-li shora (zdola) omezená 
+          množina funkčních hodnot $f(A)$. Je-li funkce $f$ omezená shora i zdola na množině $A$, pak ji 
+          nazýváme omezenou na množině $A$. Je-li $A=D(f)$, nazýváme funkci omezenou. Viz kniha 
+          \cite[s.~87]{Brabec1989}       
+        \end{definition}
+        Funkce $f$ je omezená na množině $A$, právě když existuje číslo $K>0$ tak, že platí
+        $$|f(x)|\leq K \qquad \text{pro každé } x\in A$$
+        neboli
+        $$-K\leq f(x) \leq K \qquad \text{pro každé } x\in A.$$
+        \begin{example}\label{MAI:exam05}
+          Funkce $f:y=\frac{1}{x^2+1}$ je omezená. Platí totiž $$\left|\frac{1}{x^2+1}\right|=\frac{1}{x^2+1}\leq1 \qquad \text{pro všechna }x\in\realset.$$ Zdola
+          je tato funkce omezena dokonce číslem $0$.  
+        \end{example}
+        \begin{itemize}
+          \item Je-li funkce $f$ shora omezená na množině $A$, existuje konečné \emph{supremum} $\sup f(A)$. 
+                Toto číslo nazýváme \emph{supremem funkce $f$ na množině $A$} a označujeme je též $\sup_{x\in 
+                A}f(A)$ nebo $\sup\{f(x), x\in A\}$.
+          \item Je-li funkce $f$ zdola omezená na množině $A$, existuje konečné \emph{infimum} $\inf(A)$,    
+                které nazýváme \emph{infimum funkce $f$ na množině $A$} a označujeme je též $\inf_{x\in 
+                A}f(A)$ nebo $\inf\{f(x), x\in A\}$. 
+          \item Není-li funcke $f$ shoda (zdola) omezená na množině $A$, pak je ovšem $\sup_{x\in A}    
+                f(x)=+\infty$ ($\sup_{x\in A} f(x)=-\infty$).
+          \item Má-li množina $f(A)$ největší (nejmenší) prvek, pak toto číslo nazýváme největší 
+                (nejmenší hodnotou funkce $f$  na množině $A$ (je-li $A = f(f)$, též absolutním maximem, 
+                resp. absolutním minimem funkce $f$) a značíme je $\max_{x\in A} f(x)$ ($\min_{x\in A} 
+                f(x)$). V tomto případě existuje takové číslo $x_0\in A$, že $f(x_0)=\max_{x\in A}f(x)$ 
+                ($f(x_0)=\min_{x\in A}f(x)$). Pro všechna $x\in A$ tedy platí $f(x)\leq f(x_0)$ 
+                ($f(x)\geq f(x_0)$). Je zřejmé, že největší (nejmenší) hodnota funkce $f$ na množině $A$, 
+                pokud existuje je současně supremem (infimem) funkce $f$ na $A$.
+        \end{itemize}
+        \begin{example}\label{MAI:exam06}
+          Pro funkci z příkladu \ref{MAI:exam05} platí:
+          \begin{equation}
+            \sup_{x\in\realset}=\frac{1}{x^2+1}=\max_{x\in\realset}=\frac{1}{x^2+1}=1; \qquad \inf_{x\in\realset}=\frac{1}{x^2+1}=0,
+          \end{equation}
+          tato funkce však nenabývá v definičním oboru $\realset$ nejmenší hodnoty, neboť je stále 
+          $\dfrac{1}{x^2+1}>0$. To, že infimum je $0$, dokážeme takto: Zvolíme-li libovolně $\varepsilon>0$, 
+          pak snadno zjistíme, že existuje $x$, pro níž $\dfrac{1}{x^2+1}<\varepsilon$:
+          \begin{align*}
+            1                  &< \varepsilon(x^2+1) \\
+            \frac{1}{\epsilon} &< x^2+1 \Rightarrow \sqrt{\frac{1}{\epsilon}-1} < x
+          \end{align*} 
+          %----------------------------------
+          % image: MAI_rolle_01.tex label: \label{MAI:fig_diff_app_02}
+            \input{../src/MAI/img/MAI_diff_app_02.tex}  
+          %----------------------------------           
+          Neexistuje tedy kladné číslo, jíž by bylo dolní mezí množiny funkčních hodnot, takže infimum je $0$. Graf funkce $f$ je na obr. \ref{MAI:fig_diff_app_02}.
+        \end{example}
+       
+      \subsubsection{Monotonní funkce}
+        \begin{definition}\label{MA1:def_lim02}
+          Funkci $f$ nazýváme \textbf{rostoucí (klesající)} na množině $A\subset D(f)$, jestliže pro každé 
+          dva body $x_1, x_2\in A,\ x_1<x_2$, platí $f(x_1)<f(x_2)$ ($f(x_1)>f(x_2)$). Funkci $f$ nazýváme 
+          \textbf{neklesající (nerostoucí)} na množině $A\subset D(f)$, jestliže pro každé dvá body $x_1, 
+          x_2\in A,x_1<x_2$, platí $f(x_1)\leq f(x_2)$ ($f(x_1)\geq f(x_2)$). Rostoucí a klesající funkce (na 
+          množině $A$) se nazývají \textbf{ryze monotónní} (na množině $A$), neklesající a nerostoucí funkce 
+          (na množině $A$) se nazývají monotónní (na množině $A$).    
+        \end{definition}
+            
+        Z definice je zřejmé, že každá rostoucí funkce je zároveň neklesající a každá klesající funkce je 
+        zároveň nerostoucí. Ryze monotónní funkce tvoří tedy podmnožinu množiny monotónních funkcí. 
+           
+        \begin{example}
+          Funkce $y=2x+1$ je \textbf{rostoucí} na intervalu $(-\infty, \infty)$. Platí totiž: $x_1<x_2\Rightarrow 2x_1<2x_2\Rightarrow2x_1+1<2x_2+1$.
+        \end{example}
+        \begin{example}
+          Funkce y=[x] je \textbf{neklesající} na intervalu $(-\infty, \infty)$ (viz příklad **). 
+        \end{example}
+        \begin{example}
+          Heavisideova funkce (viz příklad **) je \textbf{neklesající} na intervalu $(-\infty, \infty)$ (viz příklad **). 
+        \end{example}       
+        \begin{example}
+          Funkce $y=|x|$ je \textbf{klesající} na intervalu $(-\infty, 0\rangle$ a rostoucí na intervalu $\langle0, \infty)$. 
+        \end{example}  
+            
+        \begin{definition}\label{MA1:def_lim03}
+          Funkci $f$ nazýváme \textbf{konstantí} na množině $A$, jestliže pro každé dva body $x_1, x_2\in A$, platí $f(x_1)=f(x_2)$. V tom případě existuje reálné číslo $k$ 
+          takové, že pro každé $x\in A$ je $f(x)=k$. Je-li $k=0$, mluvíme o nulové funkci na množině $A$. 
+        \end{definition} 
+          
+        Výrok ``funkce $f$ je konstantní na množině $A$'' zapisujeme též $f(x)=\text{konst na }A$. Funkci konstantní na $\realset$ budeme stručně nazývat \textbf{konstantní funkcí}
+        nebo krátce \textbf{konstantou}. Z textu bude obvykle patrno, interpretujeme-li symbol $k$ jako reálné číslo nebo jako konstantní funkci. Je zřejmé, že konstantní funkce
+        na množině $A$ je zároveň neklesající i nerostoucí na množině $A$. Toto tvrzení se dá obrátit. Lze snadno dokázat i tuto větu:        
+        \begin{lemma}\label{MA1:lem_lim01}
+          Funkce $f$ je \textbf{rostoucí} na množině $A$, právě když je neklesající na množině $A$ a na žádné dvoubodové podmnožině $B\subset A$ není konstantní. 
+        \end{lemma}
+        Obdobná tvrzení platí i pro klesající funkce. 
+               
+      \subsubsection{Sudé a liché funkce}
+        \begin{definition}\label{MA1:def_lim04}
+          Funkce $f$ se nazývá \textbf{sudá} jestliže pro každé $x\in D(f)$ je též $-x\in D(f)$
+          a platí $f(x)=f(-x)$.
+          Funkce $f$ se nazývá \textbf{lichá} jestliže pro každé $x\in D(f)$ je též $-x\in D(f)$
+          a platí $f(-x)=-f(x)$. 
+        \end{definition}
+        Graf sudé funkce je souměrný podle osy $y$ (osy funkčních hodnot), graf liché funkce je 
+        souměrný podle počátku. 
+        \begin{example}\label{MAI:exam08}
+          Funkce $f:\,y=x^2$ je sudá, funkce $g:\,y=x^3$ je lichá.
+          %----------------------------------
+          % image: MAI_diff_app_06.tex label: \label{MAI:fig_diff_app_06}
+            \input{../src/MAI/img/MAI_diff_app_06.tex}  
+          %----------------------------------           
+        \end{example}
+        Daná funkce nemusí být ovšem ani sudá, ani lichá. Snadno se dokáže tvrzení:
+        \begin{itemize}
+          \item Je-li sudá funkce $f$ na množině $D(f)\cap\langle0,\infty)$ rostoucí (klesající),
+                je na množině $D(f)\cap(-\infty,0\rangle$ klesající (rostoucí).
+          \item Je-li lichá funkce na množině $D(f)\cap\langle0,\infty)$ rostoucí (klesající),
+                je též na množině $D(f)\cap(-\infty,0\rangle$ klesající (rostoucí).                 
+        \end{itemize}
+      \subsubsection{Periodická funkce}
+    %----------------------------------------------------------------------------------------------      
+    \subsection{Operace s funkcemi. Uspořádání}       
+    
+    %----------------------------------------------------------------------------------------------
+    \subsection{Elementární funkce}
+      Základními elementárními funkcemi nazýváme \cite[s.~10]{PolakMA1}:
+      \begin{displaymath}
+        \xymatrix{
+        \mbox{mocninné} & *+[F]{\mbox{Elementární funkce}}\ar@{->}[l]\ar@{->}[dl]\ar@{->}[d]\ar@{->}[dr]\ar@{->}[r]& \mbox{exponenciální}   \\
+        \mbox{goniometrické}       &   \mbox{logaritmické}      & \mbox{cyklometrické}
+        }
+      \end{displaymath}
+  
+      \subsubsection{Goniometrické funkce}
+      
+        \begin{itemize}
+          \item \textbf{Základní vzorce pro goniometrické funkce}
+            \begin{align}
+              \sin^2\alpha &+ \cos^2\alpha = 1      &\forall\alpha\in\realset \label{MA1:eq_sincos} \\ 
+              |\sin\alpha| &= \sqrt{1-\cos^2\alpha} &\forall\alpha\in\realset \label{MA1:eq_sinabs} \\ 
+              |\cos\alpha| &= \sqrt{1-\sin^2\alpha} &\forall\alpha\in\realset \label{MA1:eq_cosabs}
+            \end{align}  
+          \item \textbf{Součtové vzorce}
+            \begin{align}
+            % \nonumber to remove numbering (before each equation)
+              \sin(\alpha + \beta) 
+                &= \sin\alpha\cdot\cos\beta - \sin\beta\cdot\cos\alpha           \label{MA1:eq_sinxpy}  \\ 
+              \sin(\alpha - \beta) 
+                &= \sin\alpha\cdot\cos\beta + \sin\beta\cdot\cos\alpha           \label{MA1:eq_sinxmy}  \\ 
+              \cos(\alpha + \beta) 
+                &= \cos\alpha\cdot\cos\beta - \sin\alpha\cdot\sin\beta           \label{MA1:eq_cosxpy}  \\ 
+              \cos(\alpha - \beta) 
+                &= \cos\alpha\cdot\cos\beta + \sin\alpha\cdot\sin\beta           \label{MA1:eq_cosxmy}  \\ 
+              \tan(\alpha\pm\beta) 
+                &= \frac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\cdot\tan\beta}   \label{MA1:eq_tanxpmy} \\ 
+              \cot(\alpha\pm\beta) 
+                &= \frac{1\mp\cot\alpha\cdot\cot\beta}{\cot\alpha\pm \cot\beta}  \label{MA1:eq_cotxpmy}
+            \end{align}
+            Součtové vzorce lze odvodit několika způsoby; jednoduchý způsob důkazu lze provést pomocí skalárního součinu vektorů.
+          \item \textbf{Vzorce pro dvojnásobný úhel $2\alpha$}
+            \newline Pro každé $\alpha\in R$ platí:
+            \begin{align}
+              \sin(2\alpha)   &= 2\sin\alpha\cos\alpha                \label{MA1:eq_sin2x} \\ 
+              \cos(2\alpha)   &= \cos^2\alpha - \sin^2\alpha          \label{MA1:eq_cos2x} \\ 
+              \tan(2\alpha)   &= \frac{2\tan\alpha}{1-\tan^2\alpha}   \label{MA1:eq_tan2x} \\ 
+              \cot(2\alpha)   &= \frac{\cot^2\alpha - 1}{2\cot\alpha}                               \label{MA1:eq_cot2x}
+            \end{align}
+          \item \textbf{Vzorce pro poloviční úhel $\displaystyle\frac{\alpha}{2}$}
+            \begin{align}
+              \left|\sin\frac{\alpha}{2}\right|   
+                &= \sqrt{\frac{1-\cos\alpha}{2}}                      \label{MA1:eq_sinx2} \\ 
+              \left|\cos\frac{\alpha}{2}\right|   
+                &= \sqrt{\frac{1+\cos\alpha}{2}}                      \label{MA1:eq_cosx2} \\ 
+              \left|\tan\frac{\alpha}{2}\right|   
+                &= \sqrt{\frac{1-\cos\alpha}{1+\cos\alpha}}           \label{MA1:eq_tanx2} \\ 
+              \left|\cot\frac{\alpha}{2}\right|   
+                &= \sqrt{\frac{1+\cos\alpha}{1-\cos\alpha}}           \label{MA1:eq_cotx2}
+            \end{align}
+        \end{itemize}
+        Vzorce \ref{MA1:eq_sinx2} a \ref{MA1:eq_cosx2} odvodíme pomocí vzorců \ref{MA1:eq_cos2x} a \ref{MA1:eq_sincos}:
+        \begin{align*}
+          \cos\alpha &= 
+          \cos2\frac{\alpha}{2}=\cos^2\frac{\alpha}{2}-\sin^2\frac{\alpha}{2}=1-2\sin^2\frac{\alpha}{2} \\
+          \sin^2\frac{\alpha}{2} &= \frac{1-\cos\alpha}{2}   \\
+          \cos^2\frac{\alpha}{2} &= 1 - \sin^2\frac{\alpha}{2} = \frac{1+\cos\alpha}{2} 
+        \end{align*}
+        a dále užijeme vztahu $\sqrt{a^2}=|a|$ (platí pro každé $a\in\realset$). Užitím součtových vzorců a 
+        toho že, $\sin\frac{\pi}{2} = 1$, $\cos\frac{\pi}{2} = 0$, $\sin\pi = 0$ a $\cos\pi = -1$ lze snadno 
+        odvodit, že pro každé 
+        $\alpha\in R$ platí
+
+        \begin{align*}
+          \sin\left(\frac{\pi}{2}+\alpha\right) &=  \cos\alpha  &   \cos\left(\frac{\pi}{2}+\alpha\right) &= -\sin\alpha \\
+          \sin\left(\frac{\pi}{2}-\alpha\right) &=  \cos\alpha  &   \cos\left(\frac{\pi}{2}-\alpha\right) &=  \sin\alpha \\
+          \sin\left(\pi+\alpha\right)           &= -\sin\alpha  &   \cos\left(\pi+\alpha\right)           &= -\cos\alpha \\
+          \sin\left(\pi-\alpha\right)           &=  \sin\alpha  &   \cos\left(\pi-\alpha\right)           &= -\cos\alpha \\
+        \end{align*}
+        \newline Důkaz provedeme pro první z těchto často užitečných vzorců (u ostatních je odvození obdobné):
+        $$\sin\left(\frac{\pi}{2}+\alpha\right) = \sin\frac{\pi}{2}\cos\alpha + \cos\frac{\pi}{2}\sin\alpha = 1\cdot\cos\alpha + 0\cdot\sin\alpha.$$
+
+    %---------------------------------------------------------------------------------------------- 
+    \subsection{Zobrazení v jiných strukturách}
+    
+    %---------------------------------------------------------------------------------------------- 
+    \subsection{Cvičení}
+  %================Podkapitola: Limita funkce =============================================          
+  \section{Limita funkce}
+  
+  %================Podkapitola: Spojitost funkce ==========================================        
+  \section{Spojitost funkce}
+  
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        
+\printbibliography[title={Seznam literatury}, heading=subbibliography]
+\addcontentsline{toc}{section}{Seznam literatury}          	

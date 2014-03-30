@@ -1,0 +1,138 @@
+%====================================================================================================
+% --------------------------------------------- Definite Integral -----------------------------------
+\chapter{Určitý integrál}
+\minitoc
+\newpage  
+\section{Motivace} 
+  %----------------------------------
+  % image: MAI_animated_integral.tex label: \label{MAI:fig_anim_int}
+    \input{../src/MAI/img/MAI_animated_integral.tex}  
+  %---------------------------------- 
+
+\subsection{Výpočet integrálu}
+    \begin{example}Metodou per partes spočítejte integrály:$\displaystyle\int_1^{ln5}{(x+1)e^xdx}$
+      \begin{align*}
+        \int{(x+1)e^xdx} &= \int{e^xdx}+\int{x\cdot e^xdx} \\
+                         &= e^x + (x-1)e^x = xe^x \\
+        \int_1^{ln5}{(x+1)e^xdx} &= [xe^x]_1^{ln5} = 5ln5-e\\
+      \end{align*}
+      kde integrál
+      \begin{equation*}
+          \int{xe^xdx}=
+            \left[\begin{array}{cc}
+              u=x   & dv=e^x \\
+              du=dx & v=e^x
+            \end{array}\right]=
+            xe^x-\int{e^xdx} = xe^x - e^x+C
+      \end{equation*}
+    \end{example}
+
+\newpage
+\section{Vlastnosti určitého integrálu}
+  V této kapitole mluvíme o spojitých funkcích $\Rightarrow$ příslušné integrály tedy vždy
+  existují. Čerpáno z knih:
+  \cite{Knichal}.
+
+  \begin{lemma}
+    \textbf{První věta o střední hodnotě integrálního počtu}: Je-li funkce $f(x)$ spojitá v
+    intervalu $\langle a, b\rangle$, existuje alespoň jeden takový bod $c\in(a, b)$, že platí
+
+    \begin{equation}\label{MA:eq_av1}
+      \int_a^b f(x)dx = (b-a)f(c).
+    \end{equation}
+  \end{lemma}
+
+  \begin{proof} Použitím Lagrangeovy věty napsané pro funkci $F(x)$, primitivní na intervalu
+    $\langle a, b\rangle$ k dané funkci $f(x)$. Podmínky věty jsou zřejmě splněny: $F(x)$ je
+    spojitá na intervalu $\langle a, b\rangle$ a má všude derivaci $F'(x)= f(x)$. Tedy existuje
+    alespoň jeden bod $c\in(a, b)$,
+    
+      %----------------------------------
+        % image: MAI_rolle_02.tex label: \label{MA:fig_rolle_02} 
+        \input{../src/MAI/img/MAI_rolle_02.tex}  
+      %----------------------------------   
+    
+      že $$F(b)-F(a) = (b-a)F'(c),$$ čímž je věta dokázána, neboť $F(b)-F(a) = \int_a^bf(x)dx$ a
+      $F'(c) = f(c)$. Funkční hodnotu $f(c)$, danou podle (\ref{MA:eq_av1}) rovnicí  
+      \begin{equation}\label{MA:eq_av2}
+         f(c) = \frac{1}{b-a}\int_a^b f(x)dx
+      \end{equation}
+      nazýváme \texttt{střední hodnotou}.
+  \end{proof}
+
+  Pro spojitou nezápornou funkci $f(x)$, lze větu o střední hodnotě jednoduše geometricky
+  interpretovat dle (obr.\ref{MAI:fig_rolle_02}). Levá strana (\ref{MA:eq_av1}) určuje obsah
+  křivočarého lichoběžníka $ABCD$, pravá strana obsah obdélníka $ABEF$. Podle této věty nabývá
+  funkce $f(x)$ aspoň v jednom bodě intervalu $(a, b)$ takové hodnoty $f(c)$, že uvažovaný
+  křivočarý lichoběžník má stejný obsah jako obdélník o základně $b-a$ a výšce $f(c)$ (str. 155
+  knihy \cite{Knichal}).
+
+  \begin{example} Určete střední hodnotu $i_s$ střídavého proudu $$i(t) = I_0\sin\omega t$$ v
+    časovém intervalu $\langle 0, \frac{T}{2}\rangle$ (v průběhu jedné poloviny periody). $I_0$ je
+    maximální hodnota proudu (obr. \ref{MA:fig_Iav_exam}), perioda $T$ je dána vztahem $T =
+    \frac{2\pi}{\omega}$
+    %----------------------------------
+      % image: MAI_rolle_02.tex label: \label{MA:fig_Iav_exam}
+      \input{../src/MAI/img/MAI_Iav_exam.tex}  
+    %----------------------------------
+
+    Podle \ref{MA:eq_av2} bude
+    \begin{align*}
+     i_s &=  \frac{2}{T}
+             \int_0^{\frac{T}{2}}I_0\sin\omega t\dd{t} =
+             \frac{2I_0}{T}\left[-\frac{\cos\omega t}{\omega}\right]_0^{\frac{T}{2}}        \\
+         &=  \frac{2I_0}{T}\frac{1}{\omega}\left(-\cos\frac{\omega T}{2}+ \cos 0\right)     \\
+         &=  \frac{2I_0}{2\pi}(-\cos\pi + \cos 0) = \frac{2}{\pi}I_0 \doteq 0,637 I_0.
+  \end{align*}
+
+  Tato hodnota se rovná intenzitě elektrického proudu, při kterém by vodičem v průběhu uvažované
+  poloviny periody prošel stejný elektrický náboj jako při proudu střídavém.
+  \end{example}
+
+  \begin{example} Efektivní hodnota $i_{ef}$ střídavého proudu $$i(t) = I_0\sin\omega t$$ (viz
+    předchozí příklad) je definována jako odmocnina ze střední hodnoty funkce $i^2(t)$ v průběhu
+    jedné periody $T = \frac{2\pi}{\omega}$. Tedy
+    \begin{align*}
+      i_{ef}^2 &= \frac{1}{T}\int_0^T I_0^2\sin^2\omega t\dd{t} = 
+                  \frac{1}{T}\int_0^T \frac{I_0^2}{2}(1- \cos2\omega t)\dd{t}           \\
+               &= \frac{I_0^2}{2T}
+                  \left[
+                    t-\frac{\sin2\omega t}{2\omega}
+                  \right]_0^T = \frac{I_0^2}{2}
+    \end{align*}
+    neboť $\sin2\omega T=\sin4\pi = 0.$ Odtud $$i_{ef} = \frac{I_0}{\sqrt{2}}.$$ Střídavý proud
+    $i(t) = I_0\sin\omega t$ má na témže odporu stejný výkon jako stejnosměrný proud o intenzitě
+    $i = 0,707I_0$.
+  \end{example}
+  Následující věta může být využita k odhadu některých integrálů
+  \begin{lemma}
+    \textbf{Druhá věta o střední hodnotě integrálního počtu}: Jsou-li funkce $f(x)$ a $g(x)$
+    spojité v intervalu $\langle a, b \rangle$ a je-li funkce $g(x)$ v $\langle a, b \rangle$
+    nezáporná a nerostoucí, existuje alespoň jeden bod $c\in\langle a, b \rangle$ tak, že platí
+    \begin{equation}\label{MA_eq_av3}
+        \int_a^b f(x)g(x) = g(a)\int_a^c f(x)dx.
+    \end{equation}
+  \end{lemma}
+  Zcela obdobnou větu lze vyslovit pro případ, že $g(x)$ je v intervalu $\langle a, b \rangle$
+  nezáporná a neklesající, tj. na pravé straně \ref{MA_eq_av3} je pak integrál $g(b)\int_c^b
+  f(x)dx$
+
+  \begin{example} Odhadněte hodnotu integrálu
+    \begin{equation}\label{MA_eq_sinx_x}
+        \int_{100\pi}^{1000\pi}\frac{\sin x}{x}dx
+    \end{equation}
+    Řešení: Funkce $f(x) = \sin x$ a $g(x) = \frac{1}{x}$ jsou v uvažovaném intervalu $\langle
+    100\pi, 1000\pi \rangle$ spojité a funkce $g(x)$ je kladná a nerostoucí.
+    \begin{equation*}
+      \int_{100\pi}^{1000\pi}\frac{\sin x}{x}dx = 
+      \frac{1}{100\pi}\int_{100\pi}^c\sin xdx =\frac{1}{100\pi}\left(\cos100\pi - \cos c\right)
+    \end{equation*}
+    kde $c$ je kladné číslo z intervalu $\langle 100\pi, 1000\pi \rangle$. Dále pro všechna
+    $c\in\langle 100\pi, 1000\pi \rangle$ platí $0\leq1-\cos c\leq2$, takže
+    \begin{equation*}
+        0\leq\int_{100\pi}^{1000\pi}\frac{\sin x}{x}dx\leq \frac{1}{50\pi}.
+    \end{equation*}
+  \end{example}   
+%---------------------------------------------------------------------------------------------------
+\printbibliography[heading=subbibliography]
+\addcontentsline{toc}{section}{Seznam literatury}

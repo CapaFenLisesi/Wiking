@@ -1,0 +1,161 @@
+%file: kap_topol_elemag.tex
+%===========Kapitola: Topologické vlastnosti elektromagnetického pole===============================
+\chapter{Topologické vlastnosti elektromagnetického pole}\label{ES:kap_topovlelmagp}
+\minitoc
+\newpage    
+  V předchozích kapitolách byly na mnohých místech zdůrazňovány některé topologické souvislosti.
+  Kapitola o topologii je úmyslně zařazena až následně, jednak aby shrnula získané poznatky a
+  vtiskla jim určitý řád, jednak aby čtenář již měl předchozí konkrétní představy o některých
+  abstraktních pojmech \cite[s.~40]{Patocka4}. 
+  
+  Topologie je matematická disciplína, patřící do vyšších pater v hierarchii matematiky. Topologie
+  se zaýává prostorovými útvary, podobně jako geometrie. Na rozdíl od geometrie ji však nezajímají 
+  \emph{kvantitativní} ukazatele zkoumaných geometrických útvarů, nýbrž určité vyšší obecnější
+  \emph{kvalitativní} ukazatele. S nadsázkou lze říci, že je to ''geometrie, která nic neměří''.
+  Topologie se dělí na dvě zdánlivě odlišné disciplíny: 
+  \begin{itemize}
+    \item \emph{Topologie diskrétních útvarů} neboli \emph{teorie grafů} - zabývá se diskrétními
+          prostorovými útvary, tj. \emph{grafy}. Graf sestává z \emph{uzlů} propojených
+          \emph{hranami}. Hrany mohou být \emph{orientované} nebo \emph{neorientované}. Všechny
+          diskrétní elektrické obvody jsou \emph{neorientovanými} grafy. Proto i všechny známe
+          metody řešení diskrétních elektrických obvodů (metoda Kirchhoffových zákonů, metoda
+          smyčkových proudů, metoda uzlových napětí) podléhají zákonitostem diskrétní topologie. 
+    \item \emph{Topologie spojitých útvarů} - zabývá se spojitými prostorovými útvary, tj.
+          \emph{plochami a křivkami} v prostorech libovolné dimenze. Patří sem všechny elektrické
+          obvody s \emph{parametry spojitě rozprostřenými} v 3D prostoru. Takovým útvarem je např.
+          krabice naplněná elektricky vodivým grafitovým práškem, do níž umístíme v libovolných
+          místech dvě nebo více elektrod. Intuitivně tušíme, že v prostoru krabice budeme pracovat s
+          ekvipotenciálami v podobě \emph{ploch} nebo se siločárami v podobě \emph{křivek} atd. 
+  \end{itemize}
+  
+  Elektrické obvody se chovají poněkud jinak než obvody magnetické: 
+  \begin{itemize}
+    \item V \emph{elektrických} obvodech je poměr mezi měrnou elektrickou vodivostí \emph{vodičů} a
+          \emph{izolantů} minimálně $10^{12}$, obvykle i větší. Proto lze snadno pomocí vodiče
+          obaleného izolantem docílit toho, že elektrický proud teče pouze prostorově vymezenými
+          \emph{diskrétními} cestami. Pak je pochopitelné, že vhodným a \emph{absolutně přesným}
+          nástrojem k analýze elektrického obvou je \emph{topologie diskrétních útvarů}.
+    \item V \emph{magnetických} obvodech je poměr mezi měrnou magnetickou vodivostí (permeabilitou)
+          \emph{vodičů} a \emph{izolantů} typicky $10^{3}$, což je dáno relativní permeabilitou
+          feromagnetik vůči vakuu. Vakuum je tedy \emph{velmi špatný} magnetický izolant a lepší v
+          přírodě bohužel neexistuje. V této situaci je obtížné realizovat ryze diskrétní magnetický
+          obvod, protože železo neumíme ''obalit'' kvalitním magnetickým izolantem. U cívky se
+          železným jádrem podle obr. \ref{es:fig_Bzv} v kapitole \ref{es:tokcvk_frmj} jsme ukázali,
+          že rozptylový tok vzdušných cest činí řádově 1 \% až 5 \% z toku celkového. Takový obvod
+          je sice již řešitelný metodami \emph{diskrétní} topologie, ale pouze přibližně. Je to
+          běžný inženýrský postup, který se v praxi velmi úspěšně používá. Pokud však rozptylový tok
+          nehceme nebo nemůžeme zanedbat, je nezbytné pracovat metodami \emph{topologie spojitých
+          útvarů\footnote{Všimněme si ale, že ke zjednodušeným výrazům pro výpočet spřaženého toku v
+          \emph{diskrétním} obvodu jsme dospěli pomocí integrálních metod, které používá topologie
+          \emph{spojitých} útvarů}. Berme to jako ukázku, že mezi oběma topologiemi je hluboký
+          vztah, i když není na první pohled patrný.}
+  \end{itemize} 
+  %----------------------------------
+  % image: resistor_grid.tex label: \label{ES:fig_res_grid}
+      \input{../src/ES/img/resistor_grid.tex}  
+  %----------------------------------
+  
+  Na první pohled se zdá, že obě topologie využívají natolik odlišných matematických postupů, že
+  spolu tyto disciplíny nijak nesouvisí. Opak je pravdu. Mezi oběma panuje hluboký vztah, obě
+  vycházejí ze stejných základů. Vysvětlení lze hledat na obr. \ref{ES:fig_res_grid}. Je zde
+  nakreslen \emph{přenosový dvojbran} se zcela obecnou vnitřní strukturou, která může mít např.
+  podobu husté vodivostní\footnote{V magnetických obvodech je psychologicky výhodnější pracovat s
+  magnetickými vodivostmi než s magnetickými odpory (reluktancemi). Permeabila má totiž význam
+  \emph{měrné magnetické vodivosti}} sítě, ve které mají jednotlive vodivosti nahodile různé
+  hodnoty. S ohledem na dobře známé analogie je lhostejné, zda se jedná o \emph{elektrický} nebo
+  \emph{magnetický} obvod. Nakreslený obvod je zcela určitě \emph{diskrétní}, bude tedy řešen
+  některou klasickou diskrétní metodu, např. metodou smyčkových proudů nebo metodou uzlových
+  napětí. Výpočtem zjistíme, že z pohledu vstupní a výstupní brány má dvojbran konkrétní přenosové
+  parametry (napěťový přenos naprázdno, proudový přenos nakrátko, vstupní impedanci naprázdno,
+  nakrátko, atd.) Učiňme následující myšlenkový pokus: vodivostní síť budem neustále zjemňovat.
+  Tj., ve smšru vodorovném i svislém budeme zvyšovat počty prvků, ale tak, aby celková vodivost na
+  jednotku délky zůstávala v dané oblasti \emph{konstantní}. Výsledkem zjemňování bude v limitním
+  případě vznik \emph{spojité} vodivé desky (např. izolační podložka nastříkaná elketricky vodivým
+  odporovým lakem). Mezi původním diskrétním obvodem a deskou zřejmě platí následující souvislosti:
+  \begin{itemize}
+    \item Původní diskrétní vodivosti byly nahodile různé \(\longrightarrow\) deska bude
+          \emph{nehomogenní, anizotropní}.
+    \item Původní diskrétní vodivosti byly stejně velké ve směru \emph{x} a stejně velké (ale s
+          jinou hodnotou ve směru \emph{y}) \(\longrightarrow\) deska bude \emph{homogenní
+          anizotropní}.
+    \item Všechny diskrétní vodivosti měly stejnou hodnotu \(\longrightarrow\) deska bude
+          \emph{homogenní, izotropní}.
+  \end{itemize}
+  
+  Intuitivně tušíme, že vytvořená \emph{spojitá} deska\footnote{Uvedený příklad se týká
+  dvojrozměrné desky. Příklad lze jistě zobecnit na trojrozměrné objekty (lze si představit
+  krabici naplněnou vodivým grafitovým práškem, do které zavedeme čtyři bodové elektrody).} bude mít
+  všechny přenosové parametry číselně shodné s původním \emph{diskrétním} obvodem. Přitom ale u
+  desky nelze tyto parametry určit klasickými diskrétními metodami (nelze určit matici obvodu). Je
+  nutný přechod od diskrétních operací k operacím integrálním, tedy od topologie \emph{diskrétních
+  útvarů} k topologii \emph{spojitých útvarů}. Z uvedeného myšlenkového pokusu plyne, že v
+  \emph{limitním případě} velmi jemné sítě musí dát diskrétní i spojité operace stejný kvantitativní
+  výsledek. Na tomto poznatku je založeno přibližné řešení spojitých prostorových polí
+  \emph{metodami konečných prvků}.
+  
+  Především jsme ovšem chtěli ukázat, že mezi diskrétními a spojitými topologickými metodami není
+  zásadního rozdílu, obě vycházejí ze stejných základů a v limitním případě spolu splývají. 
+  
+  \section{Topologie diskrétních útvarů}  
+    Cílem této kapitoly je především vysvětlit \emph{pricnip reciprocity} v pasivních elektrických
+    obvodech a pomocí něho odvodit \emph{počet stupňů volnosti} elektrických obvodů. Zvláštním
+    případem obvodu je \emph{pasivní přenosový dvojbran}, u kterého bude dokázáno, že má vždy
+    \emph{tři stupně volnosti}. Tento poznatek má totiž mimořádný význam v teorii
+    \emph{transformátorů}, který je právě typickým představitelem přenosového dvojbranu. V
+    kapitolách zabývajících se transformátorem - především jeho náhradním zapojením - se budeme
+    odvolávat na výsledky získané v této kapitole. 
+    
+    \subsection{Základní pojmy teorie grafů}
+      Názvosloví a základní pojmy teorie grafů lze shrnout do následujících bodů:
+      \begin{itemize}
+        \item Základním pojmem je \emph{graf} (graf orientovaný, neorientovaný). Graf je vlastně
+              „schéma“ příslušného obvodu s vynechanými obvodovými prvky.
+        \item Graf sestává z \emph{uzlů} a \emph{hran}.
+        \item Uzel je spojení alespoň tří hran\footnote{Spojení dvou hran je elektrický bod, nikoli
+              uzel.}.
+        \item Hrana může být \emph{orientovaná} (je jí přiřazen směr), \emph{neorientovaná} (nemá
+              přiřazen směr). V elektrotechnice se používají výhradně neorientované hrany - tedy i
+              grafy (vlastnosti obvodových prvků R, L, C jsou nezávislé na směru proudu).
+        \item \emph{Úplný strom}: nepřerušená celistvá soustava nejmenšího počtu hran, která spojuje
+              všechny uzly grafu.
+        \item \emph{Nezávislá hrana}: hrana nepatřící do úplného stromu.
+        \item \emph{Nezávislá smyčka}: uzavřená smyčka, která musí obsahovat nezávislou hranu, tj.
+              hranu nepatřící do úplného stromu.
+        \item Nezávislých smyček je tolik, kolik je nezávislých hran.
+      \end{itemize}
+     
+     Označme v grafu:
+       \begin{itemize}
+         \item Počet uzlů:	\(q +1\)
+		 \item Počet hran úplného stromu:	\(q\)
+		 \item Počet hran (počet neznámých proudů):	\(p\)
+		 \item Počet nezávislých hran (nezávislých smyček):	\(n=p-q\)
+      \end{itemize}
+
+     U složitých obvodů je hledání \(n\) nezávislých smyček obtížné. Proto se k tomuto účelu používá
+     úplný strom, jehož nalezení je snadné. Nezávislé hrany jsou ty, které \emph{nepatří} do úplného
+     stromu. Každou nezávislou hranou pak musí procházet alespoň jedna nezávislá smyčka. Všechny
+     pojmy budou ukázány na konkrétním příkladu.
+
+     Řešením obvodu se rozumí: Nalezení všech \(p\) neznámých proudů ve všech \(p\) hranách.
+     Principiálně se vždy jedná o řešení soustavy \(p\) rovnic o \(p\) neznámých proudech.
+
+     K řešení lze použít tři metody:
+     \begin{itemize}
+       \item Metoda založená na přímém použití I. a II. Kirchhoffova zákona\footnote{Gustav Robert
+             Kirchhoff (1824-1887), německý fyzik, působil na univerzitách v Heidelbergu a v
+             Berlíně. I. a II. KZ objevil r. 1845 ještě jako student. Dále se zabýval spektroskopií,
+             tepelnou radiací černého tělesa, spoluobjevitel Cesia a Rubidia. Žák F. E. Neumanna.}.
+             Je nejméně efektivní, vede na nejrozsáhlejší soustavu \(p\) rovnic o \(p\) neznámých.
+       \item Metoda smyčkových proudů (Mesh Currents Matrix Method), Maxwellova metoda. Vede na
+             soustavu pouze \(n\) rovnic o \(n\) neznámých smyčkových proudech\footnote{Ze
+             smyčkových proudů lze skutečné proudy snadno vyřešit pomocí doplňkových rovnic
+             sestavených pomocí I. KZ.}. Vezmeme-li v úvahu nejsložitější obvod, ve kterém je každá
+             dvojice uzlů spojena hranou, pak bude:
+             \begin{equation}
+               n=p-q=\frac{q(q-1)}{2},
+             \end{equation}
+             což je	podstatně méně rovnic než \(p\).            
+     \end{itemize}    
+            
+\printbibliography[heading=subbibliography]
