@@ -469,6 +469,13 @@
     Ptáme se: Jaký je tok pole \(\vec{E}\) ven z libovolné uzavřené plochy v okolí bodového náboje? 
     Nejdříve vezměme jednoduchou plochu, jakou ukazuje obr. \ref{fyz:fig_fey_tokE01}. 
     
+    \begin{figure}[ht!]
+      \centering
+      \includegraphics[width=0.7\linewidth]{fey_tokE01.jpg}
+      \caption{Tok vektoru \(\vec{E}\) z plochy \(S\) je roven nule}
+     \label{fyz:fig_fey_tokE01} 
+    \end{figure}
+    
     Má-li pole \(\vec{E}\) charakter toku, musí být celkový tok z takové krabičky roven nule. Tento 
     výsledek opravdu dostaneme, rozumíme-li „tokem“ z této plochy plošný integrál normálové složky 
     vektoru \(\vec{E}\), tj. veličinu, kterou jsme nazvali tokem pole \(\vec{E}\). V případě 
@@ -482,14 +489,7 @@
     \oint_SE_n\dd{S} = 0.
     \end{equation}
     
-    \begin{figure}
-      \centering
-      \includegraphics[width=0.7\linewidth]{fey_tokE01.jpg}
-      \caption{Tok vektoru \(\vec{E}\) z plochy \(S\) je roven nule}
-     \label{fyz:fig_fey_tokE01} 
-    \end{figure}
-    
-    \begin{figure}
+    \begin{figure}[ht!]
       \includegraphics[width=0.7\linewidth]{fey_tokE02.jpg}
       \caption{Tok vektoru \(\vec{E}\) z plochy \(S\) je roven nule}
      \label{fyz:fig_fey_tokE02} 
@@ -507,7 +507,7 @@
     změní úměrně \(\cos\vartheta\). Součin \(E_n\cdot\Delta S\) se tedy nezmění. Tok z celé plochy 
     \(S\) zůstává nulový.
       
-    \begin{figure}
+    \begin{figure}[ht!]
       \centering
       \includegraphics[width=0.7\linewidth]{fey_tokE03.jpg}
       \caption{Každý objem lze považovat za úplně složený z infinitezimálních komolých kuželů. Tok 
@@ -533,7 +533,7 @@
     ho obalíme malou plochou S uloženou úplně uvnitř původní plochy \(S\) (obr. 
     \ref{fyz:fig_fey_tokE05})           
 
-    \begin{figure}
+    \begin{figure}[ht!]
       \centering                  
       \includegraphics[width=0.8\linewidth]{fey_tokE04.jpg}
       \caption{Nachází-li se náboj uvnitř plochy, tok z ní není roven nule.}
@@ -732,6 +732,7 @@
     Pak by se potenciál na ploše měnil a nebyla by ekvipotenciální plochou. Ekvipotenciální plochy 
     tedy musí všude svírat se siločárami elektrického pole pravý úhel.    
     \begin{figure}[ht!]
+      \centering
       \includegraphics[width=0.9\linewidth]{fey_ekvipot01.jpg}
       \captionof{figure}{Siločáry a ekvipotenciální plochy v případě kladného bodového náboje.}
       \label{fyz:fig_fey_ekvipot01}  
@@ -764,5 +765,180 @@
               stejně velkých bodových nábojů s opačným znaménkem}
      \label{fyz:fig_fey_ekvipot02}
     \end{figure}
-        
+  
+  %------------------------------------------ Použití Gaussova zákona ----------------------------------------
+  \section{Použití Gaussova zákona} 
+    V elektrostatice platí dva zákony: tok elektrického pole z objemu je přímo úměrný náboji v něm — Gaussův 
+    zákon, a cirkulace elektrického pole je rovna nule, tj. \(\vec{E}\) je gradientem. Z těchto dvou zákonů 
+    vyplývají v elektrostatice všechny předpovědi. Ale vyjádřit tyto zákony matematicky je jedna věc a 
+    používat je snadno a s určitou dávkou důvtipu je věc druhá. V této kapitole probereme řadu výpočtů, které 
+    je možné provést pomocí Gaussova zákona. Dokážeme některé věty a popíšeme některé jevy, zejména ve 
+    vodičích, které je možno na základě tohoto zákona velmi snadno pochopit. Samotný Gaussův zákon však 
+    nemůže poskytnout řešení žádné úlohy, neboť je třeba respektovat ještě druhý zákon. Proto, když budeme 
+    používat Gaussův zákon k řešení konkrétních úloh, musíme k němu ještě něco přidat: Budeme muset například 
+    udělat nějaký předpoklad o tom, jak vypadá pole, založený například i na požadavcích symetrie. Anebo 
+    budeme muset explicitně zavést představu, že pole je gradientem potenciálu \cite[s.~82]{Feynman02}.
+    
+    \subsection{Rovnováha v elektrostatickém poli}
+      Uvažujme nejdříve o tomto problému: Kdy může být bodový náboj ve stabilní mechanické rovnováze v 
+      elektrickém poli jiných nábojů? Jako příklad si představme tři záporné náboje umístěné ve vrcholech 
+      rovnostranného trojúhelníka ve vodorovné rovině. Zůstal by kladný náboj, který se nachází ve středu 
+      trojúhelníka, na tomto místě? (Bude jednodušší, když na okamžik zapomeneme na gravitaci, ačkoliv její 
+      zahrnutí výsledky stejně nezmění) Síla působící na kladný náboj je nulová, ale je to stabilní 
+      rovnováha? Vrátil by se náboj do rovnovážné polohy, kdyby se trochu posunul? Odpověď zní: ne.
+      
+      V \emph{žádném} elektrostatickém poli neexistují žádné body stabilní rovnováhy (s výjimkou poloh, ve 
+      kterých jsou už jiné náboje). Z Gaussova zákona je snadno vidět proč. Za prvé, má-li být náboj v 
+      rovnováze v nějakém konkrétním bodě \(P_0\), musí tam být pole nulové. Za druhé, má-li být rovnováha 
+      stabilní, požadujeme, aby při vysunutí náboje z \(P_0\) v jakémkoliv směru vznikla zpětná síla 
+      směřující opačně než posunutí. Elektrické pole tedy musí ve všech okolních bodech směřovat dovnitř - k 
+      bodu \(P_0\). Nejsou-li v \(P_0\) žádné náboje, bylo by to v rozporu s Gaussovým zákonem. Snadno se 
+      můžeme přesvědčit.
+      
+      Představme si malou myšlenou plošku, obklopující \(P_0\) (obr. \ref{fyz:fig_fey_elstat_gauss01}). 
+      Směřuje-li všude v okolí elektrické pole do \(P_0\), jistě není plošný integrál normálové složky roven 
+      nule. V případě ukázaném na obrázku musí tok ploškou mít zápornou hodnotu. Podle Gaussova zákona tok 
+      elektrického pole z libovolné plochy je přímo úměrný celkovému náboji uvnitř. Není-li v \(P_0\) žádný 
+      náboj, je existence takového pole, jako jsme právě popsali, v rozporu s Gaussovým zákonem. Vyvážit 
+      kladný náboj v prázdném prostoru, tj. v bodě, v němž se nenachází žádný záporný náboj, se nepodaří. 
+      Kladný náboj může být v rovnováze jen tehdy, nachází-li še ve středu rozdělení záporného náboje. 
+      Samozřejmě, v takovém případě by rozdělení záporného náboje muselo být udržováno na místě jinými než 
+      elektrickými silami.
+           
+      Náš výsledek jsme získali pro bodový náboj. Platí tentýž závěr i pro složité uspořádání nábojů 
+      udržovaných pohromadě v pevných vzájemných polohách, řekněme tyčemi? Prozkoumáme tento problém pro dva 
+      stejné náboje upevněné na tyči. Může být v elektrostatickém poli takový útvar v rovnováze? Opět zní 
+      odpověď ne. Celková síla působící na tyč nemůže mít zpětný účinek pro posunutí v každém směru.
+      \begin{wrapfigure}{r}{0.5\linewidth} % \ref{fyz:fig_fey_elstat_gauss01}
+        \centering
+        \includegraphics[width=0.6\linewidth]{fey_elstat_gauss01.jpg}
+        \caption{Kdyby bod \(R\) představoval polohu stabilní rovnováhy kladného náboje, směřovalo by   
+                 elektrické pole všude v okolí k \(P_0\).}
+        \label{fyz:fig_fey_elstat_gauss01}
+      \end{wrapfigure} 
+      
+      Označme celkovou sílu působící na tyč v jakékoliv poloze \(\vec{F}\); \(\vec{F}\) je pak vektorovým	
+      polem. Budeme-li uvažovat jako předtím, dojdeme k závěru, že v poloze stabilní rovnováhy musí mít
+      divergence \(\vec{F}\) zápornou hodnotu. Celková síla působící na tyč je rovna prvnímu náboji krát pole 
+      v jeho poloze, plus druhý náboj krát pole v jeho poloze: \[\vec{F}=q_1\vec{E_1} + q_2\vec{E_2}.\] Pro 
+      divergenci \(F\) z toho vyplývá \[\ndiver{F}=q_1(\ndiver{E_1}) + q_2(\ndiver{E_2}).\] Je-li každý z 
+      těchto nábojů ve vakuu, jsou V \(q_1(\ndiver{E_1})\), stejně jako \(q_2(\ndiver{E_2})\) rovny nule a 
+      divergence \(\ndiver{F}\) je také rovna nule - není tedy záporná, jak by bylo žádoucí pro rovnováhu. 
+      Sami můžete rozšířit tuto úvahu a přesvědčit se, že vůbec žádný pevný útvar skládající se z jakéhokoliv 
+      počtu nábojů nemůže mít v elektrostatickém poli polohu stabilní rovnováhy ve volném prostoru.
+      
+      Nedokázali jsme však, že rovnováha je zakázána, existují-li úchyty nebo jiná mechanická omezení. Jako 
+      příklad nám poslouží dutá trubice, v níž se může náboj volně pohybovat dopředu a dozadu, ale ne do 
+      stran. V tomto případě je možno velmi snadno navrhnout elektrické pole, které na obou koncích směřuje 
+      dovnitř, připustí-li se, že v blízkosti středu trubice může směřovat ven do stran. Prostě na každý 
+      konec trubice umístíme kladné náboje, jak ukazuje obr. \ref{fyz:fig_fey_elstat_gauss02}. Nyní může 
+      existovat rovnovážný bod i tehdy, když je divergence rovna nule. Náboj by, samozřejmě, nebyl ve 
+      stabilní rovnováze pro pohyb do stran, kdyby nepůsobily „neelektrické“ síly stěn trubice. 
+      
+      \begin{figure}[ht!] % \ref{fyz:fig_fey_elstat_gauss02}
+        \centering
+        \includegraphics[width=0.6\linewidth]{fey_elstat_gauss02.jpg}
+        \caption{Existují-li mechanické vazby, náboj může být v rovnováze.}
+        \label{fyz:fig_fey_elstat_gauss02}
+      \end{figure}      
+      
+    \subsection{Rovnováha s vodiči}
+      V poli soustavy fixovaných nábojů neexistuje pro náš zkušební náboj žádná stabilní poloha. Jak je to v 
+      soustavě nabitých vodičů? Může soustava nabitých vodičů vytvořit takové pole, které bude mít bod 
+      stabilní rovnováhy pro bodový náboj? (Myslíme, samozřejmě, bod jinde než na povrchu vodiče.) Víte, že 
+      vodiče se vyznačují tím, že náboje v nich se mohou volně pohybovat. Je možné, že posune-li se trochu 
+      náš zkušební náboj, pohnou se ostatní náboje na vodičích tak, že na něj budou působit návratovou silou? 
+      Odpověď se stále stejná: Ne, ačkoliv z důkazu, který jsme podali výše, to není patrné. V tomto případě 
+      je důkaz těžší a my pouze naznačíme postup.
+      
+      \emph{Nejprve poznamenáme, že když se náboje na vodičích přerozdělují, může se to dít pouze tehdy, 
+      zmenšuje-li se tím jejich potenciální energie}. (Při pohybu ve vodiči se část jejich energie ztrácí na 
+      teplo). Už jsme ukázali, že jsou-li náboje vytvářející pole \emph{stacionární}, v blízkosti každého 
+      bodu \(P_0\), v němž je pole rovno nule, existuje takový směr, že posune-li se jím z \(P_0\), energie 
+      systému se zmenší (neboť síla směřuje od \(P_0\)). Jakékoliv přerozdělení nábojů na vodičích může pouze 
+      ještě víc zmenšit potenciální energii, takže (podle principu virtuální práce) jejich pohyb jen zvětší 
+      sílu ve zmíněném směru orientovanou od \(P_0\), ale neobrátí ji.
+      
+      Naše závěry neznamenají, že náboj není možné dostat do rovnováhy elektrickými silami. Je to možné, 
+      budou-li polohy nebo velikosti opěrných nábojů regulovány pomocí vhodných zařízení. Vy víte, že tyč 
+      postavená na hrot je v gravitačním poli nestabilní, ale to nedokazuje, že není možné ji vyvážit na 
+      konci prstu. Podobně je možné náboj udržovat v nějaké poloze elektrickými silami, jsou-li 
+      \emph{proměnné}. Ale ne pasivní, tj. \emph{statickou} soustavou sil.
+    
+    \subsection{Stabilita atomů}
+      Nelze-li náboje trvale udržovat ve svých polohách, zajisté nebude adekvátní představovat si látku, jako 
+      kdyby se skládala ze statických bodových nábojů (elektronů a protonů), řídících se pouze zákony 
+      elektrostatiky. Taková elektrostatická konfigurace je nemožná, zhroutila by se.
+      
+      Svého času bylo navrženo, že kladný náboj atomu může být rozdělen homogenně v kouli a záporné náboje — 
+      elektrony mohou být v klidu uvnitř kladného náboje, jak je to znázorněno na obr. 
+      \ref{fyz:fig_fey_elstat_gauss03}. To byl první model atomu, navržený Thomsonem. Na základě Geigerových 
+      a Marsdenových pokusů však dospěl Rutherford k závěru, že kladné náboje jsou velmi silně soustředěny v 
+      tom, co nazval jádrem. Thomsonův statický model 
+      byl zavržen.
+      \begin{figure}[ht!] % \ref{fyz:fig_fey_elstat_gauss03}
+        \centering
+        \includegraphics[width=0.6\linewidth]{fey_elstat_gauss03.jpg}
+        \caption{Thomsonův model atomu}
+        \label{fyz:fig_fey_elstat_gauss03}
+      \end{figure}
+      
+      Rutherford a Bohr pak navrhli, že půjde o dynamickou rovnováhu s elektrony obíhajícími na orbitách, 
+      jako na obr. \ref{fyz:fig_fey_elstat_gauss04}. Orbitální pohyb by zabraňoval elektronům spadnout k 
+      jádru. Již známe nejméně jeden problém spojený s touto představou. Při takovém pohybu by elektrony měly 
+      zrychlení (v důsledku jejich kruhového pohybu), a vyzařovaly by proto energii.
+      
+      Tím by ztrácely kinetickou energii potřebnou na to, aby zůstaly na orbitě a spirálově by se blížily k 
+      jádru. Opět nestabilita!
+      \begin{figure}[ht!] % \ref{fyz:fig_fey_elstat_gauss04}
+        \centering
+        \includegraphics[width=0.6\linewidth]{fey_elstat_gauss04.jpg}
+        \caption{Rutherfordův-Bohrův model atomu}
+        \label{fyz:fig_fey_elstat_gauss04}
+      \end{figure}      
+      
+      Nyní se stabilita atomů vysvětluje pomocí kvantové mechaniky. Elektrostatické síly přitahují elektron 
+      těsně k jádru, jak je to jen možné, přičemž ten je však přinucen zůstat rozptýlen v prostoru do 
+      vzdálenosti vyplývající z principu neurčitosti. Byl-li by totiž omezen na příliš malý prostor, měl by 
+      velkou neurčitost v hybnosti. Ale to znamená, že by měl velkou střední energii, která by mu umožňovala 
+      vymanit se z elektrické přitažlivosti jádra. Konečným výsledkem je taková elektrická rovnováha, která 
+      se ani příliš neliší od Thomsonovy představy - pouze je to záporný náboj, který je rozptýlen (neboť 
+      hmotnost elektronu je mnohokrát menší než hmotnost protonu).
+    
+    \subsection{Pole nabité přímky}
+      Gaussův zákon je možno použít na řešení mnoha úloh o elektrostatickém poli vyznačujících se speciální 
+      symetrií - obvykle kulovou, válcovou nebo rovinnou. Ve zbývající částí této kapitoly použijeme Gaussův 
+      zákon v několika takových úlohách. Snadnost, s jakou lze tyto úlohy takto řešit, může vést ke klamnému 
+      dojmu, že jde o velmi účinnou metodu umožňující postupovat tak i v mnoha dalších úlohách. Naneštěstí 
+      tomu tak není. Seznam úloh, které lze pomocí Gaussova zákona snadno řešit, bude brzy vyčerpán. V 
+      dalších kapitolách vypracujeme účinnější metody ke zkoumání elektrostatických polí.
+      
+      Jako náš první příklad budeme uvažovat soustavu s válcovou souměrností. Předpokládejme, že máme velmi 
+      dlouhou, homogenně nabitou tyč. Myslíme tím, že elektrické náboje jsou rovnoměrně rozděleny podél 
+      nekonečně dlouhé přímky, přičemž na jednotkovou délku připadá náboj \(\tau\). Chceme vědět, jaké bude 
+      elektrické pole. Úlohu je jistě možno řešit integrováním příspěvků každé části přímky k poli. My to 
+      však dokážeme bez integrování, pomocí Gaussova zákona a důvtipu. Především snadno vytušíme, že 
+      elektrické pole bude směřovat radiálně od přímky. Jakákoli osová složka nábojů na jedné straně by se 
+      totiž anulovala stejně velkou osovou složkou pocházející od nábojů na straně druhé. Výsledkem může být 
+      pouze radiální pole. Také se zdá být odůvodněné, že pole by mělo mít tutéž velikost pro všechny body ve 
+      stejně velké vzdálenosti od přímky. Je to zřejmé. (Asi to není snadno dokazatelné, ale je to pravda, 
+      je-li prostor symetrický - a věříme, že je.)
+      
+      \begin{figure}[ht!] % \ref{fyz:fig_fey_elstat_gauss05}
+        \centering
+        \includegraphics[width=0.6\linewidth]{fey_elstat_gauss05.jpg}
+        \caption{Válcová gaussovská plocha s nabitou přímkou v ose}
+        \label{fyz:fig_fey_elstat_gauss05}
+      \end{figure}  
+      
+      Gaussův zákon můžeme použít následujícím způsobem. Mějme myšlenou válcovou plochu koaxiální s naší 
+      přímkou, jak to znázorňuje obr. \ref{fyz:fig_fey_elstat_gauss05}. Podle Gaussova zákona je celkový tok 
+      pole z této plochy roven náboji uvnitř válce, dělenému \(\varepsilon_0\). Protože pole je na válcovou 
+      plochu kolmé, normálová složka pole je rovna velikosti pole. Označíme ji \(E\) Dále nechť poloměr válce 
+      je r.Je výhodné brát jeho délku jako jednu jednotku. Tok válcovou plochou je roven součinu £ a jejího 
+      plošného obsahu, tj. 2n r. Tok oběma čelními stěnami je roven nule, protože elektrické poleje s nimi 
+      rovnoběžné. Celkový náboj uvnitř naší válcové plochy je přesně ť, neboť délka části přímky uzavřené 
+      uvnitř válce je rovna jedné jednotce. Z Gaussova zákona pak vyplývá, že
+      
+    
 \printbibliography[heading=subbibliography]
