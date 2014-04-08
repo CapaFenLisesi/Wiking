@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                               Jaroslav Fait                                                  %%%
+%%%                               ^^^^^^^^^^^^^                                                  %%%
+%%%                               *W*I*K*I*N*G*                                                  %%%
+%%%                                10.12.2011                                                    %%%
+%%%                  <<<XETEX — Unicode-based TeX engine>>>                                      %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[fontsize=10pt,pagesize]{scrbook}
+  \usepackage{wikiPageLayout}
+
+% ~~~~~~~~~~ Color settings ~~~~~~~~~~~~~~~~~~~~~~
+  \usepackage[x11names, dvipsnames, table]{xcolor}
+  % Define my colors
+  \definecolor{Blue}{rgb}{0.3,0.3,0.9}
+  \definecolor{listinggray}{gray}{0.9}
+  \definecolor{help}{RGB}{0, 128, 0}
+  \definecolor{keyword}{RGB}{0, 0, 128}
+
+% ------------------------------- Bibliography ------------------------------------------------------
+% Bibliography with UTF8 support
+   % note: - The backend option is not read correctly by the parser, if it is
+   % in the first position (right after the square bracket) of the usepackage command. 
+  \usepackage[
+    backref=true,                % 
+    hyperref=true,               % 
+    refsection=chapter,          %
+    firstinits=true,             %
+    indexing=true,               %
+    url=false,                   % 
+    style=alphabetic,            %  style=debug, alphabetic
+    backend=biber,               % 
+    doi=false,
+    texencoding=utf8,
+    bibencoding=utf8]{biblatex}
+    \addbibresource{MasterBiblioLib.bib}
+
+
+% ~~~~~~~~~~ DEBUG tools ~~~~~~~~~~~~~~~~~~~~~~~~~   
+% \listfiles 
+% For running a document through LATEX without actually getting any output.
+ \usepackage{syntonly}
+   \pretolerance=1000   % avoid overfull lines in LaTeX 
+  \usepackage{etoolbox} 
+  \newtoggle{DEBUG}
+  \toggletrue{DEBUG}
+%  \togglefalse{DEBUG}
+
+% ---------------------------------------------------------------------------------------------------
+% ~~~~~~~~~~~ Custom library ~~~~~~~~~~~~~~~~~~~~
+  \usepackage{wikiMath}
+  \usepackage{wikiGraphic}
+  \usepackage{wikiPhysics}
+  \usepackage{wikiTitlePage}
+  \usepackage{wikiWWWrefs}
+  \usepackage{wikiDrawing} 
+  \usepackage{wikiJS}        % Javascript - AcroTex 
+  \usepackage{wikiHyph}      % Hyphenation
+%  \usepackage{wikiSandbox}
+
+% ###################################################################################################
+% ###                                     *W*I*K*I*N*G*                                           ###
+% ###################################################################################################
+\begin{document}
+% ======================================== Title page ===============================================
+  \input{wikiMainTitlePage}
+% ========================================= TOC =====================================================
+% this sets the depth to which things are listed in the table of contents 
+% (Chapters =0, Sections =1, etc)
+\setcounter{tocdepth}{1} % 
+\setcounter{secnumdepth}{4} 
+\dominitoc
+\tableofcontents
+% ======================================== Document Body ============================================
+% turns on chapter numbering, resets page numbering and uses arabic numerals for page numbers;
+\mainmatter 
+\iftoggle{DEBUG}{
+  DEBUG was on
+  \part{Fyzika}
+    \input{../src/FYZ/FYZ.tex}
+}
+{
+% DEBUG was off
+  \part{Lineární algebra}
+    \input{../src/LA/LA}
+  \part{Matematická analýza I}
+    \input{../src/MAI/MA1}
+  \part{Obyčejné diferenciální rovnice}
+    \input{../src/ODR/ODR.tex}    
+  \part{Numerické metody}
+    \input{../src/NM/NM.tex}
+  \part{Fyzika}
+    \input{../src/FYZ/FYZ.tex}
+  \part{Astrofyzika}
+    \input{../src/AFYZ/AFYZ.tex}
+  \part{Mechanika}
+    \input{../src/MECH/MECH.tex}
+  \part{Teorie elektromagnetického pole}
+    \input{../src/TEMP/TEMP.tex}
+  \part{Signály a soustavy}
+    \input{../src/SAS/SAS.tex}
+  \part{Teorie elektrických obvodů}
+    \input{../src/TEO/TEO.tex}
+  \part{Elektronické součástky}
+    \input{../src/ES/ES.tex}
+  \part{Senzory a akční členy}
+    \input{../src/SAC/SAC.tex}
+  \part{Analogové elektronické systémy}
+    \input{../src/AES/AES.tex}
+  \part{Elektronické napájecí zdroje}
+    \input{../src/ENZ/ENZ.tex}
+  \part{Číslicové elektronické systémy}
+    \input{../src/CES/CES.tex}
+  \part{Mikroprocesorová technika}
+    \input{../src/MIT/MIT.tex}
+  \part{Programovatelné logické obvody}
+    \input{../src/PLO/PLO.tex}
+  \part{Elektromagnetická kompatibilita}
+    \input{../src/EMC/EMC.tex}
+  \part{C}
+    \input{../src/C/C.tex}
+  \part{ANSI/C++}
+    \input{../src/CPP/CPP.tex}
+  \part{Elektrické měřicí systémy}
+    \input{../src/EMS/EMS.tex}
+  \part{Výkonová elektronika}
+    \input{../src/VE/VE.tex}
+  \part{Elektrické přístroje}
+    \input{../src/EPR/EPR.tex}
+  \part{Železniční zabezpečovací technika}
+    \input{../src/ZZT/ZZT.tex}
+}    
+% ========================================== Appendix ===============================================
+\backmatter %turns off chapter numbering and doesn't fiddle with page numbering. 
+% ========================================= Bibliography ============================================
+
+  \printbibliography[title={Bibliografie}]
+  \addcontentsline{toc}{chapter}{Seznam literatury}
+%  \printbibliography[title={Bibliografie}] 
+%  \addcontentsline{toc}{section}{Bibliografie} 
+\end{document}

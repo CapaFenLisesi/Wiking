@@ -1,0 +1,129 @@
+% ===================================================================================================
+%                                     MATH environment 
+% ===================================================================================================
+\NeedsTeXFormat{LaTeX2e}
+% \, = 3/18 \quad
+% \: = 4/18 \quad
+% \; = 5/18 \quad
+% \  = corresponds to normal space.
+% \qquad = 2\quad
+% ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  \RequirePackage{lipsum}
+  \RequirePackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
+  \RequirePackage{mathtools}              % extension package to amsmath  
+  \RequirePackage{mathrsfs}
+  \RequirePackage{etoolbox}
+  \RequirePackage{bigints}                % write big integrals  
+  \RequirePackage{polynom}                % implements macros for manipulating
+                                          % polynomials - command \polylongdiv
+  \usepackage{kvmacros}                   % Karnaugh maps: x:\MANUAL\LaTeX\karnaugh.pdf
+  \usepackage[framemethod=TikZ]{mdframed} % Frames
+% ~~~~~~~~ Bool switch ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\newbool{pboldvectors}%
+\booltrue{pboldvectors}%
+% ~~~~~~~~ Environments ~~~~~~~~~~~~~~~~~~~~~~~~~~
+% Různá prostředí (enumerate, itemize):
+% \newtheorem{name}[counter]{text}[section]
+% -----------------------------------------
+% Příkaz:
+%   \itemsep - nastavuje velikost svislé mezery mezi jednotlivými položkami na hodnotu např. 0pt.
+%   \parsep  - vzdálenost mezi odstavci jedné položky,
+%   \itemsep - vzdálenost mezi položkami (přičítá se ještě \parsep),
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=2\topsep \thm@postskip=\thm@preskip
+}
+\makeatother
+% Argument name je krátké jméno, které identifikuje daný teorém. Argument text je skutecné jméno
+% teorému, které bude vysázeno. Argumenty v hranatých závorkách jsou nepovinné. Oba specifikují
+% číslování, které se pro teorém použije. Argumentem counter mužete specifikovat jméno (name) dríve
+% deklarovaného teorému. Nový teorém pak bude číslován ve stejné posloupnosti. Argument section
+% umožnuje specifikovat jednotku o kterou budou císla teorému zvetšována.
+  \newtheorem{theorem}{Teorém}[section]
+  \newtheorem{lemma}{Věta}[section]
+% \newtheorem{proof}{Důkaz} % nahrazeno \renewenvironment{proof}[1][Důkaz] v main.tex
+  \newtheorem{definition}{Definice}[section]
+  \newtheorem{example}{Příklad}[section]
+  \newtheorem{note}{Poznámka}[section]
+  
+% ~~~~~~~~ Renewcommand ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ \renewcommand{\qedsymbol}{$\blacksquare$} % \heartsuit
+% examples:
+%     \renewenvironment{proof}[1][Důkaz]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}} 
+%     \renewenvironment{proof}[1][Důkaz]{\noindent\textbf{#1.} }{}
+%     \newenvironment{myproof}[1][\proofname]{%
+%       \proof[\ttfamily \scshape \large #1 (yes, ``#1'')]% 
+%     }{\endproof}
+  \makeatletter 
+    \renewenvironment{proof}[1][Důkaz]{%
+      \par\pushQED{\qed}\normalfont\topsep6\p@\@plus6\p@\relax\trivlist
+      \item[\hskip\labelsep\textbf#1\@addpunct{.}]\ignorespaces}%
+     {\popQED\endtrivlist\@endpefalse}
+  \makeatother
+
+% ~~~~~~~~~~~ Math command ~~~~~~~~~~~~~~~~~~~~~~~
+  \newcommand{\vr}[1]{\ensuremath{\mathbf{#1}}}                % vectors
+% \newcommand{\abs}[1]{\left\lvert#1\right\rvert}              % f(x): y=|x|
+  \newcommand{\der}[2]{\frac{d #1}{d #2}}                      % derivatives
+  \newcommand{\dder}[2]{\frac{d^2 #1}{d #2^2}}                 % double derivatives
+  \newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}       % partial derivatives
+  \newcommand{\ppder}[2]{\frac{\partial^2 #1}{\partial^2 #2}}  % double partial derivatives
+  \newcommand{\grad}[1]{\mathrm{grad\;}#1}                     % gradient
+  \newcommand{\diver}[1]{\mathrm{div}\;\vec{#1}}               % divergence
+  \newcommand{\rot}[1]{\mathrm{rot}\;\vec{#1}}                 % rotace
+  \newcommand{\ngrad}[1]{\nabla\;#1}                           % nabla gradient
+  \newcommand{\ndiver}[1]{\nabla\cdot\vec{#1}}                 % nabla divergence
+  \newcommand{\nrot}[1]{\nabla\times\vec{#1}}                  % nabla rotace
+  
+  \newcommand{\realset}{\mathbb{R}}
+  \newcommand{\naturalset}{\mathbb{Z}}
+  \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+
+  \ifbool{pboldvectors}%
+    {\newcommand{\vecc}[1]{\mathbf{#1}}}                      % then clausule
+    {\newcommand{\vecc}[1]{\vec{#1}}}                         % else clausule
+%\renewcommand{\bar}[1]{\accentset{\overline}{#1}} 
+  \newcommand{\dx}{\hspace{2pt}dx}
+  \newcommand{\dd}[1]{\hspace{2pt}d#1}
+  \newcommand{\limitint}{\mathop{\int}}
+  \newcommand{\limitoint}{\mathop{\oint}}
+% ~~~~~~~~~~~ Math chars ~~~~~~~~~~~~~~~~~~~~~~~~~
+  \newcommand{\iPhi}{\mathit{\Phi}}
+  \newcommand{\iPsi}{\mathit{\Psi}}
+  \newcommand{\iTheta}{\mathit{\Theta}}
+  \newcommand{\iUpsilon}{\mathit{\Upsilon}}
+  \newcommand{\iXi}{\mathit{\Xi}}
+  \newcommand{\sftriangle}{\mathbf{\triangle}}
+  \newcommand{\sfnabla}{\mathbf{\nabla}}
+  \newcommand{\iI}{\mathrm{I}}
+  \newcommand{\iII}{\mathrm{II}}
+  \newcommand{\iIII}{\mathrm{III}}
+  \DeclareRobustCommand{\ammaG}{\text{\reflectbox{$\Gamma$}}}
+
+% ~~~~~~~~~~~ Math functions ~~~~~~~~~~~~~~~~~~~~~
+  \newcommand \tg     {\mathop{\textrm tg}\nolimits}    % tg    = tangens 
+  \newcommand \cotg   {\mathop{\textrm cotg}\nolimits}  % cotg  = kotangens
+  \newcommand \arctg  {\mathop{\textrm arctg}\nolimits} % arctg = arcus tangens
+  \newcommand \tgh    {\mathop{\textrm tgh}\nolimits}   % tg    = tangens hyperb.
+  \newcommand \cotgh  {\mathop{\textrm cotgh}\nolimits} % cotg  = cotangens hyperb.
+  
+
+% ~~~~~~~~~~~ Frames ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  \mdfdefinestyle{MyFrame}{%
+      linecolor=blue,
+      outerlinewidth=2pt,
+      roundcorner=20pt,
+      innertopmargin=\baselineskip,
+      innerbottommargin=\baselineskip,
+      innerrightmargin=20pt,
+      innerleftmargin=20pt,
+      backgroundcolor=gray!50!white
+  }
+
+  \mdfdefinestyle{MyMarginNoteStyle}{
+     topline=false,
+     bottomline=false,
+     rightline=false,
+     backgroundcolor=yellow!20
+  }
