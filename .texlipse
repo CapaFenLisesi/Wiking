@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Mon Dec 09 12:13:40 CET 2013
+markTmpDer=true
+builderNum=7
+outputDir=out/
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=main.tex
+outputFile=wiking.pdf
+langSpell=
+markDer=true
+srcDir=tex/

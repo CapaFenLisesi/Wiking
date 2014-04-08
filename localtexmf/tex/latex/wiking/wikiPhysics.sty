@@ -1,0 +1,17 @@
+% ===================================================================================================
+%                                     Physics environment 
+% ===================================================================================================
+\NeedsTeXFormat{LaTeX2e}
+% ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+  \RequirePackage{lipsum}
+% ~~~~~~~~~~ Chemical formula ~~~~~~~~~~~~~~~~~~~~ 
+  \usepackage[version=3]{mhchem}
+% ~~~~~~~~~~ SI unit  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+% This article describes the SIunits package that provides support for the SI 
+ \usepackage{siunitx}
+% Physical quantities have both numbers and units, and each physical quantity should be expressed
+% as the product of a number and a unit.
+  \sisetup{
+    output-decimal-marker = {,},             % set the comma as decimal point 
+    exponent-product = {\cdot}               % exponent-product option example: \times, \ldots 
+  }

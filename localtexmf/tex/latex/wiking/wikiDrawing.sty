@@ -1,0 +1,100 @@
+% ===================================================================================================
+%                                     Drawing environment 
+% ===================================================================================================
+\NeedsTeXFormat{LaTeX2e}
+% ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  \RequirePackage{lipsum}
+  \RequirePackage{tikz, tikz-3dplot}     % TikZ and PGF picture 
+    \usetikzlibrary{intersections, calc, positioning}
+    \usetikzlibrary{decorations.markings, decorations.pathmorphing} 
+    \usetikzlibrary{shapes, matrix, chains, scopes}
+    \usetikzlibrary{arrows.new}
+    \usetikzlibrary{arrows,fit}
+    \usetikzlibrary{topaths,automata}
+  \usepackage{pgfplots}                  % http://www.ctan.org/pkg/pgfplots
+  \pgfplotsset{compat=newest}
+  
+  \usepackage{pstricks}                  % PostScript macros for Generic TeX.  
+
+% ~~~~~~~~ TikZ Cheat Sheet ~~~~~~~~~~~~~~~~~~~~~~
+% (x,y)                                    Cartesian coordinates
+% (angle:r)                                polar coordinates
+% ($ (A) + {sin(60)}*(B) $)                coordinate calculations calc
+% ($ (A)!.25!(B) $)                        partway calculations calc
+% ($ (A)!3cm!(B) $)                        3cm from (A) in direction of (B) calc
+% ($ (A)!1.2!30:(B) $)                     stretch by 1:2, then rotate by 30° calc
+% ($ (A)!(B)!(C) $)                        projection of point B onto line AC calc
+% ($ (A)!(B)!30:(C) $)                     project B onto line AC, then rotate by 30° calc
+% \node[above=1cm of somenode.north]       position new node 1cm above existing anchor positioning
+
+%---------------------------------- Tikz graphic ---------------------------------------------------
+\newcommand{\cube}{
+  \begin{tikzpicture}[scale=0.1]
+    \shade[yslant=-0.5,right color=gray!10, left color=black!50] (0,0) rectangle +(3,3);
+    \draw[yslant=-0.5] (0,0) rectangle (3,3);      
+    \shade[yslant=0.5,right color=gray!70,left color=gray!10] (3,-3) rectangle +(3,3);
+    \draw[yslant=0.5] (3,-3) rectangle (6,0);
+    \shade[yslant=0.5,xslant=-1,bottom color=gray!10, top color=black!80] (6,3) rectangle +(-3,-3);
+    \draw[yslant=0.5,xslant=-1] (3,0) rectangle (6,3);
+  \end{tikzpicture}
+}
+% ~~~~~~~~~~~ XY Coordinate ~~~~~~~~~~~~~~~~~~~~~
+% umožňuje zobrazit souřadnice daného bodu - x-ová složka proměnná \XCoord
+% http://tex.stackexchange.com/questions/66125/extract-x-value-from-coordinate-in-tikz
+\newdimen\XCoord
+\newdimen\YCoord
+\newcommand*{\ExtractCoordinate}[1]{\path (#1); \pgfgetlastxy{\XCoord}{\YCoord};}%
+% příklad použití:
+%         \ExtractCoordinate{p5};
+%         \node [below] at (1cm,-1.5cm) {p5 $(\XCoord,\YCoord)$}; 
+%------------------------------------------------
+% Vykreslí XY kříž - pro funkce - nutné použít následující proměnné
+% \def\xmin{-15} % scalebar-x
+% \def\xmax{130} % scalebar-x
+% \def\ymin{-15} % scalebar-y
+% \def\ymax{+90} % scalebar-y
+% \def\zero{0}
+% \def\phase{0}
+% \def\period{48}
+
+% ~~~~~~~~~~~ MyXYcross ~~~~~~~~~~~~~~~~~~~~~~~~~
+\newcommand{\MyXYcross}{% 
+   \draw[name path=axeX,->] (\xmin,\zero) -- (\xmax,\zero)   node[right] {$x$} coordinate(x axis);
+   \draw[name path=axeY,->] (\phase,\ymin) -- (\phase,\ymax) node[left]  {$y$} coordinate(y axis);
+   \path[name intersections={of=axeX and axeY, name=pocatek}];
+   \node[below left] at (pocatek-1) {$0$};
+   \draw[fill=white] (pocatek-1) circle(2pt);
+}
+
+%-------------------------Circuitikz----------------------------------------------------------------
+  \usepackage[american, europeanresistor, cuteinductors,smartlabels]{circuitikz}
+    \ctikzset{bipoles/thickness=1}
+    \ctikzset{bipoles/length=0.8cm}
+    \ctikzset{bipoles/vsourceam/height/.initial=.7}
+    \ctikzset{bipoles/vsourceam/width/.initial=.7}
+    \tikzstyle{every node}=[font=\small]
+    \tikzstyle{every path}=[line width=0.8pt,line cap=round,line join=round]
+% ~~~~~~Circuitikz different ground symbol ~~~~~~
+% http://tex.stackexchange.com/questions/74628/circuitikz-different-ground-symbol     
+  \makeatletter
+  \pgfdeclareshape{ground}{
+  \anchor{center}{
+      \pgfpointorigin
+  }
+  \behindforegroundpath{      
+      \pgf@circ@res@step=\ctikzvalof{monopoles/ground/width}\pgf@circ@Rlen
+  
+      \pgfscope       
+          \pgfpathmoveto{\pgfpointorigin}
+          \pgfpathlineto{\pgfpoint{0pt}{-\pgf@circ@res@step}}
+          \pgfusepath{draw}
+  
+          \pgfsetlinewidth{4\pgflinewidth} % thickness
+  
+          \pgfpathmoveto{\pgfpoint{-\pgf@circ@res@step}{-\pgf@circ@res@step}}
+          \pgfpathlineto{\pgfpoint{\pgf@circ@res@step}{-\pgf@circ@res@step}}
+          \pgfusepath{draw}                       
+      \endpgfscope
+      }
+  }
+  \makeatother
