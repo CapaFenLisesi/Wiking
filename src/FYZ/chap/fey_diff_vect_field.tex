@@ -544,8 +544,8 @@
     \end{enumerate}
     Můžeme se přesvědčit, že to jsou všechny možné kombinace.
   
-    Podívejme se nejdříve na druhou z nich, tj. na b). Má stejný tvar jako  $\nabla\times(\nabla T)$: má 
-    stejný tvar jako $\vec{A}\times(\vec{h}T)= (\vec{A}\times\vec{A}) = 0$, neboť $\vec{A}\times\vec{A}$ je 
+    Podívejme se nejdříve na druhou z nich, tj. na b). Má stejný tvar jako $\vec{A}\times(\vec{A}T)= 
+    (\vec{A}\times\vec{A})T = 0$, neboť $\vec{A}\times\vec{A}$ je 
     vždy \(0\). Z toho tedy vyplývá, že
     \begin{equation}\label{FYZ:eq_rotgrad}
       \mathrm{rot}\,\grad{T} = \nabla\times\nabla T = 0.
@@ -682,7 +682,8 @@
     \begin{equation*}
       (\nabla^2\vec{h})_x = \left(\frac{\partial^2}{\partial x^2} + 
                                   \frac{\partial^2}{\partial y^2} + 
-                                  \frac{\partial^2}{\partial z^2} \right)
+                                  \frac{\partial^2}{\partial z^2} 
+                            \right)
     \end{equation*}
     Stejný výraz se však nedá napsat, kdybychom se ptali na radiální složku \(\nabla^2\vec{h}\). Radiální 
     složka \(\nabla^2\vec{h}\) není rovna výrazu \((\nabla^2\vec{h})_r\). Příčina je v tom, že máme-li co 
@@ -698,5 +699,16 @@
     diferenciální operátor, smíme jej použít pouze na vektory, jejichž složky mají pevný směr, tj. na složky 
     dané v pravoúhlé souřadnicové soustavě. Proto budeme-li naše vektorové diferenciální rovnice sát ve 
     složkách, budeme všechna vektorová pole vyjadřovat pomocí jejich x-ových, y-ových a z-ových složek.
+  
+  \section{Cvičení}
+    \begin{example}
+      Jestliže platí, že \(\rot{A} = \rot{B}\), plyne z toho že \(\vec{A}=\vec{B}\)?\newline
+      \textbf{Řešení:}
       
+      Nikoliv. Mějme následující funkci\(\vec{A} = \vec{B} + \grad{\varPsi}\), kde \(\varPsi(\vec{r})\) je 
+      libovolná skalární funkce ( tedy\(\vec{A}\neq\vec{B}\)), pak platí
+      \[\rot{A} = \rot{B} +\mathrm{rot}\;\grad{\varPsi} = \rot{B}\] (rotace gradientu je pro spojité funkce 
+      vždy nulová, viz \ref{FYZ:eq_rotgrad} kapitola \ref{sec:fey_diff_2deriv})
+      
+    \end{example}
 \printbibliography[heading=subbibliography]  

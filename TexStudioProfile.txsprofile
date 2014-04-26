@@ -2,15 +2,17 @@
 IniMode=true
 
 [version]
-written_by_TXS_version=2.6.6
+written_by_TXS_version=2.7.0
 written_by_TXS_SVNversion=0
 created_by_TXS_version=2.6.2
 created_by_TXS_SVNversion=4110
+written_by_TXS_hg_revision=4307+:7e7903c73aac+
+created_by_TXS_hg_revision=4307+:7e7903c73aac+
 
 [texmaker]
 Tools\Commands\latex="\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\latex.exe\"  -src -interaction=nonstopmode %.tex"
 Tools\Commands\pdflatex="\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\pdflatex.exe\"  -synctex=1 -interaction=nonstopmode %.tex"
-Tools\Commands\xelatex="\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\xelatex.exe\" --enable-write18 --extra-mem-bot=10000000 -synctex=1 -interaction=nonstopmode -output-driver=\"xdvipdfmx -V 5\" %.tex"
+Tools\Commands\xelatex="\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\xelatex.exe\" -jobname=wiking --enable-write18 --extra-mem-bot=10000000 -synctex=1 -interaction=nonstopmode -output-driver=\"xdvipdfmx -V 5\" %.tex"
 Tools\Commands\lualatex="\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\lualatex.exe\"  -synctex=1 -interaction=nonstopmode %.tex"
 Tools\Commands\view-dvi=\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\yap.exe\" -1 -s @?\"c:ame \"?am.dvi\"
 Tools\Commands\view-ps=\"C:\\Program Files (x86)\\Adobe\\Acrobat 11.0\\Acrobat\\AcroDist.exe\" \"?am.ps\"
@@ -28,7 +30,7 @@ Tools\Commands\makeglossary=\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\
 Tools\Commands\metapost="\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\mpost.exe\"  -interaction=nonstopmode ?me)"
 Tools\Commands\asy=
 Tools\Commands\gs=\"C:\\Program Files (x86)\\MiKTeX 2.9\\miktex\\bin\\mgs.exe\"  \"?am.ps\"
-Tools\Commands\latexmk="latexmk -pdf -silent -pdflatex=\"pdflatex -synctex=1 %%O %%S\" %"
+Tools\Commands\latexmk="latexmk -pvc -pdf -e \"$pdflatex='xelatex %O -interaction=nonstopmode %S'\" %"
 Tools\Commands\quick=txs:///compile | txs:///view
 Tools\Commands\compile=txs:///xelatex
 Tools\Commands\view=txs:///view-pdf-internal
@@ -56,24 +58,24 @@ Files\Auto%20Detect%20Encoding%20Of%20Loaded%20Files=true
 Common%20Encodings=UTF-8, ISO-8859-1, windows-1252, Apple Roman
 Files\Max%20Recent%20Files=5
 Files\Max%20Recent%20Projects=3
-Files\Recent%20Files=C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_diff_vect_field.tex, C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_electrostatics.tex, C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_spec_relativita.tex, C:/Users/Jafinek/Documents/WIKING/localtexmf/tex/latex/wiking/wikiPageLayout.sty, C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_electromagnetism.tex
-Files\Recent%20Project%20Files=C:/Users/Jafinek/Documents/WIKING/tex/main.tex, C:/Users/Jafinek/Documents/WIKING/src/NM/NM.tex, C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/adc_aproximace.tex
+Files\Recent%20Files=C:/Users/Jafinek/Documents/WIKING/localtexmf/bibtex/bib/local/MasterBiblioLib.bib, C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/history_of_physics.tex, C:/Users/Jafinek/Documents/latex/smithchart/smithchart.tex, C:/Users/Jafinek/Documents/WIKING/localtexmf/tex/latex/wiking/wikiMath.sty, C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_electrostatics.tex
+Files\Recent%20Project%20Files=C:/Users/Jafinek/Documents/WIKING/tex/wiking.tex, C:/Users/Jafinek/Documents/WIKING/tex/main.tex, C:/Users/Jafinek/Documents/WIKING/src/NM/NM.tex
 Files\Remember%20File%20Filter=true
 Files\RestoreSession=true
-Files\Last%20Document=C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_diff_vect_field.tex
+Files\Last%20Document=C:/Users/Jafinek/Documents/WIKING/src/FYZ/chap/fey_electrostatics.tex
 Files\Parse%20BibTeX=false
 Files\Parse%20Master=true
 Files\Autosave=5
 Files\Autoload=true
 Editor\UseEscForClosingFullscreen=false
-Tools\Insert%20Unicode%20From%20SymbolGrid=false
+Tools\Insert%20Unicode%20From%20SymbolGrid=true
 Spell\DictionaryDir=C:/Program Files (x86)/TeXstudio/dictionaries
 Spell\Language=cs_CZ
 Spell\Dic=C:/Program Files (x86)/TeXstudio/dictionaries/de_DE.dic
 Thesaurus\Database=C:/Program Files (x86)/TeXstudio/dictionaries/th_cs_CZ_v3.dat
 Update\AutoCheck=true
 Update\AutoCheckInvervalDays=7
-Update\LastCheck=@Variant(\0\0\0\x10\0%|\x83\x4\xb7\xfd\x80\xff)
+Update\LastCheck=@Variant(\0\0\0\x10\0%|\xc4\x3-\x90\x98\xff)
 Editor\WordWrapMode=3
 Editor\WrapLineWidth=110
 Editor\Parentheses%20Matching=true
@@ -107,7 +109,7 @@ Editor\Use%20Line%20For%20Search=true
 Editor\Search%20Only%20In%20Selection=true
 Editor\Auto%20Replace%20Commands=true
 Editor\Font%20Family=Lucida Console
-Editor\Font%20Size=15
+Editor\Font%20Size=11
 Editor\Line%20Spacing%20Percent=100
 Editor\Esc%20for%20closing%20log=false
 Editor\Mouse%20Wheel%20Zoom=false
@@ -154,7 +156,7 @@ Tools\Show%20Messages%20When%20Compiling=true
 Tools\Show%20Stdout=1
 Tools\Automatic%20Rerun%20Times=5
 Tools\Search%20Paths=
-Tools\Log%20Paths=
+Tools\Log%20Paths=C:\\Users\\Jafinek\\Documents\\WIKING\\tex
 Tools\PDF%20Paths=
 Tools\Auto%20Checkin%20after%20Save=false
 Tools\SVN%20Undo=false
@@ -175,15 +177,15 @@ Interface\Language=en
 Preview\Mode=4
 Preview\Auto%20Preview=1
 Preview\Auto%20Preview%20Delay=300
-Geometries\PdfViewerLeft=1306
-Geometries\PdfViewerTop=5
-Geometries\PdfViewerWidth=592
+Geometries\PdfViewerLeft=72
+Geometries\PdfViewerTop=-8
+Geometries\PdfViewerWidth=1840
 Geometries\PdfViewerHeight=1058
 Geometries\PdfViewerMaximized=true
-Geometries\PdfViewerState="@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\x2\0\0\0\0\0\0\x1\x13\0\0\x3\x8c\xfc\x2\0\0\0\x3\xfb\0\0\0\xe\0o\0u\0t\0l\0i\0n\0\x65\0\0\0\0\x39\0\0\x3\x8c\0\0\0t\0\xff\xff\xff\xfb\0\0\0\xe\0p\0\x64\0\x66\0i\0n\0\x66\0o\0\0\0\0\0\xff\xff\xff\xff\0\0\0t\0\xff\xff\xff\xfb\0\0\0\x10\0o\0v\0\x65\0r\0v\0i\0\x65\0w\0\0\0\0\0\xff\xff\xff\xff\0\0\0t\0\xff\xff\xff\0\0\0\x3\0\0\a6\0\0\0=\xfc\x1\0\0\0\x3\xfb\0\0\0\f\0s\0\x65\0\x61\0r\0\x63\0h\0\0\0\0\0\0\0\a6\0\0\x1x\0\xff\xff\xff\xfb\0\0\0\n\0\x66\0o\0n\0t\0s\0\0\0\0\0\xff\xff\xff\xff\0\0\0^\0\xff\xff\xff\xfb\0\0\0\n\0\x63\0l\0o\0\x63\0k\0\0\0\0\0\xff\xff\xff\xff\0\0\0P\0\xff\xff\xff\0\0\a6\0\0\x3\xcc\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)"
+Geometries\PdfViewerState="@ByteArray(\0\0\0\xff\0\0\0\0\xfd\0\0\0\x2\0\0\0\0\0\0\x1\x13\0\0\x3\x8c\xfc\x2\0\0\0\x3\xfb\0\0\0\xe\0o\0u\0t\0l\0i\0n\0\x65\0\0\0\0\x39\0\0\x3\x8c\0\0\0t\0\xff\xff\xff\xfb\0\0\0\xe\0p\0\x64\0\x66\0i\0n\0\x66\0o\0\0\0\0\0\xff\xff\xff\xff\0\0\0t\0\xff\xff\xff\xfb\0\0\0\x10\0o\0v\0\x65\0r\0v\0i\0\x65\0w\0\0\0\0\0\xff\xff\xff\xff\0\0\0t\0\xff\xff\xff\0\0\0\x3\0\0\a0\0\0\0=\xfc\x1\0\0\0\x3\xfb\0\0\0\f\0s\0\x65\0\x61\0r\0\x63\0h\x1\0\0\0\0\0\0\a0\0\0\x1x\0\xff\xff\xff\xfb\0\0\0\n\0\x66\0o\0n\0t\0s\0\0\0\0\0\xff\xff\xff\xff\0\0\0^\0\xff\xff\xff\xfb\0\0\0\n\0\x63\0l\0o\0\x63\0k\0\0\0\0\0\xff\xff\xff\xff\0\0\0P\0\xff\xff\xff\0\0\a0\0\0\x3\x89\0\0\0\x4\0\0\0\x4\0\0\0\b\0\0\0\b\xfc\0\0\0\x1\0\0\0\x2\0\0\0\x1\0\0\0\xe\0t\0o\0o\0l\0\x42\0\x61\0r\x1\0\0\0\0\xff\xff\xff\xff\0\0\0\0\0\0\0\0)"
 Preview\CacheSize=1024
 Preview\DPI=99
-Preview\Scale%20Option=1
+Preview\Scale%20Option=0
 Preview\Scale=100
 Preview\ZoomStepFactor=1.4142135
 Preview\Magnifier%20Size=300
@@ -248,14 +250,14 @@ Grammar\Display%20Error%204=true
 Grammar\Display%20Error%205=true
 Grammar\Display%20Error%206=true
 Grammar\Display%20Error%207=true
-Search\Find%20History=\\dd, wiking, o, Fyzika, div, a, alignat, xetex, \\int, 4., \\end{refsection}, substac, , , fey_circ_C06, keywords, ENZ:kap_active_forward_converter, 30, 40, tabular, LA:fig_ort_doplnek_1, MA:int_ex_15, , myscale, TEO:fig_MUN_priklad, FYZ:eq_fey_elmag09, temp:eq_partialT_partialx
+Search\Find%20History=\\dd, wiking, o, Fyzika, div, a, alignat, xetex, \\int, 4., \\end{refsection}, substac, , , fey_circ_C06, keywords, ENZ:kap_active_forward_converter, 30, 40, tabular, LA:fig_ort_doplnek_1, MA:int_ex_15, , myscale, TEO:fig_MUN_priklad, aligninside, mymathln, mathmakebox, Patocka, \\label{RA:eq_smith06}
 Search\Case%20Sensitive=true
 Search\Whole%20Words=false
 Search\Regular%20Expression=false
 Search\Highlight=true
 Search\Cursor=true
 Search\Selection=false
-Search\Replace%20History=, "  ", "15  ", 15, 20, LA:fig_ort01, temp:eq_pT_px
+Search\Replace%20History=, "  ", "15  ", 15, 20, LA:fig_ort01
 Search\Ask%20before%20Replace=false
 Search\Escape%20Sequence=false
 Editor\Completion%20Files=amsmath.cwl, biblatex.cwl, latex-document.cwl, latex-mathsymbols.cwl, tex.cwl
@@ -296,7 +298,7 @@ CentralToolBar=@Invalid()
 customIcons=@Variant(\0\0\0\b\0\0\0\0)
 customHighlighting=@Variant(\0\0\0\b\0\0\0\0)
 customCommands=@Invalid()
-Symbols\Quantity=@Variant(\0\0\0\b\0\0\0\x3\0\0\0\x36\0r\0\x65\0l\0\x61\0t\0i\0o\0n\0/\0i\0m\0g\0\x30\0\x31\0\x30\0r\0\x65\0l\0\x61\0t\0i\0o\0n\0.\0s\0v\0g\0\0\0\x2\0\0\0\x1\0\0\0*\0g\0r\0\x65\0\x65\0k\0/\0i\0m\0g\0\x30\0\x32\0\x39\0g\0r\0\x65\0\x65\0k\0.\0s\0v\0g\0\0\0\x2\0\0\0\x1\0\0\0*\0g\0r\0\x65\0\x65\0k\0/\0i\0m\0g\0\x30\0\x32\0\x31\0g\0r\0\x65\0\x65\0k\0.\0s\0v\0g\0\0\0\x2\0\0\0\x1)
+Symbols\Quantity=@Variant(\0\0\0\b\0\0\0\x6\0\0\0\x36\0r\0\x65\0l\0\x61\0t\0i\0o\0n\0/\0i\0m\0g\0\x30\0\x31\0\x30\0r\0\x65\0l\0\x61\0t\0i\0o\0n\0.\0s\0v\0g\0\0\0\x2\0\0\0\x2\0\0\0*\0g\0r\0\x65\0\x65\0k\0/\0i\0m\0g\0\x30\0\x32\0\x39\0g\0r\0\x65\0\x65\0k\0.\0s\0v\0g\0\0\0\x2\0\0\0\x2\0\0\0*\0g\0r\0\x65\0\x65\0k\0/\0i\0m\0g\0\x30\0\x32\0\x31\0g\0r\0\x65\0\x65\0k\0.\0s\0v\0g\0\0\0\x2\0\0\0\x1\0\0\0.\0\x61\0r\0r\0o\0w\0s\0/\0i\0m\0g\0\x30\0\x33\0\x34\0\x61\0r\0r\0o\0w\0s\0.\0s\0v\0g\0\0\0\x2\0\0\0\x3\0\0\0.\0\x61\0r\0r\0o\0w\0s\0/\0i\0m\0g\0\x30\0\x33\0\x31\0\x61\0r\0r\0o\0w\0s\0.\0s\0v\0g\0\0\0\x2\0\0\0\x6\0\0\0.\0\x61\0r\0r\0o\0w\0s\0/\0i\0m\0g\0\x30\0\x30\0\x37\0\x61\0r\0r\0o\0w\0s\0.\0p\0n\0g\0\0\0\x2\0\0\0\x5)
 Symbols\Favorite%20IDs=@Invalid()
 Symbols\hiddenlists=
 StructureView\SingleDocMode=false
@@ -324,6 +326,10 @@ Preview\Scrolling%20Follows%20Cursor=false
 Preview\Cursor%20Follows%20Scrolling=false
 Preview\Sync%20Multiple%20Views=true
 Preview\Invert%20Colors=false
+Files\Max%20Recent%20Sessions=5
+Files\Recent%20Session%20Files=C:/Users/Jafinek/Documents/WIKING/TexStudioProfile.session.txss
+Editor\Completion%20Show%20Placeholders=true
+LogView\WarnIfFileSizeLargerMB=2
 
 [formats]
 version=1.0
