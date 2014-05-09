@@ -1,7 +1,3 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}Elektrické síly}{\reset@font\mtcSfont 9}{section.3.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.2}Elektrická a magnetická pole}{\reset@font\mtcSfont 10}{section.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.3}Charakteristiky vektorových polí}{\reset@font\mtcSfont 10}{section.3.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.4}Zákony elektromagnetizmu}{\reset@font\mtcSfont 11}{section.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.5}Co jsou pole?}{\reset@font\mtcSfont 13}{section.3.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.6}Působení na dálku versus teorie pole}{\reset@font\mtcSfont 13}{section.3.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.7}Elektromagnetizmus ve vědě a technice}{\reset@font\mtcSfont 14}{section.3.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {3.1}AVR Architektura}{\reset@font\mtcSfont 11}{section.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.1}Strojový cyklus}{\reset@font\mtcSSfont 11}{subsection.3.1.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {3.1.2}Prefetch a pipelining}{\reset@font\mtcSSfont 11}{subsection.3.1.2}}

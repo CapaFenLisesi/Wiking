@@ -44,8 +44,8 @@
    \pretolerance=1000   % avoid overfull lines in LaTeX 
   \usepackage{etoolbox} 
   \newtoggle{DEBUG}
-  \toggletrue{DEBUG}
-%  \togglefalse{DEBUG}
+ \toggletrue{DEBUG}
+% \togglefalse{DEBUG}
 
 % ---------------------------------------------------------------------------------------------------
 % ~~~~~~~~~~~ Custom library ~~~~~~~~~~~~~~~~~~~~
@@ -78,9 +78,8 @@
 \mainmatter 
 \iftoggle{DEBUG}{
   DEBUG was on
-  \part{Radiotechnika}
-%    \input{../src/RA/RA.tex}
-    \input{../src/FYZ/FYZ.tex}
+  \part{Mikroprocesorová technika}
+    \input{../src/MIT/MIT.tex}
 }
 {
 % DEBUG was off
