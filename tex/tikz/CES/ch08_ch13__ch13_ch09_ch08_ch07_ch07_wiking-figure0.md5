@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:-> \node [below left] at (0,-1) {aa}; a \newline a }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

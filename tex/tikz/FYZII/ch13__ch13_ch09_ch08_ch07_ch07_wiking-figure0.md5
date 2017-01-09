@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:->[grow=right, sloped] \node [bag] {\textbf {Základní hlediska kybernetiky}} child { node[end] {\texttt {hledisko řízení}} } child { node[end] {\texttt {hledisko informační}} } child { node[end] {\texttt {hledisko systémové}} }; }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

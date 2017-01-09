@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:-> \begin {axis}[scale=0.45, standard, domain = 0:15, samples = 16, xlabel={$n$}, ylabel={$x[n]$}, ymax=1.1] \addplot +[ycomb,blue,thick] {sin(5*180*x/25)}; \end {axis} }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

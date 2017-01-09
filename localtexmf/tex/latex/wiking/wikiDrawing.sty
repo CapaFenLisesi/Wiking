@@ -1,18 +1,62 @@
-% ===================================================================================================
+% =================================================================================================
 %                                     Drawing environment 
-% ===================================================================================================
+% =================================================================================================
 \NeedsTeXFormat{LaTeX2e}
-% ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  \RequirePackage{lipsum}
-  \RequirePackage{tikz, tikz-3dplot}     % TikZ and PGF picture 
-    \usetikzlibrary{intersections, calc, positioning}
-    \usetikzlibrary{decorations.markings, decorations.pathmorphing} 
-    \usetikzlibrary{shapes, matrix, chains, scopes}
-    \usetikzlibrary{arrows.new}
-    \usetikzlibrary{arrows,fit}
-    \usetikzlibrary{topaths,automata}
-  \usepackage{pgfplots}                  % http://www.ctan.org/pkg/pgfplots
+% ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~
+\usepackage{expl3}                   % fpeval
+\ExplSyntaxOn
+\cs_set_eq:NN \fpeval \fp_eval:n
+\ExplSyntaxOff
+% ~~~~~~~~~~~ Colors ~~~~~~~~~~~~~~~~~~~~~~~~
+\PassOptionsToPackage{svgnames}{xcolor}
+\PassOptionsToPackage{x11names}{xcolor}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\PassOptionsToPackage{table}{xcolor}
+\RequirePackage{xcolor}
+  % Define my colors
+  \definecolor{Blue}{rgb}{0.3,0.3,0.9}
+  \definecolor{lstgray}{gray}{0.9}
+  \definecolor{help}{RGB}{0,128,0}
+  \definecolor{keyword}{RGB}{0,0,128}
+  \definecolor{lstnumcolor}{RGB}{.5,.5,.5} % gray
+  \definecolor{Gray}{gray}{0.85}
+  \definecolor{LightCyan}{rgb}{0.88,1,1}
+  \definecolor{mygreen}{rgb}{0,0.6,0}
+  \definecolor{mygray}{rgb}{0.5,0.5,0.5}
+  \definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\RequirePackage{tikz} 
+  \usetikzlibrary{babel}
+  \usetikzlibrary{intersections, calc, positioning, mindmap, trees}
+  \usetikzlibrary{decorations.pathmorphing, decorations.pathreplacing} 
+  \usetikzlibrary{decorations.markings}
+  \usetikzlibrary{matrix, arrows}
+  \usetikzlibrary{topaths, automata, scopes, chains}
+  \usetikzlibrary{quotes, shapes}
+  \usetikzlibrary{fit}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
   \pgfplotsset{compat=newest}
+  \usepgfplotslibrary{external} 
+    \tikzset{external/system call={%
+        xelatex -save-size=80000 
+       -pool-size=10000000 
+       -extra-mem-top=50000000 
+       -extra-mem-bot=10000000 
+       -main-memory=90000000 
+        \tikzexternalcheckshellescape
+       -halt-on-error 
+       -shell-escape 
+       -interaction=batchmode
+       -jobname "\image" "\texsource"}}
+    \tikzset{external/up to date check={diff}}
+    \tikzset{external/mode=convert with system call} 
+    \tikzsetexternalprefix{build/}
+
+    
+%    \usepackage{pgfplots}                  % http://www.ctan.org/pkg/pgfplots
+%      \pgfplotsset{compat=newest}
+%      \usepgfplotslibrary{external} 
   
   \usepackage{pstricks}                  % PostScript macros for Generic TeX.  
 
@@ -29,7 +73,7 @@
 
 %---------------------------------- Tikz graphic ---------------------------------------------------
 \newcommand{\cube}{
-  \begin{tikzpicture}[scale=0.1]
+  \begin{tikzpicture}[scale=0.05]
     \shade[yslant=-0.5,right color=gray!10, left color=black!50] (0,0) rectangle +(3,3);
     \draw[yslant=-0.5] (0,0) rectangle (3,3);      
     \shade[yslant=0.5,right color=gray!70,left color=gray!10] (3,-3) rectangle +(3,3);
@@ -66,35 +110,26 @@
    \draw[fill=white] (pocatek-1) circle(2pt);
 }
 
+\newcommand{\XYcross}{% 
+  \draw[name path=axeX,->] 
+    (\xmin,\zero) -- (\xmax,\zero)   node[right] {\xlabel} coordinate(x axis);
+  \draw[name path=axeY,->] 
+    (\phase,\ymin) -- (\phase,\ymax) node[left]  {\ylabel} coordinate(y axis);
+  \path[name intersections={of=axeX and axeY, name=pocatek}];
+  \node[below left] at (pocatek-1) {$0$};
+  \draw[fill=white] (pocatek-1) circle(2pt);
+}
+
 %-------------------------Circuitikz----------------------------------------------------------------
-  \usepackage[american, europeanresistor, cuteinductors,smartlabels]{circuitikz}
-    \ctikzset{bipoles/thickness=1}
-    \ctikzset{bipoles/length=0.8cm}
-    \ctikzset{bipoles/vsourceam/height/.initial=.7}
-    \ctikzset{bipoles/vsourceam/width/.initial=.7}
-    \tikzstyle{every node}=[font=\small]
-    \tikzstyle{every path}=[line width=0.8pt,line cap=round,line join=round]
-% ~~~~~~Circuitikz different ground symbol ~~~~~~
-% http://tex.stackexchange.com/questions/74628/circuitikz-different-ground-symbol     
-  \makeatletter
-  \pgfdeclareshape{ground}{
-  \anchor{center}{
-      \pgfpointorigin
-  }
-  \behindforegroundpath{      
-      \pgf@circ@res@step=\ctikzvalof{monopoles/ground/width}\pgf@circ@Rlen
-  
-      \pgfscope       
-          \pgfpathmoveto{\pgfpointorigin}
-          \pgfpathlineto{\pgfpoint{0pt}{-\pgf@circ@res@step}}
-          \pgfusepath{draw}
-  
-          \pgfsetlinewidth{4\pgflinewidth} % thickness
-  
-          \pgfpathmoveto{\pgfpoint{-\pgf@circ@res@step}{-\pgf@circ@res@step}}
-          \pgfpathlineto{\pgfpoint{\pgf@circ@res@step}{-\pgf@circ@res@step}}
-          \pgfusepath{draw}                       
-      \endpgfscope
-      }
-  }
-  \makeatother
+\usepackage[
+  american, 
+  europeanresistor,
+  cuteinductors,  
+  smartlabels]{circuitikz}
+  \usetikzlibrary{shapes} 
+  \ctikzset{bipoles/thickness=1}
+  \ctikzset{bipoles/length=0.8cm}
+  \ctikzset{bipoles/vsourceam/height/.initial=.7}
+  \ctikzset{bipoles/vsourceam/width/.initial=.7}
+  \tikzstyle{every node}=[font=\small]
+  \tikzstyle{every path}=[line width=0.8pt,line cap=round,line join=round]

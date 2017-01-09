@@ -13,10 +13,10 @@
 \newcounter{m}
 \setcounter{m}{0}
 \newcounter{mc}
-
+\tikzexternaldisable
 % \begin{document}
-    %\begin{frame}[fragile]{Animated Integral}
-      %\centering
+    \begin{frame}[fragile]{Animated Integral}
+      \centering
       \protect  % JAFA příkaz protect pomohl -> nemusí být \begin{frame}, který funguje divně (vysází se obsah
                 % závorek, tj. [fragile]{Animated Integral})
         \begin{animateinline}[loop, poster = first, controls, palindrome]{2}
@@ -50,6 +50,6 @@
             }
           } % END \whiledo...
       \label{MAI:fig_anim_int}
-    %\end{frame} 
-  
+    \end{frame} 
+\tikzexternalenable
 % \end{document}

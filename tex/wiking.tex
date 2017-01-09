@@ -1,145 +1,214 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                               Jaroslav Fait                                                  %%%
-%%%                               ^^^^^^^^^^^^^                                                  %%%
-%%%                               *W*I*K*I*N*G*                                                  %%%
-%%%                                10.12.2011                                                    %%%
-%%%                  <<<XETEX — Unicode-based TeX engine>>>                                      %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[fontsize=10pt,pagesize]{scrbook}
-  \usepackage{wikiPageLayout}
+% !TeX spellcheck = <none>
+%% !TeX TS-program = xelatex
+% !TeX encoding = UTF-8
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%           Jaroslav Fait                    %%%
+%%%           ^^^^^^^^^^^^^                    %%%
+%%%           *W*I*K*I*N*G*                    %%%
+%%%             10.12.2011                     %%%
+%%%  <<<XETEX — Unicode-based TeX engine>>>    %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\listfiles
+\documentclass[
+  fontsize=10pt,
+  openany,
+  chapterprefix=true]{scrbook}
+%\documentclass[paper=12in:9in,BCOR=9.5mm,DIV=14,10pt,twoside,
+%               pagesize=pdftex,openright,headings=twolinechapter,
+%               chapterprefix=true,american,twocolumn]{scrbook}
 
-% ~~~~~~~~~~ Color settings ~~~~~~~~~~~~~~~~~~~~~~
-  \usepackage[x11names, dvipsnames, table]{xcolor}
-  % Define my colors
-  \definecolor{Blue}{rgb}{0.3,0.3,0.9}
-  \definecolor{listinggray}{gray}{0.9}
-  \definecolor{help}{RGB}{0, 128, 0}
-  \definecolor{keyword}{RGB}{0, 0, 128}
+% ~~~~~~~~~~ DEBUG tools ~~~~~~~~~~~~~~~~~~~~~~~~~
+\usepackage[protrusion=true]{microtype}
+\usepackage{etoolbox}
+\usepackage{ifxetex}
+% --- Debug Switch -------------------------------
+\newtoggle{DEBUG}
+% \toggletrue{DEBUG}
+ \togglefalse{DEBUG}
+% ~~~~~~~~~~ Wiki Library ~~~~~~~~~~~~~~~~~~~~~~~~
+\usepackage{wikiLayout}
+%\usepackage{lmodern}
+\usepackage{wikiWWWrefs}
+%\usepackage{wikiHyph}
+%\usepackage{lastpage}
+% ~~~~~~~~~~~ Custom library ~~~~~~~~~~~~~~~~~~~~~
+\usepackage{wikiDrawing}
+% formatting table of contents.
+\usepackage{tocloft}
+\usepackage[nohints]{minitoc}      % NOHINTS - troubleshooting W0028, WW0030
+  \mtcsetrules{minitoc}{off}       % cara pred a po.
+% http://tex.stackexchange.com/questions/268205/minitoc-suppress-title-and-rules
+  \mtcsettitle{minitoc}{}          % sets an empty title (i.e. no title)
+  \mtcsetoffset{minitoc}{-1.0em}   % shift the minitoc to the left
+  \setlength{\mtcindent}{0pt} 
+  \mtcsetdepth{parttoc}{1}
+%%\usepackage[toc]{multitoc}
+%\setlength{\cftsecnumwidth}{4em}
+%
+\newcommand{\dochaptertoc}{%
+  \vspace{1.85\baselineskip} % workaround for removed rule
+  \smash{\makebox[\linewidth]{\hrulefill}} % workaround for removed rule
+  \vspace{-1.85\baselineskip} % workaround for removed rule
+  \minitoc
+  \vspace{-1.15\baselineskip} % workaround for removed rule
+  \smash{\makebox[\linewidth]{\hrulefill}} % workaround for removed rule
+  \vspace{1.15\baselineskip} % workaround for removed rule
+}
 
-% ------------------------------- Bibliography ------------------------------------------------------
-% Bibliography with UTF8 support
-   % note: - The backend option is not read correctly by the parser, if it is
-   % in the first position (right after the square bracket) of the usepackage command. 
-  \usepackage[
-    backref=true,                % 
-    hyperref=true,               % 
-    refsection=chapter,          %
-    firstinits=true,             %
-    indexing=true,               %
-    url=false,                   % 
-    style=alphabetic,            %  style=debug, alphabetic
-    backend=biber,               % 
-    doi=false,
-    texencoding=utf8,
-    bibencoding=utf8]{biblatex}
-    \addbibresource{MasterBiblioLib.bib}
+\newcommand{\setchaptertoc}{%
+  \setchapterpreamble{% KOMA-Script command
+    \dochaptertoc%
+  }}
+  
+\usepackage{animate}
+%\usepackage{lipsum} % Inserts dummy text
+\usepackage{media9}
+  \addmediapath{../media}
+    \newcommand{\AddVideo}[3]{
+      \includemedia[
+        activate=pageopen,
+        width=#1pt,height=#2pt,
+        addresource=#3.mp4,
+        flashvars={ src=#3.mp4 &loop=true &scaleMode=stretch}
+      ]{}{StrobeMediaPlayback.swf} %VPlayer.swf StrobeMediaPlayback.swf
+      }
+      
+\usepackage{wikiMath}
+\usepackage{wikiPhysics}
+
+%\allowdisplaybreaks
+%\usepackage[theorems]{tcolorbox}
+\usepackage{listings}
+%\usepackage{framed}
+
+\usepackage{enumitem}
+
+\usepackage{widetext}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+% centrovani bunky horizontálně i vertikálně
+\newcolumntype{C}[1]{>{\centering}m{#1}}
+
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\usepackage{booktabs}
+
+\usepackage{subfig}
+\usepackage{multirow}                  % Columns spanning multiple rows
+\usepackage{epigraph}
 
 
-% ~~~~~~~~~~ DEBUG tools ~~~~~~~~~~~~~~~~~~~~~~~~~   
-% \listfiles 
-% For running a document through LATEX without actually getting any output.
- \usepackage{syntonly}
-   \pretolerance=1000   % avoid overfull lines in LaTeX 
-  \usepackage{etoolbox} 
-  \newtoggle{DEBUG}
- \toggletrue{DEBUG}
-% \togglefalse{DEBUG}
+%% ~~~~~~~~ Attache file into PDF ~~~~~~~~~~~~~~~~~
+%% insert pages of external PDF documents without `Overfull \hbox' and 
+%%`Overfull \vbox' warnings
+%% when inserted pages does not match the print space. 
+%  \usepackage{pdfpages}                   % \includepdf >> Inserts pages of 
+%  %an external PDF 
+%  %document.
+  \usepackage{attachfile2}
+%  \usepackage[author=jafa]{pdfcomment}    % A user-friendly interface to pdf 
+%  %annotations.
 
-% ---------------------------------------------------------------------------------------------------
-% ~~~~~~~~~~~ Custom library ~~~~~~~~~~~~~~~~~~~~
-  \usepackage{wikiMath}
-  \usepackage{wikiGraphic}
-  \usepackage{wikiPhysics}
-  \usepackage{wikiTitlePage}
-  \usepackage{wikiWWWrefs}
-  \usepackage{wikiDrawing} 
-  \usepackage{wikiJS}        % Javascript - AcroTex 
-  \usepackage{wikiHyph}      % Hyphenation
-%  \usepackage{wikiSandbox}
-  \usepackage{calculus}
 
-% ###################################################################################################
-% ###                                     *W*I*K*I*N*G*                                           ###
-% ###################################################################################################
+
+% ~~~~~~~~~~~ Hyperlinks ~~~~~~~~~~~~~~~~~~~~~~~~ 
+\usepackage{hyperref}
+\usepackage{bookmark}
+\hypersetup{
+  pdfstartview=FitH,
+  pdfauthor={Jaroslav Fait},
+  pdftitle={Wiking},
+  pdfsubject={My study notes},
+  pdfkeywords={linear algebra, math, physics, electronics},
+  pdfpagelayout={TwoPageLeft}, %  Displays two pages, odd-numbered pages to the left 
+  pdfcreator={Xelatex}
+  bookmarks={true},            %  A set of Acrobat bookmarks are written
+  colorlinks={true},           %  Colors the text of links and anchors. 
+  linkcolor={NavyBlue},        %  Color for normal internal links.
+  anchorcolor={black},         %  Color for anchor text.
+  filecolor={cyan},            %  Color for URLs which open local files.
+  menucolor={red},             %  Color for Acrobat menu items.
+  runcolor={blue},             %  Color for run links (launch annotations).
+  urlcolor={NavyBlue},         %  Color for linked URLs. 
+  citecolor={CornflowerBlue},
+  hypertexnames={false}
+}
+
+\tikzexternalize
+\doparttoc
+
+
 \begin{document}
-% ======================================== Title page ===============================================
-  \input{wikiMainTitlePage}
-% ========================================= TOC =====================================================
-% this sets the depth to which things are listed in the table of contents 
-% (Chapters =0, Sections =1, etc)
-\setcounter{tocdepth}{1} % 
+  \begin{titlepage}
+    \frontmatter % turns off
+    \vspace*{3cm} 
+    \centering
+    \texttt{\large Jaroslav Fait, 
+            \href{mailto:jaroslav.fait@hotmail.com}{jaroslav.fait@hotmail.com}  }\\[1cm]
+    \noindent\rule{\textwidth}{0.4mm} \\[0.4cm] 
+    \textbf{\Huge Wiking}\\[0.1cm]
+    \noindent\rule{\textwidth}{0.4mm} \\[1.4cm]
+    \today
+    \vfill
+    \vspace*{1cm}
+  \end{titlepage}
+%% ========== TOC =================================
+%% this sets the depth to which things are listed  
+%% in the table of contents (Chap = 0, Sec = 1, etc)
+\setcounter{tocdepth}{0} % 
 \setcounter{secnumdepth}{4} 
 \dominitoc
 \tableofcontents
-% ======================================== Document Body ============================================
-% turns on chapter numbering, resets page numbering and uses arabic numerals for page numbers;
+% ========== Document Body =======================
+% turns on chapter numbering, resets page numbering
+% and uses arabic numerals for page numbers;
 \mainmatter 
 \iftoggle{DEBUG}{
-  DEBUG was on
-  \part{Mikroprocesorová technika}
-    \input{../src/MIT/MIT.tex}
+%    \input{../src/MAI/MA1}
+    \input{../src/FYZ/FYZ.tex}
+%    \input{../src/TKY/TKY.tex}
+%    \input{../src/TEO/TEO.tex}
+%    \input{../src/AES/AES.tex}
+%    \input{../src/CES/CES.tex}
+%    \input{../src/RAE/RAE.tex}
+%    \input{../src/PVE/PVE.tex}
+%    \input{../src/EPR/EPR.tex}
+%    \input{../src/ZZT/ZZT.tex}
+%    \input{../src/NJ/NJ.tex}
+
 }
 {
 % DEBUG was off
-  \part{Lineární algebra}
-    \input{../src/LA/LA}
-  \part{Matematická analýza I}
     \input{../src/MAI/MA1}
-  \part{Obyčejné diferenciální rovnice}
-    \input{../src/ODR/ODR.tex}    
-  \part{Numerické metody}
-    \input{../src/NM/NM.tex}
-  \part{Fyzika}
     \input{../src/FYZ/FYZ.tex}
-  \part{Astrofyzika}
-    \input{../src/AFYZ/AFYZ.tex}
-  \part{Mechanika}
-    \input{../src/MECH/MECH.tex}
-  \part{Teorie elektromagnetického pole}
-    \input{../src/TEMP/TEMP.tex}
-  \part{Signály a soustavy}
-    \input{../src/SAS/SAS.tex}
+  \part{Technická Kybernetika}
+    \input{../src/TKY/TKY.tex}
   \part{Teorie elektrických obvodů}
     \input{../src/TEO/TEO.tex}
-  \part{Elektronické součástky}
-    \input{../src/ES/ES.tex}
-  \part{Senzory a akční členy}
-    \input{../src/SAC/SAC.tex}
   \part{Analogové elektronické systémy}
     \input{../src/AES/AES.tex}
-  \part{Elektronické napájecí zdroje}
-    \input{../src/ENZ/ENZ.tex}
   \part{Číslicové elektronické systémy}
     \input{../src/CES/CES.tex}
-  \part{Mikroprocesorová technika}
-    \input{../src/MIT/MIT.tex}
-  \part{Programovatelné logické obvody}
-    \input{../src/PLO/PLO.tex}
-  \part{Elektromagnetická kompatibilita}
-    \input{../src/EMC/EMC.tex}
-  \part{Radioelektronika}
-    \input{../src/RA/RA.tex}
-  \part{C}
-    \input{../src/C/C.tex}
-  \part{ANSI/C++}
-    \input{../src/CPP/CPP.tex}
-  \part{Elektrické měřicí systémy}
-    \input{../src/EMS/EMS.tex}
-  \part{Výkonová elektronika}
-    \input{../src/VE/VE.tex}
-  \part{Elektrické přístroje}
+  \part{Vysokofrekvenční technika}
+    \input{../src/RAE/RAE.tex}
+  \part{Pohony a výkonová elektronika}
+    \input{../src/PVE/PVE.tex}
+  \part{Silnoproudá elektrotechnika}
     \input{../src/EPR/EPR.tex}
   \part{Železniční zabezpečovací technika}
     \input{../src/ZZT/ZZT.tex}
-}    
-% ========================================== Appendix ===============================================
-\backmatter %turns off chapter numbering and doesn't fiddle with page numbering. 
-% ========================================= Bibliography ============================================
+%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%  \part{Němčina}
+%    \input{../src/NJ/NJ.tex}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+}
 
+% ============== Appendix ========================
+% turns off chapter numbering and doesn't 
+% fiddle with page numbering.
+\backmatter 
+% ============== Bibliography ====================
   \printbibliography[title={Bibliografie}]
   \addcontentsline{toc}{chapter}{Seznam literatury}
-%  \printbibliography[title={Bibliografie}] 
-%  \addcontentsline{toc}{section}{Bibliografie} 
 \end{document}

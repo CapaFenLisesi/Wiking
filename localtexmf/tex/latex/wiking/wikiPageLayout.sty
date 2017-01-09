@@ -28,27 +28,40 @@
 % t - umístění na začátku stránky, na které je prostředí uvedeno ve zdrojovém textu; Pozn: může se
 %     umístit i na stránce následující
 % b - umístění na konci stránky, na které je prostředí uvedeno ve zdrojovém textu (nefunguje pro
-%     dvousloupcové tabulky a obrázky ve dvousloupcovém režimu stránky); Pozn: moc mi to nefunguje  
-% p - umístění na stránce, na které není text a která není příliš fyzicky a logicky (v jiné sekci)   
-%     vzdálena od místa uvedení ve zdrojovém textu; může se umístit i na stránku, kde jsou i jiné
-%     (jen) plovoucí objekty.
+%     dvousloupcové tabulky a obrázky ve dvousloupcovém režimu stránky); Pozn: moc mi to 
+%     nefunguje  
+% p - umístění na stránce, na které není text a která není příliš fyzicky a logicky (v jiné 
+%     sekci) vzdálena od místa uvedení ve zdrojovém textu; může se umístit i na stránku, kde jsou 
+%     i jiné (jen) plovoucí objekty.
 
 % ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   \RequirePackage[l2tabu, orthodox]{nag}     % Obsolete commands and packages control
   \RequirePackage{lipsum}
-  \usepackage{helvet}                        % font
-  \usepackage{xltxtra}                       % fontspec package
-  \renewcommand{\familydefault}{\sfdefault}
+  \usepackage{xltxtra}                       % fontspec package - not necessary 
+
+%  \usepackage{helvet}                       % font
+%  \usepackage{avant}                        % font
+%  \usepackage{polyglossia}                                
+%    \setdefaultlanguage[variant=british]{english}
+%    \setotherlanguages{latin,greek,russian,czech,german}
 %  \usepackage[onehalfspacing]{setspace}
   \usepackage[verbose,
               a3paper,
-              twocolumn, 
-              textheight=350mm,
-              textwidth=250mm
+              twocolumn,
+%             landscape,
+              scale=0.9, 
+              heightrounded,                 % includeall, 
+              showframe=false,
+%              centering, 
+%              textheight=350mm,
+%              textwidth=250mm
               ]{geometry}
-%  \usepackage[a3paper, twocolumn, inner=1cm]{geometry}
-  
+              
+% ~~~~~~~~ Table of contents ~~~~~~~~~~~~~~~~~~~~ 
   \usepackage[nohints]{minitoc}              % formatting table of contents.
+%  \usepackage{tocstyle} 
+%  \usetocstyle{KOMAlike} 
+% ~~~~~~~~ Itemize, Enumerat  ~~~~~~~~~~~~~~~~~~~~
 % The enumerate package allows you to control the display of the enumeration counter. 
 % \usepackage{enumerate} 
   \usepackage{enumitem}
@@ -56,6 +69,22 @@
               labelfont=bf,                  % make all caption labels small and bold or:
               textfont=it]{caption}          % Captions
   \usepackage{footnote} 
+
+% ~~~~~~~~~~~ Chapter,section styles ~~~~~~~~~~~~
+% variant A: 
+% KOMA-Script: How to colour just the section numbers
+% http://tex.stackexchange.com/questions/193177/koma-script-how-to-colour-just-the-section-numbers
+% \renewcommand*{\othersectionlevelsformat}[3]{\textcolor{DeepSkyBlue2}{#3}\autodot\enskip}
+
+% variant B:
+% How do i add a blue box around the section number?
+% http://tex.stackexchange.com/questions/209365/how-do-i-add-a-blue-box-around-the-section-number
+%\renewcommand*{\othersectionlevelsformat}[1]{%
+%  \makebox[0pt][r]{%
+%    \fcolorbox{blue}{blue}{\color{white}\csname the#1\endcsname}%
+%    \enskip
+%  }
+%}  
 % ~~~~~~~~~~~ Hyperlinks ~~~~~~~~~~~~~~~~~~~~~~~~ 
   \usepackage{hyperref}
   \hypersetup{
@@ -73,13 +102,14 @@
     menucolor={red},             %  Color for Acrobat menu items.
     runcolor={blue},             %  Color for run links (launch annotations).
     urlcolor={NavyBlue},         %  Color for linked URLs. 
-    citecolor={CornflowerBlue}
+    citecolor={CornflowerBlue},
+    hypertexnames={false}
   } 
 % ~~~~~~~~~~~~ Fonts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   \setkomafont{chapter}{\fontsize{24bp}{24bp}\selectfont}
-  \setkomafont{section}{\fontsize{18bp}{24bp}\selectfont}
-  \setkomafont{subsection}{\fontsize{14bp}{16bp}\selectfont}
-  \setkomafont{subsubsection}{\fontsize{12bp}{14bp}\selectfont}
+  \setkomafont{section}{\fontsize{16bp}{24bp}\selectfont}
+  \setkomafont{subsection}{\fontsize{12bp}{16bp}\selectfont}
+  \setkomafont{subsubsection}{\fontsize{11bp}{14bp}\selectfont}
   \setkomafont{paragraph}{\normalsize\mdseries}
   \setkomafont{subparagraph}{\normalsize\mdseries}
 
@@ -115,7 +145,7 @@
   \usepackage{widetext} 
   \usepackage{cuted}            % \twocolumn mode 
   
-% ~~~~~~~~~~ Czechicized document structure ~~~~~
+% ~~~~~~~~~~ Czech document structure ~~~~~
 \renewcommand\chaptername{Kapitola}
 \renewcommand\partname{Část}
 \renewcommand{\bibname}{Seznam literatury} % Change the bibliography heading title
@@ -131,5 +161,4 @@
                                            % (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
 %\numberwithin{table}{section}              % Number tables within sections: 
                                            %(i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
-
-
+%\renewcommand\thepart{\arabic{part}}

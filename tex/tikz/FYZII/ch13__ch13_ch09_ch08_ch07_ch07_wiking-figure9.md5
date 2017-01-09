@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:->[scale=0.3] \begin {scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt,y=1pt,x=1pt] \curveS ; \XYcross ; \end {scope} }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

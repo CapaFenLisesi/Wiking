@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:-> \draw (0,0) rectangle (0.5,0.5); \fill [green!20!white] (0,0) -- (3mm,0mm) arc (0:30:3mm) -- cycle; }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

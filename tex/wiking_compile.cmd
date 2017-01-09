@@ -1,24 +1,12 @@
 rem latexmk -pvc -pdf -e "$pdflatex='xelatex %O -interaction=nonstopmode %S'" main.tex 
-
+rem xelatex.exe -synctex=1 -interaction=nonstopmode %.tex
+timer 
+echo http://www.gammadyne.com/cmdline.htm#timer
 xelatex  -jobname=wiking --enable-write18 --extra-mem-bot=10000000 -synctex=1 -interaction=nonstopmode -output-driver="xdvipdfmx -V 5" wiking.tex  >report.txt
+timer /s /nologo
 biber wiking.bcf
+timer
 xelatex  -jobname=wiking --enable-write18 --extra-mem-bot=10000000 -synctex=1 -interaction=nonstopmode -output-driver="xdvipdfmx -V 5" wiking.tex  >report.txt
+timer /s /nologo
 
-ECHO "SMAZE SOUBORY S NASLEDUJICI PRIPONOU:"
-ECHO ""
-DEL /F /S *.bak
-DEL /F /S *.aux
-DEL /F /S *.mtc*
-DEL /F /S *.djs
-DEL /F /S *.out
-DEL /F /S *.toc
-DEL /F /S main*.xml
-DEL /F /S *.tips
-rem DEL /F /S *.log
-DEL /F /S *.upa
-DEL /F /S *.maf
-DEL /F /S *.bcf
-DEL /F /S *.atfi
-DEL /F /S /A H Thumbs.db
-DEL /F /S /A H .picasa.ini
-PAUSE
+COPY "d:\TEX\tex\wiking.pdf" "c:\Users\jaros\Google Drive\wiking.pdf"

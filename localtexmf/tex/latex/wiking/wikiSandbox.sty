@@ -2,6 +2,21 @@
 %                                         Sandbox 
 % ===================================================================================================
 \NeedsTeXFormat{LaTeX2e}
+  \RequirePackage{lipsum}
+  \RequirePackage{tikz, tikz-3dplot}     % TikZ and PGF picture 
+    \usetikzlibrary{intersections, calc, positioning, mindmap, trees}
+    \usetikzlibrary{decorations.markings, decorations.pathmorphing} 
+    \usetikzlibrary{shapes, matrix, chains, scopes}
+    \usetikzlibrary{arrows,fit}
+    \usetikzlibrary{topaths,automata}    
+
+    
+    \usepackage{pgfplots}                  % http://www.ctan.org/pkg/pgfplots
+      \pgfplotsset{compat=newest}
+      \usepgfplotslibrary{external} 
+  
+  \usepackage{pstricks}                  % PostScript macros for Generic TeX.  
+  
 % ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 % sections—namely titles, headers and contents.
 % \usepackage[explicit]{titlesec}
@@ -53,14 +68,14 @@
 % ------------------------------------------- My tools ---------------------------------------------
 % opakuje předdefinvaný text. To se hodí při testu vzhledu dokumentu, ačkoliv není znám relevantní
 % obsah použití: \sometext10 -> namnoží 10krát předdefinovaný text. 
-\newcount\sometextcount
-\def\sometext#1 {{\sometextcount0
-  \loop\ifnum\sometextcount<#1  \advance\sometextcount1
-  Some text blabla 
-  \repeat}} 
+%\newcount\sometextcount
+%\def\sometext#1 {{\sometextcount0
+%  \loop\ifnum\sometextcount<#1  \advance\sometextcount1
+%  Some text blabla 
+%  \repeat}} 
       
 % ------------------------------------------- Frames ---------------------------------------------
-  \usepackage[framemethod=TikZ]{mdframed}% standard methods for framing text: framemethod=TikZ
+%  \usepackage[framemethod=TikZ]{mdframed}% standard methods for framing text: framemethod=TikZ
 % C:\Program Files (x86)\MiKTeX 2.9\doc\latex\mdframed\mdframed.pdf  
 %   \mdfdefinestyle{theoremstyle}{%
 %     linecolor=red,linewidth=2pt,%
@@ -75,47 +90,47 @@
 
 % ~~~~~~~~ Image that also acts as a link ~~~~~~~
 % http://tex.stackexchange.com/questions/54927/how-to-insert-an-image-that-also-acts-as-a-link
- \newcommand{\googlepdflink}[2]{
-    \href{#2}{%
-          \parbox{3cm}{
-            \centering
-            \vspace{0.05\textwidth}\textbf{#1}\\
-            \includegraphics[width=0.05\textwidth]{../src/lib/img/pdf_ico.png}}
-            }
-        }
+% \newcommand{\googlepdflink}[2]{
+%    \href{#2}{%
+%          \parbox{3cm}{
+%            \centering
+%            \vspace{0.05\textwidth}\textbf{#1}\\
+%            \includegraphics[width=0.05\textwidth]{../src/lib/img/pdf_ico.png}}
+%            }
+%        }
         
 % Page style
 %------------
 % To get better control over the headers: 
- \usepackage{fancyhdr}  % Customising with fancyhdr
-    
-   % It also helps to have rubber band values for the space between paragraphs:      
-   \pagestyle{fancy}             % \pagestyle{headings} 
-   \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-   \renewcommand{\sectionmark}[1]{\markright{#1}{}}
-   \fancyhf{}                    % want to get different style for even and odd pages
-   % HEADERS CONFIGURATION 
-   % \fancyhead[selectors]{output you want}
-   \fancyhead[LE,RO]{\thepage}   % \thepage = number of the current page    
-   \fancyhead[RE]{\textit{\nouppercase{\leftmark}}}
-   \fancyhead[LO]{\textit{\nouppercase{\rightmark}}}
-   % The selectors are the following:
-    % E . . . even page
-    % O . . . odd page
-    % L . . . left side
-    % C . . . centered
-    % R . . . right side   
-   \fancypagestyle{plain}{ % 
-       \fancyhf{} % remove everything
-       \renewcommand{\headrulewidth}{0pt} % remove lines as well
-       \renewcommand{\footrulewidth}{0pt}}
+% \usepackage{fancyhdr}  % Customising with fancyhdr
+%    
+%   % It also helps to have rubber band values for the space between paragraphs:      
+%   \pagestyle{fancy}             % \pagestyle{headings} 
+%   \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%   \renewcommand{\sectionmark}[1]{\markright{#1}{}}
+%   \fancyhf{}                    % want to get different style for even and odd pages
+%   % HEADERS CONFIGURATION 
+%   % \fancyhead[selectors]{output you want}
+%   \fancyhead[LE,RO]{\thepage}   % \thepage = number of the current page    
+%   \fancyhead[RE]{\textit{\nouppercase{\leftmark}}}
+%   \fancyhead[LO]{\textit{\nouppercase{\rightmark}}}
+%   % The selectors are the following:
+%    % E . . . even page
+%    % O . . . odd page
+%    % L . . . left side
+%    % C . . . centered
+%    % R . . . right side   
+%   \fancypagestyle{plain}{ % 
+%       \fancyhf{} % remove everything
+%       \renewcommand{\headrulewidth}{0pt} % remove lines as well
+%       \renewcommand{\footrulewidth}{0pt}}
 
 % Provides support for setting the spacing between lines in a document. Package
 % options include singlespacing, onehalfspacing, and doublespacing.
 % http://www.ctan.org/tex-archive/macros/latex/contrib/setspace/
-  \usepackage{setspace} 
+%  \usepackage{setspace} 
 % quotation marks 
-  \usepackage{upquote}
+%  \usepackage{upquote}
   
 % ------------------------------------------------------------------------------------------------------------
 % This package provides a flexible and easy interface to page dimensions. You can change the page

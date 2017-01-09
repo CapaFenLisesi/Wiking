@@ -1,55 +1,63 @@
+% !TeX spellcheck = cs_CZ
+%======================== Kapitola: Železniční zabezpečovací technika ============================
 \chapter{Úvod}
-  Základním požadavkem na železniční zabezpečovací zařízení je zajištění bezpečného provozu na železnici. 
-  Tento požadavek je ohrožen vznikem poruch, čemuž nelze u reálných systémů zabránit absolutně. Jak již bylo 
-  řečeno, tyto poruchy se nesmí projevit nebezpečným způsobem, čehož se dosahuje vhodným návrhem systému. Z 
-  toho zdánlivě vyplývá, že na bezporuchovost (spolehlivost) systému nemusí být kladeny příliš vysoké 
-  požadavky, neboť poruchy neohrožují bezpečnost dopravy.  
+\minitoc
 
-  Opak je však pravdou, protože lze očekávat, že vzrůstající poruchovost zařízení bude doprovázena také 
-  vzrůstem obecné četnosti výskytu hazardních stavů a také četností výskytu hazardního stavu v uvažovaném 
-  časovém okně (druhá porucha), což je podstatné u redundantních a reakčních systémů.
+  Základním požadavkem na železniční zabezpečovací zařízení je zajištění bezpečného provozu na 
+  železnici. Tento požadavek je ohrožen vznikem poruch, čemuž nelze u reálných systémů zabránit 
+  absolutně. Jak již bylo řečeno, tyto poruchy se nesmí projevit nebezpečným způsobem, čehož se 
+  dosahuje vhodným návrhem systému. Z toho zdánlivě vyplývá, že na bezporuchovost (spolehlivost) 
+  systému nemusí být kladeny příliš vysoké požadavky, neboť poruchy neohrožují bezpečnost dopravy.  
+
+  Opak je však pravdou, protože lze očekávat, že vzrůstající poruchovost zařízení bude doprovázena 
+  také vzrůstem obecné četnosti výskytu hazardních stavů a také četností výskytu hazardního stavu v 
+  uvažovaném časovém okně (druhá porucha), což je podstatné u redundantních a reakčních systémů.
   
-  Navíc případná nefunkčnost systému následkem poruchy znamená, že řízení provozu, který nemůže být zastaven 
-  po celou dobu opravy systému, je nutné provádět bez jeho dohledu. Zodpovědnost je přinejmenším částečně 
-  opět na člověku, který je navíc v této mimořádné situaci ještě náchylnější k chybám. U zabezpečovacích 
-  zařízení tedy musíme požadovat i vysokou spolehlivost! Proto se v následující kapitole budeme stručně 
-  věnovat popisu jednotlivých poruch.
+  Navíc případná nefunkčnost systému následkem poruchy znamená, že řízení provozu, který nemůže být 
+  zastaven po celou dobu opravy systému, je nutné provádět bez jeho dohledu. Zodpovědnost je 
+  přinejmenším částečně opět na člověku, který je navíc v této mimořádné situaci ještě náchylnější 
+  k chybám. U zabezpečovacích zařízení tedy musíme požadovat i vysokou spolehlivost! Proto se v 
+  následující kapitole budeme stručně věnovat popisu jednotlivých poruch.
   
   \section{Klasifikace poruch}
-    \textbf{Chyba} je rozdíl mezi správnou a skutečnou hodnotou nějaké veličiny. V zařízení se chyby mohou 
-    obecně objevit jako \emph{důsledek (projev) poruchy některé jeho součásti, působením nějakého cizího 
-    vlivu} nebo \emph{selháním lidského činitele}. Za poruchy hardware se považují všechna vybočení z 
-    předpokládaných vlastností stavebního prvku (součástky, dílu) zařízení. Předpokládanými vlastnostmi prvků 
-    přitom jsou vlastnosti odpovídající příslušným technickým podmínkám popisujícím jeho vlastnosti. Jako 
-    omyl lze označit každou lidskou činnost, která může vést k nezamýšlenému chování zařízení. V širším slova 
-    smyslu se jako \textbf{porucha} označují souhrnně všechny příčiny vedoucí k chybě, tj. poruch součásti, 
+    \textbf{Chyba} je rozdíl mezi správnou a skutečnou hodnotou nějaké veličiny. V zařízení se 
+    chyby mohou obecně objevit jako \emph{důsledek (projev) poruchy některé jeho součásti, 
+    působením nějakého cizího vlivu} nebo \emph{selháním lidského činitele}. Za poruchy hardware se 
+    považují všechna vybočení z předpokládaných vlastností stavebního prvku (součástky, dílu) 
+    zařízení. Předpokládanými vlastnostmi prvků přitom jsou vlastnosti odpovídající příslušným 
+    technickým podmínkám popisujícím jeho vlastnosti. Jako omyl lze označit každou lidskou činnost, 
+    která může vést k nezamýšlenému chování zařízení. V širším slova smyslu se jako 
+    \textbf{porucha} označují souhrnně všechny příčiny vedoucí k chybě, tj. poruch součásti, 
     cizí vliv i omyl.
       
 \chapter{Bezpečnost a spolehlivost zabezpečovacích systémů}
  \section{Spolehlivost}
  \section{Bezpečnost}
     V různých publikacích je možné najít různé definice bezpečnosti. Například norma 
-    EN~61508\footnote{Funkční bezpečnost elektrických/elektronických/programovatelných elektronických systémů 
-    souvisejících s bezpečností (Functional safety of electrical/ electronic/programmable electronic 
-    systems), obecná norma funkční bezpečnosti, která se opírá o dvě základní koncepce - životní cyklus 
-    bezpečnosti a úroveň integrity bezpečnosti (SIL)} definuje bezpečnost jako nepřítomnost netolerovaného 
-    rizika. Z této definice je zřejmé, že bezpečnost je úzce spjatá s rizikem, a je nutné bezpečnost
-    třeba chápat relativně. Když se řekne, že řídicí systém je bezpečný, neznamená to jeho absolutní 
-    bezpečnost (ta je prakticky nedosažitelná vzhledem na existenci objektivních faktorů, jako je například 
-    úroveň poznání, technologická úroveň a limitované finanční prostředky), ale taková úroveň bezpečnosti, 
+    EN~61508\footnote{Funkční bezpečnost elektrických/elektronických/programovatelných 
+    elektronických systémů souvisejících s bezpečností (Functional safety of electrical/ 
+    electronic/programmable electronic systems), obecná norma funkční bezpečnosti, která se opírá o 
+    dvě základní koncepce - životní cyklus bezpečnosti a úroveň integrity bezpečnosti 
+    (\texttt{SIL})} 
+    definuje bezpečnost jako nepřítomnost netolerovaného rizika. Z této definice je zřejmé, že 
+    bezpečnost je úzce spjatá s rizikem, a je nutné bezpečnost třeba chápat relativně. Když se 
+    řekne, že řídicí systém je bezpečný, neznamená to jeho absolutní bezpečnost (ta je prakticky 
+    nedosažitelná vzhledem na existenci objektivních faktorů, jako je například úroveň poznání, 
+    technologická úroveň a limitované finanční prostředky), ale taková úroveň bezpečnosti, 
     která zodpovídá definovaným bezpečnostním požadavkům na tento řídicí systém. 
 
     Relativnost v pojímání bezpečnosti znamená posun od kvalitativního ke kvantitativnímu chápaní bezpečnosti.
 
-    Kvalitativně je bezpečnost chápána jako schopnost řídicího systému zajistit omezení důsledků poruch 
-    řídicích systému v daných podmínkách a v daném časovém intervalu. Matematicky je možné kvalitativní 
-    bezpečnost řídicího systému vyjádřit jako 
+    Kvalitativně je bezpečnost chápána jako schopnost řídicího systému zajistit omezení důsledků 
+    poruch řídicích systému v daných podmínkách a v daném časovém intervalu. Matematicky je možné 
+    kvalitativní bezpečnost řídicího systému vyjádřit jako 
     \begin{equation}
       E_H = 0,
     \end{equation}
-    kde \(E_H\) je množina nebezpečných stavů, které jsou důsledkem výskytu pravděpodobných poruch řídicího 
-    systému. Pravděpodobná porucha je taková porucha z množiny všech poruch, jejichž výskyt během provozu 
-    řídicího systému je nutné předpokládat (vzhledem na požadovanou úroveň bezpečnosti řídicího systému).
+    kde \(E_H\) je množina nebezpečných stavů, které jsou důsledkem výskytu pravděpodobných poruch 
+    řídicího systému. Pravděpodobná porucha je taková porucha z množiny všech poruch, jejichž 
+    výskyt během provozu řídicího systému je nutné předpokládat (vzhledem na požadovanou úroveň 
+    bezpečnosti řídicího systému).
 	
     Kvantitativně je bezpečnost řídicího systému chápána jako pravděpodobnost nepřítomnosti
     jakéhokoliv nebezpečného stavu v řídicím systému v daných podmínkách a v daném časovém
@@ -60,23 +68,25 @@
       P_{HT}(t)\geq P_{HT}(t)>0,
     \end{equation}
     kde \(P_{HT}(t)\) je pravděpodobnost tolerovaného nebezpeční řídicího systému a \(P_{HR}(t)\)
-    je reálná pravděpodobnost nebezpečného stavu řídicího systému.
+    je reálná pravděpodobnost nebezpeč\-ného stavu řídicího systému.
 	 
-    Na kvantitativním hodnocení bezpečnosti řídicího systému je v podstatě možné uplatnit stejné teoretické 
-    postupy, jako při hodnocení spolehlivosti technických systémů. Zásadní rozdíl je v tom, že při hodnocení 
-    spolehlivosti standardních řídicích systémů se obvykle rozlišují dva stavy - bezporuchový stav a 
-    poruchový stav, a k těmto dvěma stavům se vztahují také kvantitativní ukazatele spolehlivosti. Při 
-    hodnocení bezpečnosti řídicích systémů musíme uvažovat s dvěma druhy poruchových stavů - bezpečným a 
-    nebezpečným poruchovým stavem. Bezpečnost řídicího systému se potom vyjadřuje pomocí ukazatelů 
-    bezpečnosti (například pravděpodobnost výskytu nebezpečné poruchy, intenzita nebezpečných poruch, ...).
+    Na kvantitativním hodnocení bezpečnosti řídicího systému je v podstatě možné uplatnit stejné 
+    teoretické postupy, jako při hodnocení spolehlivosti technických systémů. Zásadní rozdíl je v 
+    tom, že při hodnocení spolehlivosti standardních řídicích systémů se obvykle rozlišují dva 
+    stavy - bezporuchový stav a poruchový stav, a k těmto dvěma stavům se vztahují také 
+    kvantitativní ukazatele spolehlivosti. Při hodnocení bezpečnosti řídicích systémů musíme 
+    uvažovat s dvěma druhy poruchových stavů - bezpečným a nebezpečným poruchovým stavem. 
+    Bezpečnost řídicího systému se potom vyjadřuje pomocí ukazatelů bezpečnosti (například 
+    pravděpodobnost výskytu nebezpečné poruchy, intenzita nebezpečných poruch, ...).
 
-    Při kvantitativním hodnocení důsledků poruch na bezpečnost řídicího systému se obvykle k hodnoceným 
-    řídicím systémům přistupuje jako k neobnovovaným objektům, protože z pohledu bezpečnosti jsou důležité 
-    dva stavy (bezpečný, nebezpečný) a analýza končí výskytem nebezpečné poruchy (může jít o jednu poruchu, 
-    nebo o kombinaci více poruch, které nejsou individuálně nebezpečné). To znamená, že od uvedení řídicího 
-    systému do provozu, až po výskyt nebezpečné poruchy, se může řídicí systém střídavě nacházet ve funkčním, 
-    nebo nefunkčním stavu (nefunkční ještě neznamená nebezpečný). Z tohoto důvodu ukazatele bezpečnosti jsou 
-    podobné ukazatelům bezporuchovosti neobnovovaných objektů. 
+    Při kvantitativním hodnocení důsledků poruch na bezpečnost řídicího systému se obvykle k 
+    hodnoceným řídicím systémům přistupuje jako k neobnovovaným objektům, protože z pohledu 
+    bezpečnosti jsou důležité dva stavy (bezpečný, nebezpečný) a analýza končí výskytem nebezpečné 
+    poruchy (může jít o jednu poruchu, nebo o kombinaci více poruch, které nejsou individuálně 
+    nebezpečné). To znamená, že od uvedení řídicího systému do provozu, až po výskyt nebezpečné 
+    poruchy, se může řídicí systém střídavě nacházet ve funkčním, nebo nefunkčním stavu (nefunkční 
+    ještě neznamená nebezpečný). Z tohoto důvodu ukazatele bezpečnosti jsou podobné ukazatelům 
+    bezporuchovosti neobnovovaných objektů. 
   
     \subsection{Základní legislativa}
       \begin{itemize}
@@ -84,7 +94,7 @@
               bezpečnosti elektrických/elektronických/programovatelných elektronických systémů
               souvisejících s bezpečností (Functional safety of electrical/electronic/programmable
               electronic systems), obecná norma funkční bezpečnosti, která se opírá o dvě základní
-              koncepce - životní cyklus bezpečnosti a úroveň integrity bezpečnosti (SIL)
+              koncepce - životní cyklus bezpečnosti a úroveň integrity bezpečnosti (\texttt{SIL})
               \begin{itemize}
                 \item EN 61508-1: Všeobecné požadavky
                 \item EN 61508-2: Požadavky na elektrické / elektronické / programovatelné
@@ -172,13 +182,13 @@
     je třeba i tyto funkce považovat za bezpečnostní.
     \begin{figure}[hb!]
       \centering
-      \includegraphics[width=0.3\textwidth]{DZT_SRCS_fce.jpg}
+      \includegraphics[width=1\linewidth]{DZT_SRCS_fce.jpg}
       \caption{Vztah mezi bezpečnostními funkcemi a moduly SRCS}
       \label{DZT:fig_DZT_SRCS_fce}
     \end{figure}    
     Bezpečnostní funkce jsou definované na základě analýzy rizik jako technická opatření na snížení
     rizika spojeného s konkrétními nebezpečí na tolerovatelnou úroveň. Účinnost bezpečnostní funkce
-    se určuje pomocí úrovně integrity bezpečnosti \emph{(SIL - safety integrity level)}. 
+    se určuje pomocí úrovně integrity bezpečnosti \emph{(\texttt{SIL} - safety integrity level)}. 
     
     Norma \emph{EN 61508} definuje integritu bezpečnosti jako pravděpodobnost, že SRCS bude plnit 
     požadované bezpečné funkce za všech stanovených podmínek v rámci stanoveného operačního 
@@ -207,12 +217,15 @@
     systematickým poruchám i náhodným poruchám. 
     
     \subsection{Úroveň integrity bezpečnosti}
-      Úroveň integrity bezpečnosti (\emph{Safety Integrity Levels - SIL}) se dělí podle EN 50129
-      do čtyř kategorií - úroveň 4 (SIL 4) je nejvyšší, úroveň 1 (SIL 1) je nejnižší.  Pokud se
-      objevuje úroveň SIL 0, značí to, že se jedná o systém na které nejsou kladeny žádné
+      Úroveň integrity bezpečnosti (\emph{Safety Integrity Levels - \texttt{SIL}}) se dělí podle EN 
+      50129
+      do čtyř kategorií - úroveň 4 (\texttt{SIL} 4) je nejvyšší, úroveň 1 (\texttt{SIL} 1) je 
+      nejnižší.  Pokud se
+      objevuje úroveň \texttt{SIL} 0, značí to, že se jedná o systém na které nejsou kladeny žádné
       bezpečnostní požadavky (ve smyslu zabezpečovací techniky)
       
-      Proto, aby SRCS mohl být zařazen do odpovídající úrovně bezpečnosti SIL, musí vyhovovat
+      Proto, aby SRCS mohl být zařazen do odpovídající úrovně bezpečnosti \texttt{SIL}, musí 
+      vyhovovat
       těmto faktorům:
       \begin{itemize}
         \item naplnění podmínek řízení kvality, 
@@ -225,109 +238,63 @@
       odpovídající úrovně bezpečnosti. To platí ovšem i naopak - splnění tří předchozích podmínek
       (řízení kvality, řízení bezpečnosti a technické bezpečnosti) nezaručuje, že bylo dosaženo
       kvantitativních cílů a nelze tedy tvrdit, že zařízení lze zařadit do odpovídající skupiny
-      SIL (\ref{DZT:fig_EN50129_SIL_techniques}).
+      \texttt{SIL} (\ref{DZT:fig_EN50129_SIL_techniques}).
       
-      \begin{figure}[hb!]% Relationship between SILs and techniques
+      \begin{figure}[ht!]% Relationship between \texttt{SIL}s and techniques
         \centering
-        \includegraphics[width=0.5\textwidth]{EN50129_SIL_techniques.pdf}
-        \caption{Vztah mezi SIL úrovní a technikami jejich dosažení}
+        \includegraphics[width=0.95\linewidth]{EN50129_SIL_techniques.pdf}
+        \caption{Vztah mezi \texttt{SIL} úrovní a technikami jejich dosažení}
         \label{DZT:fig_EN50129_SIL_techniques}
       \end{figure}
       
-      Žádná z norem CENELEC nepředepisuje, které zařízení musí být jaké úrovně. Toto určení je 
+      Žádná z norem \texttt{CENELEC} nepředepisuje, které zařízení musí být jaké úrovně. Toto 
+      určení je 
       ponecháno na provozovateli, resp. regulátorovi, vyplyne také z provedených analýz rizik 
       a hazardů.
       
       Následující tabulka shrnuje definované úrovně integrity bezpečnosti a zároveň dává do
-      souvislosti s tolerovatelnými četnostmi hazardů. SIL jsou tedy prostředkem přiřazení
+      souvislosti s tolerovatelnými četnostmi hazardů. \texttt{SIL} jsou tedy prostředkem přiřazení
       kvalitativních přístupů (pro vyloučení systematických poruch) ke kvantitativnímu přístupu
       (pro řízení náhodných poruch), neboť systematické poruchy nelze kvantifikovat.
       \begin{table}[h]
+        \centering
         \begin{tabular}{|c|c|}
           \hline
-           Úroveň integrity 
-           bezpečnosti &  Tolerovatelná četnost hazardu   \\          
-             SIL       &   THR [za hodinu a funkci]       \\ \hline\hline 
-              4        & \(10^{-9}\leq THR < 10^{-8}\)    \\ \hline
-              3        & \(10^{-8}\leq THR < 10^{-7}\)    \\ \hline
-              2        & \(10^{-7}\leq THR < 10^{-6}\)    \\ \hline
-              1        & \(10^{-6}\leq THR < 10^{-5}\)    \\ \hline
+           Úroveň integrity &  Tolerovatelná četnost hazardu            \\
+             bezpečnosti \texttt{SIL} &  THR [za hodinu a funkci]       \\ \hline\hline 
+              4        & \(10^{-9}\leq THR < 10^{-8}\)                  \\ \hline
+              3        & \(10^{-8}\leq THR < 10^{-7}\)                  \\ \hline
+              2        & \(10^{-7}\leq THR < 10^{-6}\)                  \\ \hline
+              1        & \(10^{-6}\leq THR < 10^{-5}\)                  \\ \hline
         \end{tabular}
-        \caption{SIL tabulka: Funkce, jejichž kvantitativní požadavky by převyšovaly 
-                 hranici \(10^{-9}\), která se zdánlivě nelogicky objevuje u SIL4, vyžaduje
-                 podle normy EN 50129 zvláštní technická nebo provozní opatření pro dosažení
-                 tak mimořádného cíle.}
+        \caption{\texttt{SIL} tabulka: Funkce, jejichž kvantitativní požadavky by převyšovaly 
+                 hranici \(10^{-9}\), která se zdánlivě nelogicky objevuje u \texttt{SIL4}, vyžaduje
+                 podle normy \texttt{EN~50129} zvláštní technická nebo provozní opatření pro 
+                 dosažení tak mimořádného cíle.}
       \end{table}
        
       \begin{enumerate}
-        \item Z normy jasně vyplývá rozdělení na dvě skupiny SIL 1,2 vs. SIL 3,4, u nichž je 
-              výrazný rozdíl v požadavcích, které je potřeba splnit, aby SRCS mohl patřit 
-              do dané skupiny. To je velmi dobře patrné z tabulek v příloze E normy EN 50129, 
-              která se zabývá technikami a opatřeními pro řízení náhodných a systematických 
-              poruch. 
-        \item Druhým důležitým faktem je poněkud odlišná definice chápání úrovní SIL v 
+        \item Z normy jasně vyplývá rozdělení na dvě skupiny \texttt{SIL 1,2} vs. \texttt{SIL 3,4}, 
+              u nichž je výrazný rozdíl v požadavcích, které je potřeba splnit, aby SRCS mohl 
+              patřit do dané skupiny. To je velmi dobře patrné z tabulek v příloze \texttt{E} normy 
+              \texttt{EN 50129}, která se zabývá technikami a opatřeními pro řízení náhodných a 
+              systematických poruch. 
+        \item Druhým důležitým faktem je poněkud odlišná definice chápání úrovní \texttt{SIL} v 
               EN~61508. \emph{Funkční bezpečnost elektrických, elektronických, programovatelných
               elektronických systémů souvisejících s bezpečností}. Tato norma je obecnou normou pro
               průmyslové elektronické systémy, z níž vycházejí normy EN~50126, EN 50~129 atd.
               jakožto specifické normy pro železniční aplikace. Důležitou odlišností ve specifikaci
-              SIL, viz tab. 2 a 3 v první části této normy (EN~61508-1). Nicméně tabulka 3 pro
+              \texttt{SIL}, viz tab. 2 a 3 v první části této normy (EN~61508-1). Nicméně tabulka 3 
+              pro
               režim provozu s vysokým, resp. nepřetržitým vyžádáním odpovídá tabulce v normě
               EN~50129. Avšak i pro tyto systémy se zde jeví určitá odlišnost v požadavcích na
-              zajištění dané SIL. Norma EN~61508 je zaměřena pouze na \emph{funkční bezpečnost},
+              zajištění dané \texttt{SIL}. Norma EN~61508 je zaměřena pouze na \emph{funkční 
+              bezpečnost},
               není zde zahrnutý požadavek na bezpečnou reakci na ojedinělé náhodné poruchy. S
               poruchami se samozřejmě pracuje, mají být provedena opatření k jejich maximálnímu
               potlačení - četnosti i následku, nicméně může stačit, když systém je schopen poruchy
               detekovat a dát o nich vědět (např. obsluze). Závěrem nutno dodat, že je potřeba
-              určité obezřetnosti k tvrzení, že systém splňuje daný SIL. Tento údaj musí být
+              určité obezřetnosti k tvrzení, že systém splňuje daný \texttt{SIL}. Tento údaj musí 
+              být
               doplněn specifikací, která norma byla při klasifikaci použita.
       \end{enumerate}
-       
-       
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

@@ -1,669 +1,574 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9)
+This is XeTeX, Version 3.14159265-2.6-0.99996 (MiKTeX 2.9.6100 64-bit)
 entering extended mode
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
-Document Class: scrbook 2012/07/29 v3.11b KOMA-Script document class (book)
-
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
-Package scrlfile, 2012/06/15 v3.12 KOMA-Script package (loading files)
+(wiking.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbook.cls
+Document Class: scrbook 2016/06/14 v3.21 KOMA-Script document class (book)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrkbase.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrbase.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrlfile.sty
+Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
 )))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty
-)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize10pt.
-clo)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
-Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\tocbasic.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrsize10pt.cl
+o)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\typearea.sty
+Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
+)) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.sty
+
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype-xetex.
+def)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\microtype.cfg))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty")
+(D:\TEX\localtexmf\tex\latex\wiking\wikiLayout.sty
+(D:\TEX\localtexmf\tex\latex\wiking\wikiDrawing.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3-code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3xdvipdfmx.def))
+ (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-cfg\color.cfg)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\xetex.def")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\svgnam.def)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\x11nam.def))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon-lists.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-la
+tex.def (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.cod
+e.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\graphics-cfg\graphics.cfg)
 ))
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiPageL
-ayout.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrhack.sty)
- (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\nag\nag.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\nag\nag-l2tabu.cfg)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\nag\nag-orthodox.cfg))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\helvet.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xltxtra\xltxtra.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\expl3.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3names.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3bootstrap.sty
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3basics.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3expan.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3tl.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3seq.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3int.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3quark.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3prg.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3clist.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3token.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3prop.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3msg.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3file.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3skip.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3keys.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3fp.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3box.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3coffins.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3color.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3luatex.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3kernel\l3candidates.st
-y) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse
-.sty)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fontspec\fontspec-patches.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fixltx2e.sty")
-*************************************************
-* LaTeX warning: "xparse/redefine-command"
-* 
-* Redefining document command \oldstylenums with arg. spec. 'm' on line 128.
-*************************************************
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\euenc\eu1enc.def")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\euenc\eu1lmr.fd"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\xelatex\xunicode\xunicode.sty"
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3enc.def
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\euenc\eu1lmss.fd"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetex-def\xetex.def)))
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg")))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\realscripts\realscripts.
-sty
-*************************************************
-* LaTeX warning: "xparse/redefine-command"
-* 
-* Redefining document command \textsubscript with arg. spec. 's' on line 25.
-*************************************************
-*************************************************
-* LaTeX warning: "xparse/redefine-command"
-* 
-* Redefining document command \textsuperscript with arg. spec. 's' on line 28.
-*************************************************
-) (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\metalogo\metalogo.sty)
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\xelatex\xetexconfig\geometry.cfg"))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty)
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.mtc0)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mdwtools\footnote.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
 
-Package hyperref Message: Driver (autodetected): hxetex.
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.c
+ode.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfil
+tered.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\puenc.def")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\sidecap\sidecap.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"))
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\widetext\widetex
-t.sty ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sttools\flushend.sty"
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox.sty))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\sttools\cuted.sty")))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\colortbl\colortbl.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\x11nam.def))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex2.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\alphabetic.
-bbx
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bb
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-x
+etex.def
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-d
+vipdfmx.def
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-c
+ommon-pdf.def))))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysso
+ftpath.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyspr
+otocol.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.c
+ode.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.cod
+e.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.cod
+e.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.c
+ode.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.basic.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.trigonometric.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.random.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.comparison.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.base.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.round.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.misc.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.integerarithmetics.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.co
+de.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepo
+ints.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thconstruct.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thusage.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresc
+opes.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregr
+aphicstate.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansformations.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequ
+ick.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreob
+jects.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thprocessing.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorear
+rows.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresh
+ade.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreim
+age.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreex
+ternal.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorela
+yers.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansparency.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+tterns.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulesha
+pes.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplo
+t.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-0-65.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-1-18.sty))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
 x))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\alphabetic.
-cbx)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg)))
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\syntonly.sty")
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiMath.
-sty ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.cod
+e.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\t
+ikz.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+plothandlers.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulemat
+rix.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarytopaths.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarybabel.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryintersections.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+intersections.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+fpu.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarycalc.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarypositioning.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarymindmap.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarytrees.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduledec
+orations.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
+s\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
+s\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.markings.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
+s\pgflibrarydecorations.markings.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarymatrix.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryarrows.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+arrows.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryautomata.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.multipart.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
+libraryshapes.multipart.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryscopes.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarychains.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryquotes.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.geometric.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
+libraryshapes.geometric.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.misc.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
+libraryshapes.misc.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.symbols.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
+libraryshapes.symbols.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.arrows.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
+libraryshapes.arrows.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\pgf
+libraryshapes.callouts.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryfit.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-3dplot\tikz-3dplot.st
+y ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrary3d.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgfplots\pgfplots.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.revisi
+on.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.code.t
+ex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotscore.co
+de.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgfplotssys
+generic.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgfplotsli
+brary.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_loader.code.tex
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_pgflibraryfpu.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_pgfmathfloat.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsut
+il.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsliststructure.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsliststructureext.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsarray.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsmatrix.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\numtable\pgfplo
+tstableshared.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsdeque.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsbi
+nary.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsbi
+nary.data.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsut
+il.verb.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgflibrary
+pgfplots.surfshading.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgflibraryp
+gfplots.surfshading.pgfsys-xetex.def
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgflibraryp
+gfplots.surfshading.pgfsys-dvipdfmx.def))))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsco
+lormap.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsco
+lor.code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsstacked
+plots.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsplothan
+dlers.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsmeshplo
+thandler.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsmeshplo
+timage.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.scalin
+g.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotscoordpr
+ocessing.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.errorb
+ars.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.marker
+s.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsticks.c
+ode.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.paths.
+code.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryplotmarks.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+plotmarks.code.tex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\tikzlibrar
+ypgfplots.external.code.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\librarie
+s\tikzlibraryexternal.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty")
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty")
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty")
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzexternalshared.code.tex))
+Package pgfplots external lib: loading complementary code for your PGF version.
+..
+
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_pgfcoreexternal.code.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_tikzlibraryexternal.code.tex
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\atveryend.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_tikzexternalshared.code.tex)))
+("C:\Program Files\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pstricks.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex"
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"))))
+("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pst-fp.tex"
+`pst-fp' v0.05, 2010/01/17 (hv))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon-lists.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.cod
+e.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x))
+`PSTricks' v2.70  <2016/09/23> (tvz)
+
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetex-pstricks\pstricks.
+con ("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\xdvipdfmx.cfg"))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetex-pstricks\pstricks.
+con ("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\xdvipdfmx.cfg"
+Using PSTricks configuration for XeTeX+xdvipdfmx
+))) ("C:\Program Files\MiKTeX 2.9\tex\generic\pstricks\pst-fp.tex"))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\circuitikz.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcirc.defin
+es.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircutils.
+tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircmath.t
+ex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircshapes
+.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircmonopo
+les.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircbipole
+s.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcirctripol
+es.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircquadpo
+les.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcirclabel.
+tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircvoltag
+e.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcirccurren
+t.tex)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\circuitikz\pgfcircpath.t
+ex)))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\scrhack.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\xpatch\xpatch.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\xparse\xparse.s
+ty))) ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetexconfig\geometry.cfg
+)) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.def)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquotes.cfg))
+("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\polyglossia.sty"
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\makecmds\makecmds.sty)
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec-xetex.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1enc.def")
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmr.fd"))
+("C:\Program Files\MiKTeX 2.9\tex\xelatex\xunicode\xunicode.sty"
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3enc.def
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmss.fd")))
+("C:\Program Files\MiKTeX 2.9\tex\latex\fontspec\fontspec.cfg"))))
+("C:\Program Files\MiKTeX 2.9\tex\latex\polyglossia\gloss-czech.ldf")
+("C:\Program Files\MiKTeX 2.9\tex\latex\xltxtra\xltxtra.sty"
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\realscripts\realscripts.st
+y) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\metalogo\metalogo.sty))
+ (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty")))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\xstring\xstring.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring.tex))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-dm.def)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\blx-compat.def)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.def)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex-ieee\ieee.bbx
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\numeric-comp.
+bbx
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\numeric.bbx
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\standard.bbx)
+))) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex-ieee\ieee.cbx
+
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\cbx\numeric-comp.
+cbx))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex.cfg)))
+(D:\TEX\localtexmf\tex\latex\wiking\wikiWWWrefs.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\tocloft\tocloft.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\minitoc.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\mtcmess.sty)
+(wiking.mtc0)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\minitoc\english.mld))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\animate\animate.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\ifdraft.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\atenddvi.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-base.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\zref-lastpage.sty"))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\media9\pdfbase.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3keys
+2e.sty)) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\ocgx2\ocgbase.sty
+)) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\media9\media9.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3reg
+ex.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3tl-
+build.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3tl-
+analysis.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3fla
+g.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3str
+-convert.sty))) (D:\TEX\localtexmf\tex\latex\wiking\wikiMath.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\lipsum\lipsum.sty)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\bigints\bigints.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\polynom\polynom.sty)
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\kvmacros\kvmacro
-s.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amscls\amsthm.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\esint\esint.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mathtools.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\mathtools\mhsetup.sty))
+("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\mathrsfs.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\calculator\calculator.sty)
+ (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\bigints\bigints.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\polynom\polynom.sty)
+(D:\TEX\localtexmf\tex\latex\kvmacros\kvmacros.sty
 
 Macros for typesetting Karnaugh maps and Veitch charts
 Version of January 7th, 2002
 by Andreas W. Wieland, awwieland@gmx.de
 
-) (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\mdframed\mdframed.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\zref-abspage.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\zref-base.sty"))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\needspace\needspace.sty)
+) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\mdframed\mdframed.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\needspace\needspace.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\mdframed\md-frame-0.mdf)))
+ (D:\TEX\localtexmf\tex\latex\wiking\wikiPhysics.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\mhchem\mhchem.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\chemgreek\chemgreek.sty))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tra
+nslator.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\tra
+nslator-language-mappings.tex))))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\listings.hak)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty)
+(D:\TEX\localtexmf\tex\latex\widetext\widetext.sty
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\sttools\flushend.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\sttools\cuted.sty))
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\epigraph\epigraph.sty)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\attachfile2.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdfescape.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\00miktex\hyperref.cfg))
 
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.s
-ty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+Package hyperref Message: Driver (autodetected): hxetex.
 
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-
-common.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-
-latex.def
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.c
-ode.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.s
-ty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.s
-ty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
-.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.
-code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysf
-iltered.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cf
-g)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
--xetex.def
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
--common-pdf.def)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
--common-pdf-via-dvi.def)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
-softpath.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys
-protocol.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.
-tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.c
-ode.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.c
-ode.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser
-.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.basic.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.trigonometric.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.random.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.comparison.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.base.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.round.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfuncti
-ons.misc.code.tex)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.
-code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-points.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-pathconstruct.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-pathusage.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-scopes.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-graphicstate.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-transformations.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-quick.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-objects.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-pathprocessing.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-arrows.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-shade.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-image.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-external.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-layers.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-transparency.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore
-patterns.code.tex)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodules
-hapes.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulep
-lot.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcom
-p-version-0-65.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcom
-p-version-1-18.sty))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hxetex.def"
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\puenc.def")
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\stringenc.sty")
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\atfi-dvipdfmx.def")
+(wiking.atfi)) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bkm-dvipdfm.def"))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\se-ascii-print.def")
 
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.st
-y
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.
-code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.c
-ode.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\tikz.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibra
-ryplothandlers.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulem
-atrix.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarytopaths.code.tex)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\mdframed\md-frame-1.mdf)
-))
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiGraph
-ic.sty ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\flafter.sty")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xy.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xy.tex" Bootstrap'ing:
-catcodes, docmode,
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyrecat.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyidioms.tex")
+Package csquotes Warning: Using preliminary 'polyglossia' interface.
+(csquotes)                Some of the multilingual features may not
+(csquotes)                work as expected.
 
- Xy-pic version 3.8.9 <2013/10/06>
- Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
- Xy-pic is free software: see the User's Guide for details.
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\czech.lbx)
+(wiking.aux) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3cmr.fd
+) (C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-cmr.cfg)
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.14}).
 
-Loading kernel: messages; fonts; allocations: state, direction,
-utility macros; pictures: \xy, positions, objects, decorations;
-kernel objects: directionals, circles, text; options; algorithms: directions,
-edges, connections;  Xy-pic loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyall.tex"
- Xy-pic option: All features v.3.8
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycurve.tex"
- Xy-pic option: Curve and Spline extension v.3.12 curve, circles, loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyframe.tex"
- Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycmtip.tex"
- Xy-pic option: Computer Modern tip extension v.3.7
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xytips.tex"
- Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyline.tex"
- Xy-pic option: Line styles extension v.3.10 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyrotate.tex"
- Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xycolor.tex"
- Xy-pic option: Colour extension v.3.11 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xymatrix.tex"
- Xy-pic option: Matrix feature v.3.14 loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xyarrow.tex"
- Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xypic\xygraph.tex"
- Xy-pic option: Graph feature v.3.11 loaded) loaded))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\rotating\rotating.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\tablefootnote\tablefootn
-ote.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\media9\media9.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3r
-egex.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3t
-l-build.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3t
-l-analysis.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3s
-tr.sty))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3f
-lag.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3experimental\l3str\l3s
-tr-convert.sty))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\l3packages\l3keys2e\l3ke
-ys2e.sty))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\ppxetex.def))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\attachfile2.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\atfi-dvipdfmx.def")
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.atfi))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfcomment\pdfcomment.st
-y ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\zref-savepos.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\marginnote\marginnote.st
-y) (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\datetime\datetime.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fmtcount.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcprefix.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fcnumparser.sty
-))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\fmtcount\fc-english.def)
-)) (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\bezos\soulpos.sty)
-
-Package hyperref Warning: Option `xetex' has already been used,
-(hyperref)                setting the option has no effect on input line 1381.
-
-) (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\subfig\subfig.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\wrapfig\wrapfig.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\animate\animate.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\ifdraft.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\animate\animfp.sty))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\listingsutf8.sty"
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\listings.hak
-)
-
-Package listingsutf8 Warning: Package loading is aborted because of missing \pd
-f@unescapehex.
-(listingsutf8)                It is provided by pdfTeX >= 1.30.
-
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty")
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiPhysi
-cs.sty (C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\mhchem\mhchem.sty
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\twoopt.sty"))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\t
-ranslator.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\t
-ranslator-language-mappings.tex))))
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiTitle
-Page.sty)
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiWWWre
-fs.sty)
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiDrawi
-ng.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\tikz-3dplot\tikz-3dplot.
-sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarycalc.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrary3d.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryarrows.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibra
-ryarrows.code.tex)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryintersections.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibra
-ryintersections.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarypositioning.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarydecorations.markings.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarydecorations.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduled
-ecorations.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorati
-ons\pgflibrarydecorations.markings.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorati
-ons\pgflibrarydecorations.pathmorphing.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.geometric.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\p
-gflibraryshapes.geometric.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.misc.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\p
-gflibraryshapes.misc.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.symbols.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\p
-gflibraryshapes.symbols.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.arrows.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\p
-gflibraryshapes.arrows.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.callouts.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\p
-gflibraryshapes.callouts.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryshapes.multipart.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\shapes\p
-gflibraryshapes.multipart.code.tex)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarymatrix.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarychains.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryscopes.code.tex)
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\tikzlibraryarrows.new.code.tex
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\pgflibraryarrows.new.code.tex))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryfit.code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryautomata.code.tex)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.revision.tex"
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.code.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscore.code.tex"
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric
-.code.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\libs\pgfplotslibrary.c
-ode.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_loader.code.tex"
-Package pgfplots: loading complementary code for your PGF version...
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_misc.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgfkeys.code.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgfkeysfiltered.code.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgfmathfloat.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgflibraryplothandlers.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgflibraryfpu.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgfcorescopes.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgfcorelayers.code.tex")
-Package pgfplots: loading complementary utilities for your pgf version...
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplot
-soldpgfsupp_pgfutil-common-lists.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.code
-.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
-liststructure.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
-liststructureext.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
-array.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
-matrix.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstable
-shared.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\liststructure\pgfplots
-deque.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.co
-de.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsbinary.da
-ta.code.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotsutil.verb
-.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\libs\pgflibrarypgfplot
-s.surfshading.code.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots
-.surfshading.pgfsys-xetex.def"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots
-.surfshading.pgfsys-dvipdfmx.def"))))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolormap.
-code.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\util\pgfplotscolor.cod
-e.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsstackedplots.c
-ode.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsplothandlers.c
-ode.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsmeshplothandle
-r.code.tex"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.scaling.code.
-tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotscoordprocessin
-g.code.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.errorbars.cod
-e.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.markers.code.
-tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplotsticks.code.tex
-")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgfplots\pgfplots.paths.code.te
-x")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibrarydecorations.pathreplacing.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decorati
-ons\pgflibrarydecorations.pathreplacing.code.tex)))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz
-\libraries\tikzlibraryplotmarks.code.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibra
-ryplotmarks.code.tex)))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pstricks\pstricks.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pstricks.tex"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\pst-xkey.tex")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex"
-`pst-fp' v0.05, 2010/01/17 (hv))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-
-common.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.
-code.tex)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.c
-ode.tex)
-`PSTricks' v2.53a  <2014/03/30> (tvz)
-
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetex-pstricks\pstrick
-s.con ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xdvipdfmx.cfg"))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\xelatex\xetex-pstricks\pstrick
-s.con ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xdvipdfmx.cfg"
-Using PSTricks configuration for XeTeX+xdvipdfmx
-))) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pstricks\base\pst-fp.tex"))
-
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\circuitikz.st
-y
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\circuitikz.co
-de.tex
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircutils.
-sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircmath.s
-ty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircshapes
-.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircmonopo
-les.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircbipole
-s.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcirctripol
-es.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircquadpo
-les.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcirclabel.
-sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcircvoltag
-e.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\pgfcirccurren
-t.sty))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\circuitikz\circuitikz1.c
-ode.tex)))
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiJS.st
-y
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\fancytooltips\fancytoolt
-ips.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\eforms.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\insdljs.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\taborder.sty)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\edvipdfm.def)))
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiHyph.
-sty) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\calculator\calculus.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\calculator\calculator.sty"))
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\english.lbx
-) (c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.aux)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\tipa\t3cmr.fd)
 *geometry* detected driver: pdftex
-
-Package geometry Warning: The marginal notes overrun the paper edge.
-     Add 71.38165pt and more to the left margin.
-
-
-Package geometry Warning: The marginal notes overrun the paper.
-     Add 44.63606pt and more to the right margin.
-
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a3paper
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
-* h-part:(L,W,R)=(53.49118pt, 711.3189pt, 80.23677pt)
-* v-part:(T,H,B)=(79.6677pt, 995.84645pt, 119.5016pt)
-* \paperwidth=845.04684pt
-* \paperheight=1195.01575pt
-* \textwidth=711.3189pt
-* \textheight=995.84645pt
-* \oddsidemargin=-18.77881pt
-* \evensidemargin=7.96678pt
-* \topmargin=-25.6023pt
+* modes: twoside heightrounded 
+* h-part:(L,W,R)=(23.90176pt, 537.75343pt, 35.85268pt)
+* v-part:(T,H,B)=(33.80392pt, 760.53699pt, 50.70593pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=537.75343pt
+* \textheight=766.0pt
+* \oddsidemargin=-48.36823pt
+* \evensidemargin=-36.41731pt
+* \topmargin=-71.46606pt
 * \headheight=15.0pt
 * \headsep=18.0pt
 * \topskip=10.0pt
 * \footskip=42.0pt
-* \marginparwidth=112.03273pt
-* \marginparsep=12.8401pt
+* \marginparwidth=0.0pt
+* \marginparsep=0.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -675,80 +580,2495 @@ Package geometry Warning: The marginal notes overrun the paper.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"))
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.out)
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.out)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\ragged2e.sty
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everysel.sty
-ABD: EverySelectfont initializing macros))
+(wiking.bbl)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\dic
+ts\translator-basic-dictionary\translator-basic-dictionary-English.dict)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\siunitx-abbreviati
+ons.cfg) ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msa.cfg)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd")
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\microtype\mt-msb.cfg)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\esint\uesint.fd)
+("C:\Program Files\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd")
+("C:\Program Files\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd")
 
-Package biblatex Warning: File 'wiking.bbl' is wrong format version - expected 
-2.2.
+LaTeX Warning: Reference `LastPage' on page i undefined on input line 155.
 
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.bbl)
-ABD: EveryShipout initializing macros
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\soulutf8.sty"
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\soul\soul.sty))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty")
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\base\translator\d
-icts\translator-basic-dictionary\translator-basic-dictionary-English.dict)
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\siunitx\config\siunitx-a
-bbreviations.cfg)
-Package pgfplots notification 'compat/show suggested version=true': document ha
-s been generated with the most recent feature set (\pgfplotsset{compat=1.10}).
+[1] (wiking.toc [2] [3]
+Overfull \hbox (1.456pt too wide) detected at line 995
+\EU1/lmss/bx/n/12 VIII 
+[4]) [5] [6] (../src/MAI/MA1.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty)
+part I.
+[1] [2] (wiking.ptc1) [3] [4] (../src/MAI/intro_MA.tex
+chapter 1.
+(wiking.mtc1)) (../src/MAI/chapters/intro_linear_algebra.tex [5]
+chapter 2.
+(wiking.mtc2) (../src/MAI/exam/exam001.tex
+<use  "../src/MAI/img/mai_fig000.png" >) (../src/MAI/exam/exam004.tex
+<use  "../src/MAI/img/Musilova_FIG002.png" >
+Underfull \vbox (badness 3354) has occurred while \output is active [6])
+(../src/MAI/exam/exam005.tex) [7] (../src/MAI/img/LA001a.tex
+===== Image 'tikz/MAI/ch02_wiking-figure0' is up-to-date. ======
+<use  "tikz/MAI/ch02_wiking-figure0.pdf" >) (../src/MAI/img/LA001b.tex
+===== Image 'tikz/MAI/ch02_wiking-figure1' is up-to-date. ======
+<use  "tikz/MAI/ch02_wiking-figure1.pdf" >)
+Underfull \vbox (badness 2762) has occurred while \output is active [8]
+[9] (../src/MAI/exam/exam012.tex <use  "../src/MAI/img/MAI016.pdf" >)
+(../src/MAI/exam/exam013.tex) (../src/MAI/exam/exam014.tex
+Overfull \hbox (5.13399pt too wide) detected at line 21
+\OML/cmm/m/it/9 ^^[\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 B\OT1/cmr/m/n/9 ) = \OMS/cms
+y/m/n/9 f\OT1/cmr/m/n/9 4\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 5[] \OMS/cmsy/m/n/9 ^^
+@ \OT1/cmr/m/n/9 4 \OMS/cmsy/m/n/9 ^^A \OT1/cmr/m/n/9 4\OML/cmm/m/it/9 :\OT1/cm
+r/m/n/9 5 + [] \OMS/cmsy/m/n/9 ^^@ \OT1/cmr/m/n/9 1\OML/cmm/m/it/9 ;  \OT1/cmr/
+m/n/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 5[] \OMS/cmsy/m/n/9 ^^@ \OT1/cmr/m/n/9 4
+ \OMS/cmsy/m/n/9 ^^A \OT1/cmr/m/n/9 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 5 + [] \OM
+S/cmsy/m/n/9 ^^@ \OT1/cmr/m/n/9 1\OMS/cmsy/m/n/9 g \OT1/cmr/m/n/9 = \OMS/cmsy/m
+/n/9 f\OT1/cmr/m/n/9 3\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 25\OML/cmm/m/it/9 ; \OT1/
+cmr/m/n/9 15\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 25\OMS/cmsy/m/n/9 g
+[10]) (../src/MAI/exam/exam002.tex (../src/MAI/matlab/LA001.m))
+(../src/MAI/exam/exam015.tex [11]) (../src/MAI/exam/exam011.tex
+Overfull \hbox (1.36128pt too wide) in paragraph at lines 5--11
+[][]\EU1/lmr/bx/n/9 Příklad 2.7.1. []\EU1/lmr/m/it/9 Zjistěte ortogonální dopln
+ěk $\OMS/cmsy/m/n/9 h\OT1/cmr/m/n/9 (1\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1
+/cmr/m/n/9 3\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 2)\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9
+ (2\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 5)\OMS/cm
+sy/m/n/9 i?[]$\EU1/lmr/m/it/9 .
+<use  "../src/MAI/img/ort_doplnek_exam01.pdf" >
+Underfull \vbox (badness 2165) has occurred while \output is active))
+(../src/MAI/chapters/Limits_of_Functions.tex [12]
+chapter 3.
+(wiking.mtc3) (../src/MAI/img/mai_fig001.tex
+===== Image 'tikz/MAI/ch03_wiking-figure0' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure0.pdf" >) [13] (../src/MAI/img/mai_fig002.tex
 
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\hello.djs
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\dljscc.def))
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\vecsum.djs
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\dljscc.def))
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\innerpro.djs
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\dljscc.def))
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\outerpro.djs
-(C:\Users\Jafinek\AppData\Roaming\MiKTeX\2.9\tex\latex\acrotex\dljscc.def))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\jknappen\ursfs.fd")
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\euenc\eu1lmtt.fd")
-(C:\Users\Jafinek\Documents\GitHub\Wiking\localtexmf\tex\latex\wiking\wikiMainT
-itlePage.tex <use  "../src/lib/cover_page.pdf" >
-<use  "../src/lib/cover_page.pdf" > <use  "../src/lib/cover_page.pdf"  page1>
-<use  "../src/lib/cover_page.pdf"  page1>
-<use  "../src/lib/cover_page.pdf"  page1>
-<use  "../src/lib/cover_page.pdf"  page1>
-<use  "../src/lib/cover_page.pdf"  page1> [1]
-<use  "../src/lib/blank_page.pdf" > <use  "../src/lib/blank_page.pdf" >
-<use  "../src/lib/blank_page.pdf"  page1>
-<use  "../src/lib/blank_page.pdf"  page1>
-<use  "../src/lib/blank_page.pdf"  page1>
-<use  "../src/lib/blank_page.pdf"  page1>
-<use  "../src/lib/blank_page.pdf"  page1> [2] [1]) [2]
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.toc) [3] [4] [1] [2]
-[3] [4] (c:\Users\Jafinek\Documents\GitHub\Wiking\src\MIT\MIT.tex
-(c:\Users\Jafinek\Documents\GitHub\Wiking\src\MIT\Basic_MCU_Arch.tex
-Kapitola 1.
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.mtc1)
+===== Image 'tikz/MAI/ch03_wiking-figure1' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure1.pdf" >) (../src/MAI/img/mai_fig003.tex
+===== Image 'tikz/MAI/ch03_wiking-figure2' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure2.pdf" >) (../src/MAI/exam/exam017.tex
+(../src/MAI/img/mai_fig004.tex
+===== Image 'tikz/MAI/ch03_wiking-figure3' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure3.pdf" >)) (../src/MAI/img/mai_fig005.tex
+===== Image 'tikz/MAI/ch03_wiking-figure4' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure4.pdf" >) [14] (../src/MAI/exam/exam018.tex
+(../src/MAI/img/mai_fig006.tex
+===== Image 'tikz/MAI/ch03_wiking-figure5' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure5.pdf" >)) (../src/MAI/exam/exam019.tex
+(../src/MAI/img/mai_fig007.tex
+===== Image 'tikz/MAI/ch03_wiking-figure6' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure6.pdf" >)) (../src/MAI/exam/exam020.tex
+(../src/MAI/img/mai_fig008.tex
+===== Image 'tikz/MAI/ch03_wiking-figure7' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure7.pdf" >)) (../src/MAI/exam/exam022.tex
+[15]) (../src/MAI/exam/exam023.tex) (../src/MAI/exam/exam021.tex
+(../src/MAI/img/mai_fig009.tex
+===== Image 'tikz/MAI/ch03_wiking-figure8' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure8.pdf" >)) [16] (../src/MAI/exam/exam024.tex
+(../src/MAI/img/mai_fig010.tex
+===== Image 'tikz/MAI/ch03_wiking-figure9' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure9.pdf" >) (../src/MAI/img/mai_fig011.tex
+===== Image 'tikz/MAI/ch03_wiking-figure10' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure10.pdf" >))
+Overfull \hbox (2.80872pt too wide) in paragraph at lines 485--485
+[] 
+[17] (../src/MAI/img/mai_fig012.tex
+===== Image 'tikz/MAI/ch03_wiking-figure11' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure11.pdf" >) (../src/MAI/exam/exam025.tex
+(../src/MAI/img/mai_fig013.tex
+===== Image 'tikz/MAI/ch03_wiking-figure12' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure12.pdf" >)) (../src/MAI/exam/exam026.tex)
+[18] (../src/MAI/img/mai_fig014.tex
+===== Image 'tikz/MAI/ch03_wiking-figure13' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure13.pdf" >) (../src/MAI/img/mai_fig016a.tex
+===== Image 'tikz/MAI/ch03_wiking-figure14' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure14.pdf" >) (../src/MAI/img/mai_fig016b.tex
+===== Image 'tikz/MAI/ch03_wiking-figure15' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure15.pdf" >) (../src/MAI/exam/exam027.tex
+(../src/MAI/img/mai_fig015.tex
+===== Image 'tikz/MAI/ch03_wiking-figure16' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure16.pdf" >))
+(../src/MAI/sections/fce_goniometricke.tex [19]) (../src/MAI/exam/exam028.tex
+Overfull \hbox (19.75594pt too wide) in paragraph at lines 4--9
+[][]\EU1/lmr/bx/n/9 Příklad 3.3.1. []\EU1/lmr/m/it/9 Nechť $\OML/cmm/m/it/9 '\O
+T1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = \OML/cmm/m/it/9 x[]$\EU1/lmr/
+m/it/9 , $\OML/cmm/m/it/9 a \OT1/cmr/m/n/9 = 1$\EU1/lmr/m/it/9 . Potom $\OML/cm
+m/m/it/9 f\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x\OT1/cmr/m/n/9 ) = (\OML/cmm/m/it/9 
+x[][]\OT1/cmr/m/n/9 1)/(\OML/cmm/m/it/9 x[]\OT1/cmr/m/n/9 1)$\EU1/lmr/m/it/9 .
+(../src/MAI/img/mai_fig017.tex
+===== Image 'tikz/MAI/ch03_wiking-figure17' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure17.pdf" >) [20]) (../src/MAI/exam/exam029.tex
+(../src/MAI/img/mai_fig018.tex
+===== Image 'tikz/MAI/ch03_wiking-figure18' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure18.pdf" >)) (../src/MAI/exam/exam030.tex
+(../src/MAI/img/mai_fig019.tex
+===== Image 'tikz/MAI/ch03_wiking-figure19' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure19.pdf" >)) (../src/MAI/exam/exam031.tex
+(../src/MAI/img/mai_fig020.tex
+===== Image 'tikz/MAI/ch03_wiking-figure20' is up-to-date. ======
+<use  "tikz/MAI/ch03_wiking-figure20.pdf" >)
+Underfull \vbox (badness 10000) has occurred while \output is active [21]))
+(../src/MAI/chapters/Theory_of_Derivatives.tex [22]
+chapter 4.
+(wiking.mtc4) <use  "../src/MAI/img/MAI006.pdf" > [23]
+Overfull \hbox (3.28703pt too wide) in paragraph at lines 94--100
+[]\EU1/lmr/m/n/10 Poznamenejme především, že z předpokladu 3 $\OML/cmm/m/it/10 
+g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6\OT1/
+cmr/m/n/10 =
+[24]) (../src/MAI/chapters/Differential_Calculus_applications.tex [25]
+chapter 5.
+(wiking.mtc5) (../src/MAI/exam/exam003.tex [26]
+<use  "../src/MAI/img/MAI007.pdf" >)) (../src/MAI/chapters/chap_PrimitivFce.tex
+[27]
+chapter 6.
+(wiking.mtc6) [28]
+Underfull \vbox (badness 10000) has occurred while \output is active [29]
+[30]
+Overfull \hbox (1.70833pt too wide) in paragraph at lines 480--482
+[]\EU1/lmr/m/n/10 Integrál prvního zlomku, tj. $[]$, vypočteme sub-
+[31] [32] (../src/MAI/exam/exam016.tex) [33])
+(../src/MAI/chapters/chap_Int_rfce_1var.tex [34]
+chapter 7.
+(wiking.mtc7) (../src/MAI/img/MAI_animated_integral.tex <a0,fr0> <a0,fr1>
+<a0,fr2> <a0,fr3> <a0,fr4> <a0,fr5> <a0,fr6> <a0,fr7> <a0,fr8> <a0,fr9>
+<a0,fr10> <a0,fr11> <a0,fr12> <a0,fr13> <a0,fr14> <a0,fr15> <a0,fr16>
+<a0,fr17> <a0,fr18> <a0,fr19> <a0,fr20>)
+Overfull \hbox (56.17339pt too wide) in paragraph at lines 18--17
+[]\EU1/lmr/m/n/10 fragile]Animated Integral [][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][]
+===== Image 'tikz/MAI/ch07_wiking-figure0' is up-to-date. ======
+<use  "tikz/MAI/ch07_wiking-figure0.pdf" > (../src/MAI/img/MAI_rolle_02.tex
+===== Image 'tikz/MAI/ch07_wiking-figure1' is up-to-date. ======
+<use  "tikz/MAI/ch07_wiking-figure1.pdf" >) (../src/MAI/img/MAI_Iav_exam.tex
+===== Image 'tikz/MAI/ch07_wiking-figure2' is up-to-date. ======
+<use  "tikz/MAI/ch07_wiking-figure2.pdf" > [35])) (../src/MAI/chapters/ODR.tex
+[36]
+chapter 8.
+(wiking.mtc8)
+Overfull \hbox (3.3169pt too wide) in paragraph at lines 17--19
+[]\EU1/lmr/m/n/10 Newtonůw zákon: okamžitá změna hybnosti $\OML/cmm/m/it/10 p\O
+T1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 m\OT1/cmr
+/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A
+<use  "../src/MAI/img/motivace.pdf" >) (../src/MAI/chapters/ppst.tex [37]
+chapter 9.
+(wiking.mtc9) (../src/MAI/exam/exam006.tex) [38] (../src/MAI/img/mai_fig021.tex
 
-LaTeX Font Warning: Font shape `EU1/lmss/m/sc' in size <10> not available
-(Font)              Font shape `EU1/lmr/m/sc' tried instead on input line 9.
+===== Image 'tikz/MAI/ch10_ch07_wiking-figure0' is up-to-date. ======
+<use  "tikz/MAI/ch10_ch07_wiking-figure0.pdf" >) (../src/MAI/exam/exam007.tex)
+(../src/MAI/exam/exam008.tex) (../src/MAI/exam/exam009.tex [39]
+<use  "../src/MAI/img/MAI014.pdf" > <use  "../src/MAI/img/MAI015.pdf" >)
+(../src/MAI/exam/exam010.tex)) (../src/MAI/chapters/NM.tex [40]
+chapter 10.
+(wiking.mtc10)
+Overfull \hbox (3.17996pt too wide) in paragraph at lines 46--51
+[]\EU1/lmr/m/n/10 Sestavení matematického modelu dané úlohy. Tento krok
 
-) (c:\Users\Jafinek\Documents\GitHub\Wiking\src\MIT\AVR_MCU.tex [5] [6]
-Kapitola 2.
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.mtc2))
-(c:\Users\Jafinek\Documents\GitHub\Wiking\src\MIT\ANSI_C_MCU.tex [7] [8]
-Kapitola 3.
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.mtc3))) [9] [10]
+Underfull \vbox (badness 2564) has occurred while \output is active [41]
+Overfull \hbox (7.20331pt too wide) in paragraph at lines 122--127
+\EU1/lmr/m/n/10 Čísla jsou v počítačové interpretaci často zaokrouhlována (mají
+-
+[42] <use  "../src/MAI/img/fce_sinx.pdf" >
+Overfull \hbox (4.3791pt too wide) in paragraph at lines 254--256
+[]\EU1/lmr/m/it/9 Z obrázku [][]10.1[][] zjistíme, že existují tři kořeny: $\OM
+L/cmm/m/it/9 x[] \OMS/cmsy/m/n/9 2 \OT1/cmr/m/n/9 (\OMS/cmsy/m/n/9 ^^@\OT1/cmr/
+m/n/9 2\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 1)\OML/cmm/m/it/9 ; 
+x[] \OMS/cmsy/m/n/9 2
 
-LaTeX Warning: Empty bibliography on input line 141.
+Overfull \hbox (6.3904pt too wide) in paragraph at lines 258--261
+[]\EU1/lmr/m/n/10 Z obrázku zjistíme, že existují tři kořeny: $\OML/cmm/m/it/10
+ x[] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 2\
+OML/cmm/m/it/10 ; \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ; x[] 
+\OMS/cmsy/m/n/10 2
+)) (../src/FYZ/FYZ.tex [43]
+part II.
+[44] (wiking.ptc2 [45] [46] [47]) [48] (../src/FYZ/chap/fey1ch01_02_03.tex
+chapter 1.
+(wiking.mtc11) <use  "../src/FYZ/img/fyz_fig067.jpg" > [49]
+Overfull \hbox (2.15332pt too wide) in paragraph at lines 85--92
+\EU1/lmr/m/n/10 Kdyby při nějaké katastrofě zanikly všechny vědecké poznatky
+<use  "../src/FYZ/img/fyz_fig007.pdf" >
+Underfull \hbox (badness 5302) in paragraph at lines 99--125
+\EU1/lmr/m/n/10 lu myšlenky o atomu,
 
-No complaints by nag.
-(c:\Users\Jafinek\Documents\GitHub\Wiking\tex\wiking.aux)
+Underfull \hbox (badness 2050) in paragraph at lines 99--125
+\EU1/lmr/m/n/10 váme-li se na ni zblíz-
 
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
+Underfull \hbox (badness 1072) in paragraph at lines 99--125
+\EU1/lmr/m/n/10 ku zvětšíme tím nejlep-
+
+Underfull \hbox (badness 1789) in paragraph at lines 99--125
+\EU1/lmr/m/n/10 ším optickým mikrosko-
+<use  "../src/FYZ/img/fyz_fig008.pdf" >
+Underfull \hbox (badness 1490) in paragraph at lines 146--155
+\EU1/lmr/m/n/10 ního atmosférického tla-
+[50] <use  "../src/FYZ/img/fyz_fig009.pdf" >
+<use  "../src/FYZ/img/fyz_fig010.pdf" >
+Underfull \hbox (badness 2221) in paragraph at lines 206--232
+\EU1/lmr/m/n/10 me teplotu naší kapky.
+[51] <use  "../src/FYZ/img/fyz_fig011.pdf" >
+<use  "../src/FYZ/img/fyz_fig012.pdf" >
+Underfull \hbox (badness 3838) in paragraph at lines 289--299
+[][]\EU1/lmr/m/n/10 Zůstává ještě otázka:
+<use  "../src/FYZ/img/fyz_fig013a.pdf" >
+<use  "../src/FYZ/img/fyz_fig013b.pdf" >
+Overfull \hbox (11.65329pt too wide) in paragraph at lines 348--353
+[]\EU1/lmr/m/n/10 Vraťme se ještě k naší diskuzi o \EU1/lmr/m/it/10 rozpouštění
+ a srážení\EU1/lmr/m/n/10 . Zvýšíme-
+[52] <use  "../src/FYZ/img/fyz_fig014.pdf" >
+Underfull \hbox (badness 1478) in paragraph at lines 365--374
+\EU1/lmr/bx/n/10 cí\EU1/lmr/m/n/10 . Ostatní dosud uva-
+
+Underfull \hbox (badness 1783) in paragraph at lines 365--374
+\EU1/lmr/m/n/10 žované procesy nazývá-
+<use  "../src/FYZ/img/fyz_fig015.pdf" >
+Underfull \hbox (badness 1048) in paragraph at lines 378--378
+[] []\EU1/lmr/bx/n/9 Obrázek 1.10.[][]: [][]|\EU1/lmr/m/n/9 Vůně fialek [[][][]
+1[][],
+
+Overfull \hbox (0.4982pt too wide) in paragraph at lines 381--392
+[][]\EU1/lmr/m/n/10 Předpokládejme, že ato-
+
+Overfull \hbox (0.76884pt too wide) in paragraph at lines 404--411
+[]\EU1/lmr/m/n/10 K objasnění této myšlenky si zvolme jiný příklad. Ocitneme-
+<use  "../src/FYZ/img/fyz_fig016.pdf" > [53] [54]
+Overfull \hbox (18.57104pt too wide) in paragraph at lines 548--558
+\EU1/lmr/m/n/10 skutečnost, že určitý střelec bude vždy na bílém poli. Odhlédne
+me-
+[55] [56] <use  "../src/FYZ/img/fyz_fig006.pdf" > [57]
+Overfull \hbox (3.53441pt too wide) in paragraph at lines 837--851
+\EU1/lmr/m/n/10 Když jsme načrtli představu elektromagnetického pole, v němž
+[58]
+Underfull \vbox (badness 1558) has occurred while \output is active [59])
+(../src/FYZ/chap/fey1ch04.tex [60]
+chapter 2.
+(wiking.mtc12) [61] <use  "../src/FYZ/img/fyz_fig048.pdf" >
+Underfull \hbox (badness 5133) in paragraph at lines 121--132
+\EU1/lmr/m/n/10 že zvedá jedno závaží
+<use  "../src/FYZ/img/fyz_fig049a.pdf" >
+<use  "../src/FYZ/img/fyz_fig049b.pdf" >
+<use  "../src/FYZ/img/fyz_fig049c.pdf" >
+<use  "../src/FYZ/img/fyz_fig049d.pdf" >
+<use  "../src/FYZ/img/fyz_fig049e.pdf" >
+<use  "../src/FYZ/img/fyz_fig049f.pdf" > [62]
+<use  "../src/FYZ/img/fyz_fig051.pdf" >
+Underfull \vbox (badness 1242) has occurred while \output is active
+Underfull \hbox (badness 2142) in paragraph at lines 275--293
+\EU1/lmr/m/n/10 gie nám v řadě přípa-
+<use  "../src/FYZ/img/fyz_fig050a.pdf" >
+<use  "../src/FYZ/img/fyz_fig050b.pdf" >
+<use  "../src/FYZ/img/fyz_fig052.pdf" > [63]
+<use  "../src/FYZ/img/fyz_fig053.pdf" >
+<use  "../src/FYZ/img/fyz_fig054.pdf" > [64] [65] (../src/FYZ/exam/exam010.tex
+<use  "../src/FYZ/img/fyz_fig055.png" >)) (../src/FYZ/chap/fey1ch05.tex
+[66]
+chapter 3.
+(wiking.mtc13) <use  "../src/FYZ/img/fyz_fig064.pdf" > [67]
+<use  "../src/FYZ/img/fyz_fig065a.png" >
+<use  "../src/FYZ/img/fyz_fig065b.png" >
+Overfull \hbox (8.27065pt too wide) in paragraph at lines 119--128
+ [][] 
+[68] <use  "../src/FYZ/img/fyz_fig066.pdf" >
+Overfull \hbox (7.4833pt too wide) in paragraph at lines 191--194
+\EU1/lmr/m/n/10 při svém vzniku množství $\OML/cmm/m/it/10 A$ \EU1/lmr/m/n/10 r
+adioaktivního materiálu a přímým
+<use  "../src/FYZ/img/fyz_fig075.pdf" > [69]
+<use  "../src/FYZ/img/fyz_fig068.pdf" >
+<use  "../src/FYZ/img/fyz_fig069.pdf" >
+<use  "../src/FYZ/img/fyz_fig070.jpg" >
+<use  "../src/FYZ/img/fyz_fig071.jpg" > [70]
+<use  "../src/FYZ/img/fyz_fig072.jpg" >
+<use  "../src/FYZ/img/fyz_fig073.jpg" >
+<use  "../src/FYZ/img/fyz_fig076.pdf" > [71]
+<use  "../src/FYZ/img/fyz_fig074.pdf" >) (../src/FYZ/chap/fey1ch06.tex [72]
+chapter 4.
+(wiking.mtc14) [73] <use  "../src/FYZ/img/fyz_fig077.pdf" >
+<use  "../src/FYZ/img/fyz_fig079.png" >
+<use  "../src/FYZ/img/fyz_fig078.pdf" > [74]
+<use  "../src/FYZ/img/fyz_fig081.pdf" >
+Overfull \hbox (0.72559pt too wide) in paragraph at lines 224--226
+\EU1/lmr/m/n/10 kde $\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 !$\EU1/lmr/m/n/10 , nazý
+vaný „n-faktoriál“, představuje součin $\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 l\OT1/cmr/m/n/10 )(\OML/cm
+m/m/it/10 n \OMS/cmsy/m/n/10 ^^@
+<use  "../src/FYZ/img/fyz_fig080.pdf" >
+<use  "../src/FYZ/img/fyz_fig082.pdf" > [75]
+<use  "../src/FYZ/img/fyz_fig083.pdf" > [76]
+Overfull \hbox (5.83104pt too wide) in paragraph at lines 443--450
+[]\EU1/lmr/m/n/10 Podobné znázornění jako na obr. [][]4.3[][] je však možné, ne
+ptáme-
+<use  "../src/FYZ/img/fyz_fig084.pdf" >
+<use  "../src/FYZ/img/fyz_fig085.pdf" > [77]
+<use  "../src/FYZ/img/fyz_fig086.pdf" >
+<use  "../src/FYZ/img/fyz_fig087a.pdf" >
+<use  "../src/FYZ/img/fyz_fig087b.pdf" > [78]
+Overfull \hbox (29.03552pt too wide) in paragraph at lines 606--610
+[]\EU1/lmr/m/n/10 Protože pravá strana rovnice ([][]4.25[][]) je konstantní, pa
+k, „přinutíme-
+<use  "../src/FYZ/img/fyz_fig088.jpg" >) (../src/FYZ/chap/fey1ch07.tex [79]
+chapter 5.
+(wiking.mtc15)
+Overfull \hbox (1.06442pt too wide) in paragraph at lines 20--25
+\EU1/lmr/m/n/10 Uvedeme-li navíc skutečnost, že předmět reaguje na sílu zrych-
+<use  "../src/FYZ/img/fyz_fig299.pdf" >
+<use  "../src/FYZ/img/fyz_fig062.pdf" > [80]
+<use  "../src/FYZ/img/fyz_fig063.pdf" > [81]
+<use  "../src/FYZ/img/fyz_fig058.pdf" >
+<use  "../src/FYZ/img/fyz_fig059.pdf" > [82]
+<use  "../src/FYZ/img/fyz_fig060.pdf" >
+Overfull \hbox (18.82439pt too wide) in paragraph at lines 261--272
+[]\EU1/lmr/m/n/10 Co chápeme pod slovem „vyvážený“? Co je vyvážené? Přitahuje-
+<use  "../src/FYZ/img/fyz_fig089.jpg" > [83]
+<use  "../src/FYZ/img/fyz_fig090.pdf" >
+<use  "../src/FYZ/img/fyz_fig092.jpg" >
+<use  "../src/FYZ/img/fyz_fig093.jpg" >
+<use  "../src/FYZ/img/fyz_fig094.jpg" >
+<use  "../src/FYZ/img/fyz_fig095.jpg" > [84]
+<use  "../src/FYZ/img/fyz_fig096.jpg" >
+<use  "../src/FYZ/img/fyz_fig091.pdf" > [85]
+<use  "../src/FYZ/img/fyz_fig097.pdf" > [86]) (../src/FYZ/chap/fey1ch08.tex
+[87]
+chapter 6.
+(wiking.mtc16)
+Underfull \hbox (badness 1394) in paragraph at lines 90--98
+[][]\EU1/lmr/m/n/10 To je jeden způsob popisu
+<use  "../src/FYZ/img/fyz_fig098a.pdf" >
+<use  "../src/FYZ/img/fyz_fig098b.pdf" > [88] [89]
+Overfull \hbox (0.16716pt too wide) in paragraph at lines 291--304
+\EU1/lmr/m/n/10 neboť nejprve bylo vzdáleno jen $\OT1/cmr/m/n/10 5\OML/cmm/m/it
+/10 t[]$ \EU1/lmr/m/n/10 . Ta dodatečná vzdálenost
+[90] [91] [92] <use  "../src/FYZ/img/fyz_fig099.pdf" >
+<use  "../src/FYZ/img/fyz_fig100.pdf" > [93] (../src/FYZ/exam/exam003.tex
+<use  "../src/FYZ/img/fyz_fig142.jpg" >
+Underfull \hbox (badness 4569) in paragraph at lines 14--14
+[] []\EU1/lmr/bx/n/9 Obrázek 6.4.[][]: [][]|\EU1/lmr/m/n/9 Nákres železničního 
+kola s částí kolejni-
+<use  "../src/FYZ/img/fyz_fig141.pdf" >
+<use  "../src/FYZ/img/fyz_fig143.pdf" > [94] (../src/FYZ/img/fyz_fig140.tex
+===== Image 'tikz/FYZI/ch06_ch07_wiking-figure0' is up-to-date. ======
+<use  "tikz/FYZI/ch06_ch07_wiking-figure0.pdf" >) (../src/FYZ/matlab/cicloid.m)
+(../src/FYZ/img/fyz_fig144.tex <a1,fr0> <a1,fr1> <a1,fr2> <a1,fr3> <a1,fr4>
+<a1,fr5> <a1,fr6> <a1,fr7> <a1,fr8> <a1,fr9> <a1,fr10> <a1,fr11> <a1,fr12>
+<a1,fr13> <a1,fr14> <a1,fr15> <a1,fr16> <a1,fr17> <a1,fr18> <a1,fr19>
+<a1,fr20> <a1,fr21> <a1,fr22> <a1,fr23> <a1,fr24> <a1,fr25> <a1,fr26>
+<a1,fr27> <a1,fr28> <a1,fr29> <a1,fr30> <a1,fr31> <a1,fr32> <a1,fr33>
+<a1,fr34> <a1,fr35> <a1,fr36> <a1,fr37> <a1,fr38> <a1,fr39>))
+Overfull \hbox (0.19223pt too wide) in paragraph at lines 640--640
+[]\EU1/lmr/m/n/10 J. Slavík, \EU1/lmr/m/it/10 Řešené příklady z fyziky - klasic
+ká fyzika\EU1/lmr/m/n/10 , 4. vyd.
+) (../src/FYZ/chap/fey1ch09.tex [95]
+chapter 7.
+(wiking.mtc17) [96] <use  "../src/FYZ/img/fyz_fig056.pdf" >
+<use  "../src/FYZ/img/fyz_fig057.pdf" > [97]
+<use  "../src/FYZ/img/fyz_fig101.pdf" > [98]
+<use  "../src/FYZ/img/fyz_fig102.pdf" >
+<use  "../src/FYZ/img/fyz_fig103.pdf" > [99]
+<use  "../src/FYZ/img/fyz_fig104.pdf" > [100] (../src/FYZ/exam/exam002.tex
+<use  "../src/FYZ/img/fyz_fig223a.pdf" >
+<use  "../src/FYZ/img/fyz_fig223b.pdf" > [101]
+(../src/FYZ/matlab/kinematika_delo_ve_vakuu.m [102])
+<use  "../src/FYZ/img/fyz_fig222.pdf" >)) (../src/FYZ/chap/fey1ch10.tex
+[103]
+chapter 8.
+(wiking.mtc18) [104] [105] <use  "../src/FYZ/img/fyz_fig105.pdf" >
+<use  "../src/FYZ/img/fyz_fig106.pdf" >
+<use  "../src/FYZ/img/fyz_fig107.pdf" >
+<use  "../src/FYZ/img/fyz_fig108.pdf" > [106]
+<use  "../src/FYZ/img/fyz_fig109.pdf" >
+<use  "../src/FYZ/img/fyz_fig110.pdf" >
+<use  "../src/FYZ/img/fyz_fig111.pdf" > [107]
+<use  "../src/FYZ/img/fyz_fig112.pdf" > [108]) (../src/FYZ/chap/fey1ch11.tex
+[109]
+chapter 9.
+(wiking.mtc19) <use  "../src/FYZ/img/fyz_fig113.pdf" > [110]
+Overfull \hbox (7.24443pt too wide) in paragraph at lines 106--109
+\EU1/lmr/m/n/10 Protože předpokládáme, že hmotnosti měřené Petrem a Pavlem
+<use  "../src/FYZ/img/fyz_fig114.pdf" > [111]
+<use  "../src/FYZ/img/fyz_fig115.pdf" > [112]
+<use  "../src/FYZ/img/fyz_fig116.pdf" >
+Overfull \hbox (3.62329pt too wide) in paragraph at lines 376--379
+\EU1/lmr/m/n/10 hodněme se, že jde o nový vektor, jenž má složky $\OML/cmm/m/it
+/10 ^^Ka[]; ^^Ka[]; ^^Ka[]$\EU1/lmr/m/n/10 .
+<use  "../src/FYZ/img/fyz_fig117.pdf" > [113]
+<use  "../src/FYZ/img/fyz_fig118.pdf" >
+Overfull \hbox (2.03442pt too wide) in paragraph at lines 448--456
+[]\EU1/lmr/m/n/10 Máme dokázat, že Newtonovy zákony jsou invariantní vzhle-
+<use  "../src/FYZ/img/fyz_fig119.pdf" >
+<use  "../src/FYZ/img/fyz_fig120.pdf" > [114] [115])
+(../src/FYZ/chap/fey1ch12.tex [116]
+chapter 10.
+(wiking.mtc20) [117] [118] <use  "../src/FYZ/img/fyz_fig121.pdf" > [119]
+<use  "../src/FYZ/img/fyz_fig122.pdf" > [120] [121]
+<use  "../src/FYZ/img/fyz_fig123.pdf" > [122]
+<use  "../src/FYZ/img/fyz_fig124.pdf" > [123]) (../src/FYZ/chap/fey1ch13_14.tex
+[124]
+chapter 11.
+(wiking.mtc21) <use  "../src/FYZ/img/fyz_fig023.pdf" >
+Underfull \hbox (badness 8000) in paragraph at lines 62--70
+[][]\EU1/lmr/m/n/10 Na základě druhého
+[125] <use  "../src/FYZ/img/fyz_fig029.pdf" >
+<use  "../src/FYZ/img/fyz_fig024.pdf" >
+Underfull \hbox (badness 1454) in paragraph at lines 218--218
+[] []\EU1/lmr/bx/n/9 Obrázek 11.3.[][]: [][]|\EU1/lmr/m/n/9 Těleso o malé
+
+Overfull \hbox (5.97708pt too wide) in paragraph at lines 221--224
+[][]\EU1/lmr/m/n/10 Tento jednorozměrný pří-
+
+Underfull \hbox (badness 3679) in paragraph at lines 221--224
+\EU1/lmr/m/n/10 neboť víme, že změna
+
+Underfull \hbox (badness 1490) in paragraph at lines 221--224
+\EU1/lmr/m/n/10 z $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 ^^T[]$ \EU1/lmr/m/n/10 
+vynásobeného
+[126] <use  "../src/FYZ/img/fyz_fig025.pdf" > [127]
+<use  "../src/FYZ/img/fyz_fig026.pdf" >
+Overfull \hbox (13.54265pt too wide) in paragraph at lines 365--371
+\EU1/lmr/m/n/10 plikovaný problém mnoha těles, označených indexy $\OML/cmm/m/it
+/10 i \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ;
+ \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; []$\EU1/lmr/m/n/10 .
+[128] <use  "../src/FYZ/img/fyz_fig027.pdf" > [129]
+<use  "../src/FYZ/img/fyz_fig028.pdf" > [130]
+<use  "../src/FYZ/img/fyz_fig021.pdf" > [131]
+<use  "../src/FYZ/img/fyz_fig020.pdf" > [132]
+<use  "../src/FYZ/img/fyz_fig022.pdf" > [133] [134]
+<use  "../src/FYZ/img/fyz_fig018.pdf" >
+<use  "../src/FYZ/img/fyz_fig019.pdf" > [135]) (../src/FYZ/chap/fey1ch15.tex
+[136]
+chapter 12.
+(wiking.mtc22) <use  "../src/FYZ/img/fyz_fig005.pdf" > [137]
+Overfull \hbox (2.4233pt too wide) in paragraph at lines 136--148
+[]\EU1/lmr/m/n/10 Michelsonův-Morleyho experiment byl proveden pomocí pří-
+<use  "../src/FYZ/img/fyz_fig004.pdf" > [138]
+Overfull \hbox (0.1633pt too wide) in paragraph at lines 216--221
+[]\EU1/lmr/m/n/10 Výsledek Michelsonova-Morleyho experimentu byl velmi zá-
+
+Overfull \hbox (8.71382pt too wide) in paragraph at lines 231--240
+\EU1/lmr/m/n/10 Porovnáním se vztahem ([][]12.6[][]) vidíme, že $\OML/cmm/m/it/
+10 t[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 = 2\OML/cmm/m/it/
+10 t[]$\EU1/lmr/m/n/10 . Zkracuje-
+
+Overfull \hbox (4.95332pt too wide) in paragraph at lines 260--275
+[]\EU1/lmr/m/n/10 Zpomalování hodin v pohybujícím se systému je velmi zvlášt-
+[139] <use  "../src/FYZ/img/fyz_fig003a.pdf" >
+<use  "../src/FYZ/img/fyz_fig003c.pdf" >
+<use  "../src/FYZ/img/fyz_fig003b.pdf" > [140] [141] [142])
+(../src/FYZ/chap/fey1ch16.tex [143]
+chapter 13.
+(wiking.mtc23) [144]
+Overfull \hbox (0.37442pt too wide) in paragraph at lines 161--167
+\EU1/lmr/m/n/10 Tyto rovnice odpovídají poměrně jednoduchému případu, kdy
+[145] <use  "../src/FYZ/img/fyz_fig002.pdf" > [146]
+<use  "../src/FYZ/img/fyz_fig001a.pdf" >
+<use  "../src/FYZ/img/fyz_fig001b.pdf" >
+<use  "../src/FYZ/img/fyz_fig000a.pdf" >
+<use  "../src/FYZ/img/fyz_fig000b.pdf" >
+Overfull \hbox (4.2707pt too wide) in paragraph at lines 343--351
+ [][] 
+[147] <use  "../src/FYZ/img/fyz_fig125.pdf" > [148]
+Overfull \hbox (3.48991pt too wide) in paragraph at lines 488--492
+[]\EU1/lmr/m/n/10 Tento výsledek je stejně významný i pro chemii. Kdybychom
+) (../src/FYZ/chap/fey1ch17.tex [149]
+chapter 14.
+(wiking.mtc24)
+Overfull \hbox (0.31104pt too wide) in paragraph at lines 11--16
+\EU1/lmr/m/n/10 kladě našich intuitivních představ. Je velmi důležité, abychom
+
+Overfull \hbox (2.26929pt too wide) in paragraph at lines 17--20
+\EU1/lmr/m/n/10 dajícími souřadnicemi a časem $\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
+0 x[]; y; z[]; t[]\OT1/cmr/m/n/10 )$ \EU1/lmr/m/n/10 naměřenými uvnitř
+<use  "../src/FYZ/img/fyz_fig126.pdf" > [150]
+<use  "../src/FYZ/img/fyz_fig127a.pdf" >
+<use  "../src/FYZ/img/fyz_fig127b.pdf" >
+Overfull \hbox (4.2707pt too wide) in paragraph at lines 99--107
+ [][] 
+
+Overfull \hbox (1.46103pt too wide) in paragraph at lines 180--197
+\EU1/lmr/m/n/10 prostorem, mezi intervalem a vzdáleností. Podle vztahu ([][]14.
+5[][]),
+[151] <use  "../src/FYZ/img/fyz_fig128.pdf" > [152]
+<use  "../src/FYZ/img/fyz_fig129.pdf" >) (../src/FYZ/chap/fey1ch21.tex [153]
+chapter 15.
+(wiking.mtc25) <use  "../src/FYZ/img/fyz_fig246.pdf" >
+<use  "../src/FYZ/img/fyz_fig247.pdf" >
+<use  "../src/FYZ/img/fyz_fig248.pdf" >) (../src/FYZ/chap/fey1ch24.tex [154]
+chapter 16.
+(wiking.mtc26) <use  "../src/FYZ/img/fyz_fig300.pdf" >
+<use  "../src/FYZ/img/fyz_fig301.pdf" >
+<use  "../src/FYZ/img/fyz_fig302a.pdf" >
+<use  "../src/FYZ/img/fyz_fig302b.pdf" >
+<use  "../src/FYZ/img/fyz_fig302a.pdf" >
+<use  "../src/FYZ/img/fyz_fig302b.pdf" >) (../src/FYZ/chap/fey1ch25.tex
+[155]
+chapter 17.
+(wiking.mtc27) [156] <use  "../src/FYZ/img/fyz_fig293.pdf" >
+<use  "../src/FYZ/img/fyz_fig294.pdf" >
+<use  "../src/FYZ/img/fyz_fig295.pdf" > [157]
+<use  "../src/FYZ/img/fyz_fig296.pdf" >
+Overfull \hbox (6.33994pt too wide) in paragraph at lines 230--239
+[]\EU1/lmr/m/n/10 Takovou sílu lze přirovnat k celé řadě úderů kladivem. Nejdří
+-
+[158] <use  "../src/FYZ/img/fyz_fig297.pdf" > [159]
+Overfull \hbox (1.33443pt too wide) in paragraph at lines 428--444
+\EU1/lmr/m/n/10 použijeme indukčnost úměrnou hmotnosti závaží, odpor úměr-
+[160] <use  "../src/FYZ/img/fyz_fig298a.pdf" >
+<use  "../src/FYZ/img/fyz_fig298b.pdf" >
+Overfull \hbox (0.25993pt too wide) in paragraph at lines 527--531
+\EU1/lmr/m/n/10 zu složitých obvodů. Uvádíme je ve spojení s rovnicemi ([][]17.
+16[][])
+) (../src/FYZ/chap/fey1ch26.tex [161]
+chapter 18.
+(wiking.mtc28) [162] <use  "../src/FYZ/img/fyz_fig279.pdf" >
+Overfull \hbox (0.56pt too wide) in paragraph at lines 95--95
+ []|\EU1/lmr/m/n/10 vzduch| 
+
+Underfull \hbox (badness 2205) in paragraph at lines 107--107
+\EU1/lmr/m/n/9 la vzduch - voda ([[][][]1[][],
+
+Underfull \hbox (badness 2261) in paragraph at lines 110--124
+\EU1/lmr/m/n/10 poučka. S větším problémem
+<use  "../src/FYZ/img/fyz_fig280.pdf" >
+Overfull \hbox (0.56pt too wide) in paragraph at lines 154--154
+ []|\EU1/lmr/m/n/10 vzduch| 
+<use  "../src/FYZ/img/fyz_fig281.pdf" > [163]
+<use  "../src/FYZ/img/fyz_fig282.pdf" >
+<use  "../src/FYZ/img/fyz_fig283.pdf" > [164]
+Overfull \hbox (8.68523pt too wide) in paragraph at lines 281--283
+\EU1/lmr/m/n/10 Dělíme-li obě strany společnou délkou přepony $\OML/cmm/m/it/10
+ XC$ \EU1/lmr/m/n/10 a všimneme-
+<use  "../src/FYZ/img/fyz_fig284.pdf" >
+<use  "../src/FYZ/img/fyz_fig285.pdf" >
+<use  "../src/FYZ/img/fyz_fig286.pdf" >
+<use  "../src/FYZ/img/fyz_fig287.pdf" > [165]
+<use  "../src/FYZ/img/fyz_fig288.pdf" >
+<use  "../src/FYZ/img/fyz_fig289.pdf" >
+<use  "../src/FYZ/img/fyz_fig290.pdf" > [166]
+<use  "../src/FYZ/img/fyz_fig291.pdf" > [167]
+<use  "../src/FYZ/img/fyz_fig292.pdf" >) (../src/FYZ/chap/fey1ch27.tex [168]
+chapter 19.
+(wiking.mtc29) <use  "../src/FYZ/img/fyz_fig156.pdf" >)
+(../src/FYZ/chap/fey1ch28.tex [169]
+chapter 20.
+(wiking.mtc30) [170]
+Overfull \hbox (5.94556pt too wide) in paragraph at lines 156--164
+\EU1/lmr/m/n/10 snad budou číst tento text), bychom měli dodat, že označujeme-
+
+Overfull \hbox (2.39442pt too wide) in paragraph at lines 156--164
+\EU1/lmr/m/n/10 li ([][]20.3[][]) za úplné vyjádření poznatků elektrodynamiky, 
+nejsme
+
+Overfull \hbox (21.5344pt too wide) in paragraph at lines 187--207
+[]\EU1/lmr/m/n/10 Nyní můžeme vztah ([][]20.5[][]) studovat trochu podrobněji, 
+abychom
+[171] <use  "../src/FYZ/img/fyz_fig228.pdf" >
+<use  "../src/FYZ/img/fyz_fig229.pdf" > [172]
+<use  "../src/FYZ/img/fyz_fig230.pdf" >
+<use  "../src/FYZ/img/fyz_fig231.pdf" >) (../src/FYZ/chap/fey1ch29.tex [173]
+chapter 21.
+(wiking.mtc31) <use  "../src/FYZ/img/fyz_fig232.pdf" >
+<use  "../src/FYZ/img/fyz_fig233.pdf" >
+<use  "../src/FYZ/img/fyz_fig234.pdf" > [174]
+<use  "../src/FYZ/img/fyz_fig235.pdf" > [175]
+<use  "../src/FYZ/img/fyz_fig236a.pdf" >
+<use  "../src/FYZ/img/fyz_fig236b.pdf" >
+Overfull \hbox (0.82993pt too wide) in paragraph at lines 234--264
+[]\EU1/lmr/m/n/10 Podívejme se zběžně na některé jiné zajímavé případy. Opět
+<use  "../src/FYZ/img/fyz_fig237.pdf" > [176]
+<use  "../src/FYZ/img/fyz_fig238.pdf" >
+<use  "../src/FYZ/img/fyz_fig239.pdf" > [177]
+<use  "../src/FYZ/img/fyz_fig240.pdf" > [178]
+<use  "../src/FYZ/img/fyz_fig241.pdf" >) (../src/FYZ/chap/fey1ch30.tex [179]
+chapter 22.
+(wiking.mtc32) <use  "../src/FYZ/img/fyz_fig249.pdf" > [180]
+<use  "../src/FYZ/img/fyz_fig250.pdf" >
+<use  "../src/FYZ/img/fyz_fig251.pdf" > [181]
+<use  "../src/FYZ/img/fyz_fig252.pdf" > [182]
+<use  "../src/FYZ/img/fyz_fig253.pdf" >
+<use  "../src/FYZ/img/fyz_fig254.pdf" > [183] [184]
+<use  "../src/FYZ/img/fyz_fig255.pdf" >
+<use  "../src/FYZ/img/fyz_fig256.pdf" > [185]
+<use  "../src/FYZ/img/fyz_fig257.pdf" >
+<use  "../src/FYZ/img/fyz_fig258.pdf" > [186]
+<use  "../src/FYZ/img/fyz_fig259.pdf" >
+<use  "../src/FYZ/img/fyz_fig260.pdf" > [187]) (../src/FYZ/chap/fey1ch31.tex
+[188]
+chapter 23.
+(wiking.mtc33) <use  "../src/FYZ/img/fyz_fig261.pdf" >
+<use  "../src/FYZ/img/fyz_fig262.pdf" >
+<use  "../src/FYZ/img/fyz_fig263.pdf" >
+<use  "../src/FYZ/img/fyz_fig264.pdf" >
+<use  "../src/FYZ/img/fyz_fig265.pdf" >
+<use  "../src/FYZ/img/fyz_fig266a.pdf" >
+<use  "../src/FYZ/img/fyz_fig266b.pdf" >
+<use  "../src/FYZ/img/fyz_fig266c.pdf" >) (../src/FYZ/chap/fey1ch32.tex
+[189] [190]
+chapter 24.
+(wiking.mtc34) <use  "../src/FYZ/img/fyz_fig267.pdf" >
+<use  "../src/FYZ/img/fyz_fig268.pdf" >
+<use  "../src/FYZ/img/fyz_fig269.pdf" >) (../src/FYZ/chap/fey1ch33.tex [191]
+chapter 25.
+(wiking.mtc35) <use  "../src/FYZ/img/fyz_fig270a.pdf" >
+<use  "../src/FYZ/img/fyz_fig270b.pdf" >
+<use  "../src/FYZ/img/fyz_fig270c.pdf" >
+<use  "../src/FYZ/img/fyz_fig270d.pdf" >
+<use  "../src/FYZ/img/fyz_fig270e.pdf" >
+<use  "../src/FYZ/img/fyz_fig270f.pdf" >
+Overfull \hbox (3.76874pt too wide) in paragraph at lines 18--33
+ [][] 
+<use  "../src/FYZ/img/fyz_fig271a.pdf" >
+<use  "../src/FYZ/img/fyz_fig271b.pdf" >
+<use  "../src/FYZ/img/fyz_fig271c.pdf" >
+<use  "../src/FYZ/img/fyz_fig271d.pdf" >
+<use  "../src/FYZ/img/fyz_fig271e.pdf" >
+<use  "../src/FYZ/img/fyz_fig271f.pdf" >
+<use  "../src/FYZ/img/fyz_fig271g.pdf" >
+<use  "../src/FYZ/img/fyz_fig271h.pdf" >
+<use  "../src/FYZ/img/fyz_fig271i.pdf" >
+<use  "../src/FYZ/img/fyz_fig272.pdf" >
+<use  "../src/FYZ/img/fyz_fig273.pdf" >
+<use  "../src/FYZ/img/fyz_fig274.pdf" >
+<use  "../src/FYZ/img/fyz_fig275a.pdf" >
+<use  "../src/FYZ/img/fyz_fig275b.pdf" >
+<use  "../src/FYZ/img/fyz_fig276a.pdf" >
+<use  "../src/FYZ/img/fyz_fig276b.pdf" >
+<use  "../src/FYZ/img/fyz_fig277.pdf" >
+<use  "../src/FYZ/img/fyz_fig278.pdf" >) (../src/FYZ/chap/fey1ch35.tex [192]
+[193] [194]
+chapter 26.
+(wiking.mtc36) <use  "../src/FYZ/img/fyz_fig130a.pdf" >
+<use  "../src/FYZ/img/fyz_fig131_rev1.jpg" > [195]
+<use  "../src/FYZ/img/fyz_fig132.pdf" >
+Overfull \hbox (10.72444pt too wide) in paragraph at lines 93--101
+[]\EU1/lmr/m/n/10 V mnoha případech, kdyby intenzita světla byla větší, bychom
+
+Underfull \vbox (badness 10000) has occurred while \output is active [196]
+[197] <use  "../src/FYZ/img/fyz_fig133_rev1.pdf" > [198]
+<use  "../src/FYZ/img/fyz_fig134.pdf" >
+<use  "../src/FYZ/img/fyz_fig135.pdf" > [199]
+<use  "../src/FYZ/img/fyz_fig136.pdf" >
+<use  "../src/FYZ/img/fyz_fig137.pdf" >
+<use  "../src/FYZ/img/fyz_fig138.pdf" > [200]
+<use  "../src/FYZ/img/fyz_fig139.pdf" >) (../src/FYZ/chap/fey1ch36.tex [201]
+chapter 27.
+(wiking.mtc37)) (../src/FYZ/chap/fey1ch39.tex [202]
+chapter 28.
+(wiking.mtc38) <use  "../src/FYZ/img/fyz_fig242.pdf" >
+<use  "../src/FYZ/img/fyz_fig243.pdf" >
+<use  "../src/FYZ/img/fyz_fig244.pdf" >
+<use  "../src/FYZ/img/fyz_fig245.pdf" >) (../src/FYZ/chap/fey1ch50.tex [203]
+chapter 29.
+(wiking.mtc39)) (../src/FYZ/chap/kinematika.tex [204]
+chapter 30.
+(wiking.mtc40) <use  "../src/FYZ/img/fyz_fig227.pdf" > [205]
+<use  "../src/FYZ/img/fyz_fig226a.pdf" >
+<use  "../src/FYZ/img/fyz_fig226b.pdf" > (../src/FYZ/matlab/Lissajous.m)
+[206]) (../src/FYZ/chap/history_AFYZ.tex [207]
+chapter 31.
+(wiking.mtc41) (../src/FYZ/exam/exam005.tex
+<use  "../src/FYZ/img/fyz_fig224.pdf" >) (../src/FYZ/exam/exam006.tex
+<use  "../src/FYZ/img/fyz_fig225.pdf" > [208])) [209]
+part III.
+[210] (wiking.ptc3
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 15.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 15.
+
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 15.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 15.
+
+
+Overfull \hbox (4.61998pt too wide) in paragraph at lines 72--72
+ [][] [][][]\EU1/lmr/m/n/10 Elektrostatická energie nábojů. Homogenní kou- 
+[211]) [212] (../src/FYZ/chap/fey2ch01.tex
+chapter 1.
+(wiking.mtc42) <use  "../src/FYZ/img/fyz_fig145.jpg" >
+Underfull \hbox (badness 1424) in paragraph at lines 32--39
+\EU1/lmr/m/n/10 necítíte sílu vůbec žád-
+
+Underfull \vbox (badness 1490) has occurred while \output is active [213]
+[214] <use  "../src/FYZ/img/fyz_fig146a.pdf" >
+<use  "../src/FYZ/img/fyz_fig146b.pdf" >
+<use  "../src/FYZ/img/fyz_fig147.pdf" > [215]
+<use  "../src/FYZ/img/fyz_fig041a.pdf" >
+<use  "../src/FYZ/img/fyz_fig041b.pdf" >
+<use  "../src/FYZ/img/fyz_fig041c.pdf" >
+Overfull \hbox (11.12143pt too wide) in paragraph at lines 291--305
+ [][] 
+
+Overfull \hbox (2.3633pt too wide) in paragraph at lines 309--314
+[]\EU1/lmr/m/n/10 Veličinu nazvanou cirkulace definujeme jako výslednou rych-
+<use  "../src/FYZ/img/fyz_fig042.pdf" >
+Underfull \vbox (badness 2020) has occurred while \output is active [216]
+<use  "../src/FYZ/img/fyz_fig148.pdf" >
+<use  "../src/FYZ/img/fyz_fig149.pdf" >
+<use  "../src/FYZ/img/fyz_fig150.pdf" > [217]
+<use  "../src/FYZ/img/fyz_fig151.pdf" >
+<use  "../src/FYZ/img/fyz_fig040.pdf" > [218]
+Underfull \vbox (badness 2781) has occurred while \output is active
+Overfull \hbox (1.04333pt too wide) in paragraph at lines 660--664
+\EU1/lmr/m/n/10 rakterizující pole jsou funkcemi dvou geometrických sou-
+
+LaTeX Warning: File `3D_uloha.pdf' not found on input line 673.
+
+! Unable to load picture or PDF file '3D_uloha.pdf'.
+<to be read again> 
+                   }
+l.673 ...phics[width=0.4\linewidth]{3D_uloha.pdf}}
+                                                                        &
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.673 ...phics[width=0.4\linewidth]{3D_uloha.pdf}}
+                                                                        &
+<use  "3D_uloha.pdf" >
+! Unable to load picture or PDF file '3D_uloha.pdf'.
+<to be read again> 
+                   \GXT@clipend 
+l.673 ...phics[width=0.4\linewidth]{3D_uloha.pdf}}
+                                                                        &
+
+LaTeX Warning: File `2D_uloha.pdf' not found on input line 675.
+
+! Unable to load picture or PDF file '2D_uloha.pdf'.
+<to be read again> 
+                   }
+l.675 ...phics[width=0.4\linewidth]{2D_uloha.pdf}}
+                                                                          \\
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.675 ...phics[width=0.4\linewidth]{2D_uloha.pdf}}
+                                                                          \\
+<use  "2D_uloha.pdf" >
+! Unable to load picture or PDF file '2D_uloha.pdf'.
+<to be read again> 
+                   \GXT@clipend 
+l.675 ...phics[width=0.4\linewidth]{2D_uloha.pdf}}
+                                                                          \\
+
+LaTeX Warning: File `1D_r_uloha.pdf' not found on input line 677.
+
+! Unable to load picture or PDF file '1D_r_uloha.pdf'.
+<to be read again> 
+                   }
+l.677 ...ics[width=0.4\linewidth]{1D_r_uloha.pdf}}
+                                                                      &
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.677 ...ics[width=0.4\linewidth]{1D_r_uloha.pdf}}
+                                                                      &
+<use  "1D_r_uloha.pdf" >
+! Unable to load picture or PDF file '1D_r_uloha.pdf'.
+<to be read again> 
+                   \GXT@clipend 
+l.677 ...ics[width=0.4\linewidth]{1D_r_uloha.pdf}}
+                                                                      &
+
+LaTeX Warning: File `1D_x_uloha.pdf' not found on input line 679.
+
+! Unable to load picture or PDF file '1D_x_uloha.pdf'.
+<to be read again> 
+                   }
+l.679 ...ics[width=0.4\linewidth]{1D_x_uloha.pdf}}
+                                                  
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.679 ...ics[width=0.4\linewidth]{1D_x_uloha.pdf}}
+                                                  
+<use  "1D_x_uloha.pdf" >
+! Unable to load picture or PDF file '1D_x_uloha.pdf'.
+<to be read again> 
+                   \GXT@clipend 
+l.679 ...ics[width=0.4\linewidth]{1D_x_uloha.pdf}}
+                                                  
+[219]) (../src/FYZ/chap/fey2ch02.tex [220]
+chapter 2.
+(wiking.mtc43) <use  "../src/FYZ/img/fyz_fig030.pdf" > [221]
+Overfull \hbox (3.55469pt too wide) in paragraph at lines 90--93
+\EU1/lmr/m/n/10 Pro osvěžení pár faktů z vektorové algebry pro vektory$[]\OML/c
+mm/m/it/10 ;  [];  []$
+<use  "../src/FYZ/img/fyz_fig152_ver1.pdf" >
+<use  "../src/FYZ/img/fyz_fig032.pdf" > [222]
+<use  "../src/FYZ/img/fyz_fig153a_ver1.pdf" >
+<use  "../src/FYZ/img/fyz_fig153b_ver1.pdf" >
+<use  "../src/FYZ/img/fyz_fig031_ver1.pdf" >
+Overfull \hbox (0.59225pt too wide) in paragraph at lines 281--285
+\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 z\OT1/cmr/m/n/10 )$\EU1/lmr/m/n/10 , kde $\
+OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 x;  \OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 y;  
+\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 z$ \EU1/lmr/m/n/10 jsou složky vektoru $\OT
+1/cmr/m/n/10 ^^A[]$ \EU1/lmr/m/n/10 (obr. [][]2.5[][]). Vzhle-
+[223] <use  "../src/FYZ/img/fyz_fig154a_ver1.pdf" >
+<use  "../src/FYZ/img/fyz_fig154b_ver1.pdf" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 311--320
+ [][] 
+[224] <use  "../src/FYZ/img/fyz_fig155a_ver1.pdf" >
+<use  "../src/FYZ/img/fyz_fig155b_ver1.pdf" > [225]
+Overfull \hbox (2.27914pt too wide) detected at line 578
+\OT1/cmr/m/n/10 [\OMS/cmsy/m/n/10 r ^^B \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 r\OML
+/cmm/m/it/10 T\OT1/cmr/m/n/10 )][] = \OMS/cmsy/m/n/10 r[]\OT1/cmr/m/n/10 (\OMS/
+cmsy/m/n/10 r\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^@ r[]\OT1
+/cmr/m/n/10 (\OMS/cmsy/m/n/10 r\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )[] = [] [] \O
+MS/cmsy/m/n/10 ^^@ [] []
+[226] (../src/FYZ/exam/exam007.tex) (../src/FYZ/exam/exam009.tex [227]
+Overfull \hbox (0.69627pt too wide) in paragraph at lines 43--46
+\EU1/lmr/m/it/9 Divergence elektrického pole je tedy v celém prostoru nulová (n
+ejsou
+) (../src/FYZ/exam/exam008.tex <use  "../src/FYZ/img/fyz_fig201.png" >))
+(../src/FYZ/chap/fey2ch03.tex [228]
+chapter 3.
+(wiking.mtc44) <use  "../src/FYZ/img/fyz_fig033.pdf" >
+<use  "../src/FYZ/img/fyz_fig157.pdf" > [229] (../src/FYZ/img/fyz_fig034.tex
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >) [230]
+(../src/FYZ/img/fyz_fig214.tex
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure1' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure1.pdf" >)
+(../src/FYZ/img/fyz_fig215.tex
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure2' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure2.pdf" >)
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure3' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure3.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure4' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure4.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure5' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure5.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure6' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure6.pdf" > [231]
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure7' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure7.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure8' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure8.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure9' is up-to-
+date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure9.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure10' is up-to
+-date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure10.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure11' is up-to
+-date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure11.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure12' is up-to
+-date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure12.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure13' is up-to
+-date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure13.pdf" >
+===== Image 'tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure14' is up-to
+-date. ======
+<use  "tikz/FYZII/ch03_ch13_ch09_ch08_ch07_ch07_wiking-figure14.pdf" >
+<use  "../src/FYZ/img/fyz_fig035.pdf" > [232]
+<use  "../src/FYZ/img/fyz_fig201a.pdf" >
+<use  "../src/FYZ/img/fyz_fig201b.pdf" > [233]
+<use  "../src/FYZ/img/fyz_fig038.pdf" >
+<use  "../src/FYZ/img/fyz_fig039.pdf" > [234]
+<use  "../src/FYZ/img/fyz_fig036.pdf" >
+<use  "../src/FYZ/img/fyz_fig043.pdf" >
+<use  "../src/FYZ/img/fyz_fig037.pdf" > [235] <StrobeMediaPlayback.swf>
+<../media/vf_div.mp4> <../media/vf_curl.mp4> [236] <../media/vf_divdiv1.mp4>
+<../media/vf_divdiv2.mp4> <../media/vf_curlcurl2.mp4>
+<../media/vf_curlcurl1.mp4> [237] <../media/vf_divconstant.mp4>
+<../media/vf_curlconstant.mp4> <../media/vf_divcurl.mp4>)
+(../src/FYZ/chap/fey2ch04.tex [238]
+chapter 4.
+(wiking.mtc45)
+Overfull \hbox (1.56442pt too wide) in paragraph at lines 51--61
+\EU1/lmr/m/n/10 těchto předmětů, které nazýváme elektrostatika a magnetosta-
+
+Overfull \hbox (0.50554pt too wide) in paragraph at lines 62--77
+[]\EU1/lmr/m/n/10 Začněme nejjednoduššími situacemi, tedy těmi, v nichž jsou
+[239]
+Overfull \hbox (2.12357pt too wide) in paragraph at lines 155--155
+[] 
+<use  "../src/FYZ/img/fyz_fig202.pdf" > [240]
+Underfull \vbox (badness 10000) has occurred while \output is active
+<use  "../src/FYZ/img/fyz_fig044.pdf" >
+<use  "../src/FYZ/img/fyz_fig203a.pdf" >
+<use  "../src/FYZ/img/fyz_fig203b.pdf" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 284--290
+ [][] 
+[241] <use  "../src/FYZ/img/fyz_fig045.pdf" > [242]
+<use  "../src/FYZ/img/fyz_fig204.pdf" >
+<use  "../src/FYZ/img/fyz_fig205.pdf" > [243]
+<use  "../src/FYZ/img/fyz_fig206.pdf" >
+<use  "../src/FYZ/img/fyz_fig207.pdf" >
+<use  "../src/FYZ/img/fyz_fig208a.jpg" >
+<use  "../src/FYZ/img/fyz_fig208b.jpg" >
+Overfull \hbox (20.60492pt too wide) in paragraph at lines 577--580
+\EU1/lmr/m/n/10 a směr normály k povrchu. Celkový tok $\OML/cmm/m/it/10 S[]$ \E
+U1/lmr/m/n/10 dostaneme, vynásobíme-
+[244] <use  "../src/FYZ/img/fyz_fig209.pdf" > [245]
+<use  "../src/FYZ/img/fyz_fig210.pdf" >
+<use  "../src/FYZ/img/fyz_fig211.pdf" >) (../src/FYZ/chap/fey2ch05_06_07.tex
+[246]
+chapter 5.
+(wiking.mtc46) <use  "../src/FYZ/img/fyz_fig186.pdf" > [247]
+<use  "../src/FYZ/img/fyz_fig187.pdf" >
+<use  "../src/FYZ/img/fyz_fig188.pdf" >
+<use  "../src/FYZ/img/fyz_fig189.pdf" > [248]
+<use  "../src/FYZ/img/fyz_fig046.pdf" >
+Underfull \hbox (badness 3954) in paragraph at lines 176--187
+\EU1/lmr/m/n/10 vu s válcovou souměr-
+
+Overfull \hbox (2.8937pt too wide) in paragraph at lines 176--187
+\EU1/lmr/m/n/10 mogenně nabitou tyč. Mys-
+
+Underfull \hbox (badness 1859) in paragraph at lines 176--187
+\EU1/lmr/m/n/10 děleny podél nekonečně
+
+Underfull \hbox (badness 1997) in paragraph at lines 176--187
+\EU1/lmr/m/n/10 dlouhé přímky, přičemž
+
+Overfull \hbox (2.79991pt too wide) in paragraph at lines 188--197
+[]\EU1/lmr/m/n/10 Gaussův zákon můžeme použít následujícím způsobem. Měj-
+(../src/FYZ/exam/exam001.tex <use  "../src/FYZ/img/fyz_fig212.pdf" >
+<use  "../src/FYZ/img/fyz_fig213.pdf" > [249])
+<use  "../src/FYZ/img/fyz_fig191.pdf" >
+<use  "../src/FYZ/img/fyz_fig192.pdf" > [250]
+<use  "../src/FYZ/img/fyz_fig047.pdf" >
+<use  "../src/FYZ/img/fyz_fig193.pdf" > [251]
+<use  "../src/FYZ/img/fyz_fig194a.pdf" >
+<use  "../src/FYZ/img/fyz_fig194b.pdf" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 371--377
+ [][] 
+[252]
+Overfull \hbox (0.53995pt too wide) in paragraph at lines 471--477
+[]\EU1/lmr/m/n/10 Nyní si všimněme vnitřku nabitého vodivého tělesa. („Vnitř-
+<use  "../src/FYZ/img/fyz_fig195.pdf" > [253]
+<use  "../src/FYZ/img/fyz_fig196.pdf" > [254]
+<use  "../src/FYZ/img/fyz_fig197.pdf" >
+<use  "../src/FYZ/img/fyz_fig160.pdf" >
+<use  "../src/FYZ/img/fyz_fig198.pdf" > [255]
+<use  "../src/FYZ/img/fyz_fig199.pdf" > [256]
+<use  "../src/FYZ/img/fyz_fig159.pdf" >
+Overfull \hbox (0.80219pt too wide) in paragraph at lines 861--876
+\EU1/lmr/m/n/10 nost $\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 z$\EU1/lmr/m/n/10 , p
+otenciál v $\OML/cmm/m/it/10 P$ \EU1/lmr/m/n/10 se \EU1/lmr/m/it/10 trochu \EU1
+/lmr/m/n/10 změní, řekněme o $\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 '[]$\EU1/lmr/
+m/n/10 .Jakou
+<use  "../src/FYZ/img/fyz_fig200.pdf" > [257]
+<use  "../src/FYZ/img/fyz_fig158.pdf" > [258]
+<use  "../src/FYZ/img/fyz_fig161.pdf" >
+<use  "../src/FYZ/img/fyz_fig162.pdf" > [259]
+<use  "../src/FYZ/img/fyz_fig163.pdf" >
+<use  "../src/FYZ/img/fyz_fig164.pdf" >
+Overfull \hbox (4.96992pt too wide) in paragraph at lines 1213--1222
+\EU1/lmr/m/n/10 povrch koule je ekvipotenciální plochou. Její potenciál je opra
+v-
+[260] <use  "../src/FYZ/img/fyz_fig165.pdf" >
+<use  "../src/FYZ/img/fyz_fig166.pdf" >
+<use  "../src/FYZ/img/fyz_fig167.pdf" >
+<use  "../src/FYZ/img/fyz_fig168.pdf" >
+<use  "../src/FYZ/img/fyz_fig169.pdf" >
+<use  "../src/FYZ/img/fyz_fig170.pdf" >
+<use  "../src/FYZ/img/fyz_fig171.pdf" >
+<use  "../src/FYZ/img/fyz_fig172.pdf" >
+<use  "../src/FYZ/img/fyz_fig173.pdf" >
+<use  "../src/FYZ/img/fyz_fig174.pdf" >
+<use  "../src/FYZ/img/fyz_fig175.pdf" >
+<use  "../src/FYZ/img/fyz_fig176.pdf" >
+<use  "../src/FYZ/img/fyz_fig177.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active [261]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Overfull \vbox (187.40617pt too high) has occurred while \output is active
+[262]) (../src/FYZ/chap/fey2ch08.tex [263]
+chapter 6.
+(wiking.mtc47) <use  "../src/FYZ/img/fyz_fig178.pdf" >
+<use  "../src/FYZ/img/fyz_fig179.pdf" >
+<use  "../src/FYZ/img/fyz_fig180.pdf" >
+<use  "../src/FYZ/img/fyz_fig181.pdf" >
+<use  "../src/FYZ/img/fyz_fig182.pdf" >
+<use  "../src/FYZ/img/fyz_fig183.pdf" >
+<use  "../src/FYZ/img/fyz_fig184.pdf" >
+<use  "../src/FYZ/img/fyz_fig185.pdf" > [264]) (../src/FYZ/chap/fey2ch13.tex
+[265]
+chapter 7.
+(wiking.mtc48
+Overfull \hbox (0.58441pt too wide) in paragraph at lines 4--4
+ [][] [][][]\EU1/lmr/m/n/9 Magnetické pole stacionárních proudů, Am- 
+) <use  "../src/FYZ/img/fyz_fig061.pdf" >
+<use  "../src/FYZ/img/fyz_fig216.pdf" > [266]
+<use  "../src/FYZ/img/fyz_fig217.pdf" >
+<use  "../src/FYZ/img/fyz_fig218.pdf" >
+<use  "../src/FYZ/img/fyz_fig219a.pdf" >
+<use  "../src/FYZ/img/fyz_fig219b.pdf" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 144--151
+ [][] 
+[267]
+
+LaTeX Warning: Reference `fey:eq_div001' on page 268 undefined on input line 20
+7.
+
+
+Overfull \hbox (1.65012pt too wide) in paragraph at lines 237--241
+[]\EU1/lmr/m/n/10 Souvislost mezi polem $[]$ a proudy je vyjádřen rovnicí ([][]
+7.14[][]).
+<use  "../src/FYZ/img/fyz_fig220.pdf" >)) [268]
+part IV.
+[269] (../src/TKY/TKY.tex (../src/TKY/chap/zaklady_tech_kybernetiky.tex
+chapter 1.
+(wiking.mtc49) <use  "../src/TKY/img/Norbert_Wiener.jpg" >
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >
+Overfull \hbox (4.12263pt too wide) in paragraph at lines 68--80
+ [][] 
+[270] <use  "../src/TKY/img/tky_automobil.pdf" >
+Underfull \hbox (badness 3343) in paragraph at lines 106--117
+[][]\EU1/lmr/m/n/10 Automobil není
+
+Overfull \hbox (9.97981pt too wide) in paragraph at lines 106--117
+\EU1/lmr/m/n/10 izolovaným systémem
+
+Underfull \hbox (badness 1817) in paragraph at lines 106--117
+\EU1/lmr/m/n/10 a proto má také
+
+Underfull \hbox (badness 5091) in paragraph at lines 106--117
+\EU1/lmr/m/n/10 vozovka, křižovat-
+[271]
+Overfull \hbox (4.42557pt too wide) in paragraph at lines 206--208
+\EU1/lmr/m/n/10 agentní systémy, robotika, modelování neuronových
+[272]
+Overfull \hbox (0.14554pt too wide) in paragraph at lines 364--374
+[]\EU1/lmr/m/n/10 Základní prvky, ze kterých je vytvářena zpráva, bývají obec-
+
+Overfull \hbox (1.11662pt too wide) in paragraph at lines 393--396
+\EU1/lmr/m/n/10 (pergamen, magnetická páska, optický disk), anebo \EU1/lmr/m/it
+/10 nepřímým
+
+Overfull \hbox (1.52664pt too wide) in paragraph at lines 397--402
+[]\EU1/lmr/m/n/10 Při nepřímém způsobu \EU1/lmr/bx/n/10 zdroj informace \EU1/lm
+r/m/n/10 generuje prostřed-
+[273] <use  "../src/TKY/img/tky_prenosovy_kanal.pdf" >)
+(../src/TKY/chap/cis_sig.tex [274]
+chapter 2.
+(wiking.mtc50)
+Overfull \hbox (1.5132pt too wide) in paragraph at lines 41--44
+\EU1/lmr/m/n/10 sí být menší než polovina vzorkovacího kmitočtu $\OML/cmm/m/it/
+10 f[] <
+<use  "../src/TKY/img/randn_posloupnost.pdf" > (../src/TKY/exam/exam001.tex
+<use  "../src/TKY/img/Chirp_signal_plot.pdf" >
+<use  "../src/TKY/img/Chirp_signal_stem.pdf" >
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 14.
+See the caption package documentation for explanation.
+
+[275] (../src/TKY/matlab/gen_chirp_signal.m)) (../src/TKY/img/posl_operace1.tex
+
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1.pdf" >)
+(../src/TKY/img/posl_operace2.tex
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2.pdf" >)
+(../src/TKY/img/posl_operace3.tex
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure3' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure3.pdf" >))
+(../src/TKY/chap/lin_sys.tex [276]
+chapter 3.
+(wiking.mtc51) (../src/TKY/img/soustava.tex
+===== Image 'tikz/TKY/ch03_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up
+-to-date. ======
+<use  "tikz/TKY/ch03_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >)
+[277] <use  "../src/TKY/img/impulzni_odezva.pdf" >
+(../src/TKY/img/posloupnost_1n_xn.tex
+===== Image 'tikz/TKY/ch03_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1' is up
+-to-date. ======
+<use  "tikz/TKY/ch03_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1.pdf" >
+===== Image 'tikz/TKY/ch03_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2' is up
+-to-date. ======
+<use  "tikz/TKY/ch03_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2.pdf" >)
+<use  "../src/TKY/img/bicak_aprox_spoj_sig_dirac.pdf" > [278]
+Overfull \hbox (1.12332pt too wide) in paragraph at lines 274--275
+[]\EU1/lmr/m/n/10 Kmitočtové charakteristiky získáme z přenosové funkce sub-
+
+Overfull \hbox (3.15256pt too wide) in paragraph at lines 284--288
+\EU1/lmr/m/n/10 kde $\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 !\OT1/
+cmr/m/n/10 )$ \EU1/lmr/m/n/10 je \EU1/lmr/bx/n/10 modulová charakteristika \EU1
+/lmr/m/n/10 a $\OT1/cmr/m/n/10 ^^H(\OML/cmm/m/it/10 !\OT1/cmr/m/n/10 ) = []\OML
+/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j!\OT1/cmr/m/n/10 )$
+[279] (../src/TKY/exam/exam002.tex <use  "../src/TKY/img/cir_RLC.pdf" >
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 14.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `sas:eq_HP_rezidua' on page 280 undefined on input lin
+e 78.
+
+[280] (../src/TKY/matlab/SAS_exam_02_symb_Hp_solve.m)
+<use  "../src/TKY/img/ht.pdf" >
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 117.
+See the caption package documentation for explanation.
+
+<use  "../src/TKY/img/cir_RLC_response_H_PHA_GD.pdf" >
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 136.
+See the caption package documentation for explanation.
+
+[281] (../src/TKY/matlab/SAS_exam_03_Hp.m)))
+(../src/TKY/chap/feedback_theory.tex [282]
+chapter 4.
+(wiking.mtc52) <use  "../src/TKY/img/Reg_smycka03.png" > [283]
+<use  "../src/TKY/img/Reg_smycka01.png" >) (../src/TKY/chap/Sensor_Temp.tex
+[284]
+chapter 5.
+(wiking.mtc53))) [285]
+part V.
+[286] (../src/TEO/TEO.tex (../src/TEO/chap/spojity_model_elmag_p.tex
+chapter 1.
+(wiking.mtc54
+Overfull \hbox (11.8544pt too wide) in paragraph at lines 10--10
+ [][] [][][]\EU1/lmr/m/n/9 Magnetické pole vodičů s proudem v homogen- 
+)
+Overfull \hbox (0.24446pt too wide) in paragraph at lines 58--60
+\EU1/lmr/m/n/10 dem proudu průměrného, studujeme-li množství náboje,
+
+Overfull \hbox (1.02443pt too wide) in paragraph at lines 81--83
+[]\EU1/lmr/m/n/10 proud vzniká tehdy, jestliže má intenzita elek-
+[287]
+Overfull \hbox (5.57327pt too wide) in paragraph at lines 171--187
+ [][] 
+[288] <use  "../src/TEO/img/vd_e_drift.pdf" >
+Overfull \hbox (0.35332pt too wide) in paragraph at lines 221--228
+[]\EU1/lmr/m/n/10 Připojíme-li vodič k vnějšímu zdroji elektrického pole (např.
+
+<use  "../src/TEO/img/el_proud_ve_vodici.pdf" >
+<use  "../src/TEO/img/plocha_S.pdf" >
+Underfull \hbox (badness 2111) in paragraph at lines 287--287
+[] []\EU1/lmr/bx/n/9 Obrázek 1.3.[][]: [][]|\EU1/lmr/m/n/9 Rovinná plocha
+
+Underfull \hbox (badness 5316) in paragraph at lines 290--295
+[][]\EU1/lmr/m/n/10 Rovinnou plochou $\OML/cmm/m/it/10 S$
+
+Underfull \hbox (badness 2591) in paragraph at lines 290--295
+\EU1/lmr/m/n/10 průřezu můžeme zavést
+
+Underfull \hbox (badness 2197) in paragraph at lines 290--295
+\EU1/lmr/m/n/10 jako vektor $\OML/cmm/m/it/10 vrS$\EU1/lmr/m/n/10 , který
+
+Underfull \hbox (badness 1701) in paragraph at lines 290--295
+\EU1/lmr/m/n/10 vé ruky (ukazují-li prs-
+[289] (../src/TEO/exam/exam008.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+) (../src/TEO/exam/exam009.tex) (../src/TEO/exam/exam010.tex) [290]
+(../src/TEO/exam/exam011.tex (../src/TEO/img/TEMP_zem_elektroda.tex
+===== Image 'tikz/TEO/ch01_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up
+-to-date. ======
+<use  "tikz/TEO/ch01_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >)
+Overfull \hbox (5.0pt too wide) in paragraph at lines 48--61
+[]
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 48--61
+[] 
+) [291] <use  "../src/TEO/img/pravidlo_prave_ruky.pdf" >
+<use  "../src/TEO/img/pravidlo_pravotociveho_sroubu.pdf" >
+Overfull \hbox (4.35109pt too wide) in paragraph at lines 471--475
+\EU1/lmr/m/n/10 indukčních čar kruhového závitu. Označení $[]$ vyjadřuje proud
+<use  "../src/TEO/img/mag_ind_cary_kruh_z.pdf" >
+<use  "../src/TEO/img/1MR_pic.pdf" >
+<use  "../src/TEO/img/mag_sprazeny_proud1.pdf" >
+<use  "../src/TEO/img/mag_sprazeny_proud2.pdf" >
+<use  "../src/TEO/img/mag_sprazeny_proud3.pdf" > [292]
+<use  "../src/TEO/img/mag_pole_vodic_I_konst.pdf" >
+<use  "../src/TEO/img/mag_pole_vodic_I_konst_sol.pdf" >
+(../src/TEO/exam/exam012.tex [293]
+<use  "../src/TEO/img/duf_duty_valec_H.pdf" >) (../src/TEO/exam/exam013.tex
+<use  "../src/TEO/img/vypocet_H_sousy_kabel.pdf" >
+<use  "../src/TEO/img/koax_H_prubeh.pdf" >) [294]
+<use  "../src/TEO/img/rotH_dxdy.pdf" >
+Overfull \hbox (0.8647pt too wide) in paragraph at lines 737--737
+[] 
+[295]) (../src/TEO/chap/kap_Zakld_zakn_elemag.tex [296]
+chapter 2.
+(wiking.mtc55) <use  "../src/TEO/img/Amperes_circuital_law.pdf" > [297]
+<use  "../src/TEO/img/ES002.pdf" >
+Underfull \hbox (badness 3343) in paragraph at lines 104--104
+\EU1/lmr/m/n/9 proudového impulsu prošlého
+
+Underfull \hbox (badness 6204) in paragraph at lines 107--114
+[][]\EU1/lmr/m/n/10 Uvažujme experiment
+
+Overfull \hbox (0.20369pt too wide) in paragraph at lines 107--114
+\EU1/lmr/m/n/10 uspořádaný podle obr. [][]2.3[][].
+
+Underfull \hbox (badness 1325) in paragraph at lines 107--114
+\EU1/lmr/m/n/10 monosná cívka v podo-
+<use  "../src/TEO/img/MJ_patocka_glvnmr.JPG" >
+Overfull \hbox (13.89333pt too wide) in paragraph at lines 132--135
+\EU1/lmr/m/n/10 Experimentálně je možno dospět ke dvěma stěžejním poznatkům: 
+
+Overfull \hbox (6.22632pt too wide) in paragraph at lines 166--173
+[]\EU1/lmr/m/n/10 Z rovnice ([][]2.8[][]) plyne, že jednotka magnetického toku 
+Weber[][][][][]
+[298] <use  "../src/TEO/img/ES001a.pdf" >
+Underfull \hbox (badness 1430) in paragraph at lines 189--189
+[] []\EU1/lmr/bx/n/8 (a)[][] [][]|\EU1/lmr/m/n/8 Odpor je
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+\EU1/lmr/m/n/8 vždy spo-
+<use  "../src/TEO/img/ES001b.pdf" >
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+[] []\EU1/lmr/bx/n/8 (b)[][] [][]|\EU1/lmr/m/n/8 Cívka
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\EU1/lmr/m/n/8 ve spotře-
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--191
+\EU1/lmr/m/n/8 bičovém
+<use  "../src/TEO/img/ES001c.pdf" >
+Underfull \hbox (badness 2012) in paragraph at lines 193--193
+[] []\EU1/lmr/bx/n/8 (c)[][] [][]|\EU1/lmr/m/n/8 Cívka ve
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--193
+\EU1/lmr/m/n/8 zdrojovém
+
+Overfull \hbox (12.33768pt too wide) in paragraph at lines 214--224
+\EU1/lmr/m/n/10 stal zdroj elektrického napětí u(t), tj. generátor. Připojíme-
+<use  "../src/TEO/img/MJ_patocka_trf.JPG" >
+<use  "../src/TEO/img/MJ_patocka_vrvprd.JPG" > [299]
+<use  "../src/TEO/img/MJ_patocka_koxkbl.JPG" >
+<use  "../src/TEO/img/MJ_patocka_suprvcvk.JPG" > [300]
+<use  "../src/TEO/img/patocka_mag_tok_exp1.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp2.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp3.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp4.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp5.png" > [301]
+<use  "../src/TEO/img/patocka_mag_tok_exp6a.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp6b.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp7a.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp7b.png" >
+Overfull \hbox (4.27472pt too wide) in paragraph at lines 620--627
+ [][] 
+[302] [303] <use  "../src/TEO/img/patocka_mag_tok_exp8.png" > [304]
+(../src/TEO/exam/exam014.tex <use  "../src/TEO/img/patocka_mag_tok_exp9.png" >)
+<use  "../src/TEO/img/patocka_mag_tok_exp10.png" > [305]
+<use  "../src/TEO/img/patocka_mag_tok_exp11a.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp11b.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp11c.png" > [306]
+<use  "../src/TEO/img/patocka_mag_tok_exp12.png" > [307]
+<use  "../src/TEO/img/patocka_mag_tok_exp13.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp14.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp15.png" > [308]
+Overfull \hbox (1.89856pt too wide) in paragraph at lines 1238--1238
+[] 
+<use  "../src/TEO/img/patocka_mag_tok_exp16a.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp16b.png" > [309]
+<use  "../src/TEO/img/patocka_mag_tok_exp17.png" >
+<use  "../src/TEO/img/patocka_mag_tok_exp18.png" > [310] [311]
+Overfull \hbox (8.11446pt too wide) in paragraph at lines 1540--1545
+\EU1/lmr/m/it/10 ných \EU1/lmr/m/n/10 směrů, se \EU1/lmr/m/it/10 odpuzuji \EU1/
+lmr/m/n/10 (v podstatě se jedná o podlouhlou
+
+Overfull \hbox (0.84335pt too wide) in paragraph at lines 1540--1545
+\EU1/lmr/m/n/10 toru se odpuzuje sekundární vinutí od primárního (opač-
+[312]
+Overfull \hbox (2.68246pt too wide) in paragraph at lines 1709--1709
+\EU1/lmr/m/it/10 tronice, měřicí technice a silnoproudé elektrotechnice\EU1/lmr
+/m/n/10 . VU-
+) (../src/TEO/chap/kap_topol_elemag.tex [313]
+chapter 3.
+(wiking.mtc56
+Overfull \hbox (0.7634pt too wide) in paragraph at lines 4--4
+ [][] [][][]\EU1/lmr/m/n/9 Princip reciprocity v pasivních nelineárních 
+) (../src/TEO/img/resistor_grid.tex) [314] (../src/TEO/exam/exam015.tex
+[315] <use  "../src/TEO/img/patocka_topol02a.png" >
+<use  "../src/TEO/img/patocka_topol02b.png" >)
+<use  "../src/TEO/img/patocka_topol03a.png" >
+<use  "../src/TEO/img/patocka_topol03b.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 238--261
+\OML/cmm/m/it/10 U[]$\EU1/lmr/m/n/10 , až $\OML/cmm/m/it/10 U[]$\EU1/lmr/m/n/10
+ . Např. $\U/msb/m/n/10 Z$\EU1/lmr/m/n/10 -matice bude mít tvar: 
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--261
+
+[316] <use  "../src/TEO/img/patocka_topol04.png" >
+<use  "../src/TEO/img/patocka_topol05a.png" >
+<use  "../src/TEO/img/patocka_topol05b.png" >
+<use  "../src/TEO/img/patocka_topol05c.png" >
+<use  "../src/TEO/img/patocka_topol05d.png" >
+Overfull \hbox (5.90411pt too wide) in paragraph at lines 357--369
+ [][] 
+<use  "../src/TEO/img/patocka_topol06.png" > [317]
+<use  "../src/TEO/img/patocka_topol07.png" >
+<use  "../src/TEO/img/patocka_topol08.png" >
+Overfull \hbox (4.99338pt too wide) in paragraph at lines 476--477
+[]\EU1/lmr/m/it/10 buď trojicí parametrů obvodových (u transformátoru např.
+[318] (../src/TEO/exam/exam016.tex) [319]
+Underfull \hbox (badness 1221) in paragraph at lines 759--759
+[][][]\EU1/lmr/m/n/8 Obecněji lze pracovat s topologickými útvary v libovolném 
+$\OML/cmm/m/it/8 N$\EU1/lmr/m/n/8 -
+[320] <use  "../src/TEO/img/patocka_topol09a.png" >
+<use  "../src/TEO/img/patocka_topol09b.png" >
+<use  "../src/TEO/img/patocka_topol09c.png" >
+<use  "../src/TEO/img/patocka_topol09d.png" >
+Overfull \hbox (13.82008pt too wide) in paragraph at lines 807--818
+ [][] 
+<use  "../src/TEO/img/patocka_topol10a.png" >
+<use  "../src/TEO/img/patocka_topol10b.png" >
+<use  "../src/TEO/img/patocka_topol11a.png" >
+<use  "../src/TEO/img/patocka_topol11b.png" >
+<use  "../src/TEO/img/patocka_topol11c.png" >
+<use  "../src/TEO/img/patocka_topol12.png" >
+<use  "../src/TEO/img/patocka_topol13.png" >
+Overfull \hbox (4.13333pt too wide) in paragraph at lines 897--902
+[][]\EU1/lmr/bx/n/10 Věta 3.2.2. []\EU1/lmr/m/it/10 Sešitím dvou ohraničených n
+eorientovaných ploch
+[321] <use  "../src/TEO/img/patocka_topol14.png" >
+<use  "../src/TEO/img/patocka_topol15.png" >
+<use  "../src/TEO/img/patocka_topol16a.png" >
+<use  "../src/TEO/img/patocka_topol16b.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 951--963
+ [][] 
+<use  "../src/TEO/img/patocka_topol17a.png" >
+<use  "../src/TEO/img/patocka_topol17b.png" >
+<use  "../src/TEO/img/patocka_topol18a.png" >
+<use  "../src/TEO/img/patocka_topol18b.png" >
+Overfull \hbox (4.27472pt too wide) in paragraph at lines 1040--1047
+ [][] 
+[322] <use  "../src/TEO/img/patocka_topol19a.png" >
+<use  "../src/TEO/img/patocka_topol19b.png" >
+<use  "../src/TEO/img/patocka_topol20a.png" >
+<use  "../src/TEO/img/patocka_topol20b.png" >
+<use  "../src/TEO/img/patocka_topol21a.png" >
+<use  "../src/TEO/img/patocka_topol21b.png" >
+<use  "../src/TEO/img/patocka_topol22.png" >
+Overfull \hbox (7.69992pt too wide) in paragraph at lines 1124--1141
+\EU1/lmr/m/n/10 jsou vodiče obklopeny rušivým magnetickým polem. Oba zkrou-
+
+Overfull \hbox (2.80882pt too wide) in paragraph at lines 1124--1141
+\EU1/lmr/m/n/10 cené vodiče tvoří hraniční křivku $\OML/cmm/m/it/10 l$ \EU1/lmr
+/m/n/10 orientované plochy $\OML/cmm/m/it/10 S$\EU1/lmr/m/n/10 . Nechť
+<use  "../src/TEO/img/patocka_topol23.png" >
+<use  "../src/TEO/img/patocka_topol24.png" > [323]
+<use  "../src/TEO/img/patocka_topol25a.png" >
+<use  "../src/TEO/img/patocka_topol25b.png" >
+<use  "../src/TEO/img/patocka_topol26a.png" >
+<use  "../src/TEO/img/patocka_topol26b.png" >
+<use  "../src/TEO/img/patocka_topol27a.png" >
+<use  "../src/TEO/img/patocka_topol27b.png" > [324]
+<use  "../src/TEO/img/patocka_topol28a.png" >
+<use  "../src/TEO/img/patocka_topol28b.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active
+<use  "../src/TEO/img/patocka_topol29.png" >
+<use  "../src/TEO/img/patocka_topol30.png" > [325]
+<use  "../src/TEO/img/patocka_topol31a.png" >
+<use  "../src/TEO/img/patocka_topol31b.png" >
+<use  "../src/TEO/img/patocka_topol31b.png" >
+Overfull \hbox (2.68246pt too wide) in paragraph at lines 1449--1449
+\EU1/lmr/m/it/10 tronice, měřicí technice a silnoproudé elektrotechnice\EU1/lmr
+/m/n/10 . VU-
+) (../src/TEO/chap/kap_elemag_p.tex [326]
+chapter 4.
+(wiking.mtc57) [327] <use  "../src/TEO/img/patocka_elmgp01.png" > [328]
+Overfull \hbox (0.1822pt too wide) in paragraph at lines 294--299
+\EU1/lmr/m/n/10 V případě \EU1/lmr/m/it/10 skinefektu \EU1/lmr/m/n/10 nelze fyz
+ikálně interpretovat součet obou
+[329] <use  "../src/TEO/img/patocka_elmgp02.png" > [330]
+<use  "../src/TEO/img/patocka_elmgp03.png" > [331]
+<use  "../src/TEO/img/patocka_elmgp04a.png" >
+<use  "../src/TEO/img/patocka_elmgp04b.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 715--724
+ [][] 
+[332] <use  "../src/TEO/img/patocka_elmgp05.png" >
+Overfull \hbox (2.68246pt too wide) in paragraph at lines 788--788
+\EU1/lmr/m/it/10 tronice, měřicí technice a silnoproudé elektrotechnice\EU1/lmr
+/m/n/10 . VU-
+) (../src/TEO/chap/kap_skinefekt.tex [333]
+chapter 5.
+(wiking.mtc58)) (../src/TEO/chap/kap_mag_obvody.tex [334]
+chapter 6.
+(wiking.mtc59
+Overfull \hbox (3.30438pt too wide) in paragraph at lines 5--5
+ [][] [][][]\EU1/lmr/m/n/9 Elektromagnetický návrh lineárního diskrét- 
+
+Overfull \hbox (2.56638pt too wide) in paragraph at lines 20--20
+ [][] [][][]\EU1/lmr/m/n/9 Matematický model levitačního elektromag- 
+) <use  "../src/TEO/img/teo_fig001a.jpg" >
+<use  "../src/TEO/img/teo_fig001b.jpg" >
+<use  "../src/TEO/img/teo_fig001c.jpg" >
+<use  "../src/TEO/img/teo_fig001d.jpg" >
+<use  "../src/TEO/img/teo_fig001e.jpg" >
+<use  "../src/TEO/img/teo_fig002.jpg" > [335]
+<use  "../src/TEO/img/teo_fig003.jpg" >
+<use  "../src/TEO/img/teo_fig004.jpg" > [336]
+<use  "../src/TEO/img/teo_fig005.jpg" >
+<use  "../src/TEO/img/teo_fig006.jpg" >
+<use  "../src/TEO/img/teo_fig007.jpg" > [337]
+
+LaTeX Warning: Command \i invalid in math mode on input line 343.
+
+<use  "../src/TEO/img/teo_fig008.jpg" > [338]
+<use  "../src/TEO/img/teo_fig009.jpg" >
+<use  "../src/TEO/img/teo_fig010.jpg" > [339]
+Overfull \hbox (0.21846pt too wide) in paragraph at lines 493--495
+\EU1/lmr/m/n/10 měnná plocha $\OML/cmm/m/it/10 S[]$ \EU1/lmr/m/n/10 magnetickéh
+o obvodu, vymezená pře-
+
+Overfull \hbox (9.48303pt too wide) in paragraph at lines 497--502
+\EU1/lmr/m/n/10 rakteristiku jako dvojrozměrnou převodní tabulku $\OML/cmm/m/it
+/10 B \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 H; 
+p\OT1/cmr/m/n/10 )$\EU1/lmr/m/n/10 ,
+
+Overfull \hbox (2.02336pt too wide) in paragraph at lines 497--502
+\EU1/lmr/m/n/10 nebo inverzní \EU1/lmr/m/it/10 dvojrozměrnou \EU1/lmr/m/n/10 ta
+bulku $\OML/cmm/m/it/10 H \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (
+\OML/cmm/m/it/10 B; p\OT1/cmr/m/n/10 )$\EU1/lmr/m/n/10 . Obsahuje-
+<use  "../src/TEO/img/teo_fig011.jpg" > (../src/TEO/exam/exam018.tex
+<use  "../src/TEO/img/teo_fig012.jpg" >) [340]
+<use  "../src/TEO/img/teo_fig013.jpg" >
+<use  "../src/TEO/img/teo_fig015.jpg" > [341]
+Underfull \hbox (badness 2894) in paragraph at lines 704--710
+\EU1/lmr/m/n/10 spínaného reluktančního
+
+Underfull \hbox (badness 2318) in paragraph at lines 704--710
+\EU1/lmr/m/n/10 motoru \EU1/lmr/bx/n/10 SRM\EU1/lmr/m/n/10 . Z popi-
+<use  "../src/TEO/img/teo_fig014.jpg" > [342]
+<use  "../src/TEO/img/teo_fig016.jpg" >
+Overfull \hbox (0.87813pt too wide) in paragraph at lines 840--843
+[]\EU1/lmr/m/n/10 Pro výslednou akcelerační sílu $\OML/cmm/m/it/10 F[]$\EU1/lmr
+/m/n/10 . tedy i pro výsledné zrych-
+
+Overfull \hbox (3.48276pt too wide) in paragraph at lines 856--860
+\EU1/lmr/m/n/10 Sílu $\OML/cmm/m/it/10 F$ \EU1/lmr/m/n/10 elektromagnetu lze ur
+čit pomocí rovnice ([][]6.67a[][] a [][]6.67b[][]),
+<use  "../src/TEO/img/teo_fig017.jpg" >
+Overfull \hbox (2.68246pt too wide) in paragraph at lines 897--897
+\EU1/lmr/m/it/10 tronice, měřicí technice a silnoproudé elektrotechnice\EU1/lmr
+/m/n/10 . VU-
+) (../src/TEO/chap/kap_mag_mat.tex [343] [344]
+chapter 7.
+(wiking.mtc60
+Overfull \hbox (0.24138pt too wide) in paragraph at lines 3--3
+ [][] [][][]\EU1/lmr/m/n/9 Analytický výpočet magnetizační křivky fe- 
+)) (../src/TEO/chap/kap_teorie_trafa.tex [345]
+chapter 8.
+(wiking.mtc61)
+Overfull \hbox (10.90665pt too wide) in paragraph at lines 33--34
+[]\EU1/lmr/m/n/10 Model transformátoru \EU1/lmr/m/it/10 napětí \EU1/lmr/m/n/10 
+ve tvaru hybridní $[]$-matice. 
+
+Overfull \hbox (10.97334pt too wide) in paragraph at lines 34--35
+[]\EU1/lmr/m/n/10 Model transformátoru \EU1/lmr/m/it/10 proudu \EU1/lmr/m/n/10 
+ve tvaru hybridní $[]$-matice. 
+[346] <use  "../src/TEO/img/ES005.pdf" >
+<use  "../src/TEO/img/mag_char_fer.pdf" > [347]
+<use  "../src/TEO/img/mag_linearizace.pdf" >
+Overfull \hbox (0.16441pt too wide) in paragraph at lines 244--249
+\EU1/lmr/m/n/10 nických zařízení, počínaje vazebními a napájecími transformá-
+<use  "../src/TEO/img/SCH_Transformer_Core.pdf" >
+<use  "../src/TEO/img/wiki_single_phase_transformer.pdf" > [348]
+<use  "../src/TEO/img/ES003.pdf" >
+<use  "../src/TEO/img/trafo_int_uprim.pdf" >
+<use  "../src/TEO/img/ES004a.pdf" > <use  "../src/TEO/img/ES004b.pdf" >
+Underfull \hbox (badness 1616) in paragraph at lines 374--374
+[] []\EU1/lmr/bx/n/8 (b)[][] [][]|\EU1/lmr/m/n/8 Zjednodušená představa rozptyl
+u reálného
+[349]
+Overfull \hbox (1.24663pt too wide) in paragraph at lines 428--434
+\EU1/lmr/m/n/10 dární): Takový transformátor si můžeme představit jako trans-
+[350] <use  "../src/TEO/img/patocka_BH_curve.pdf" > [351]
+Overfull \hbox (2.9138pt too wide) in paragraph at lines 628--632
+\EU1/lmr/m/n/10 zachování transformátoru ($\OML/cmm/m/it/10 N[]$\EU1/lmr/m/n/10
+ ) a amplitudy napětí $\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\
+OT1/cmr/m/n/10 )$\EU1/lmr/m/n/10 ,
+
+LaTeX Warning: Reference `ES:ssec_02' on page 352 undefined on input line 635.
+
+[352]
+Overfull \hbox (1.86633pt too wide) in paragraph at lines 777--782
+\EU1/lmr/m/n/10 kost relativní permeability materiálu $\OML/cmm/m/it/10 ^^V[]$\
+EU1/lmr/m/n/10 . Bude-li platit $\OML/cmm/m/it/10 R[] \OMS/cmsy/m/n/10 ^^\
+[353]
+
+LaTeX Warning: Reference `ES:ssec_02' on page 354 undefined on input line 892.
+
+[354] (../src/TEO/exam/exam017.tex <use  "../src/TEO/img/pot_core.png" >)
+[355] <use  "../src/TEO/img/current_ef_solve_1.pdf" >
+<use  "../src/TEO/img/current_ef_solve_2.pdf" >
+<use  "../src/TEO/img/current_ef_solve_3.pdf" >
+<use  "../src/TEO/img/current_ef_solve_4.pdf" >
+<use  "../src/TEO/img/current_ef_solve_7.pdf" > [356]
+<use  "../src/TEO/img/current_ef_solve_5.pdf" >
+<use  "../src/TEO/img/current_ef_solve_6.pdf" >
+<use  "../src/TEO/img/current_ef_solve_8.pdf" >
+Overfull \hbox (2.68246pt too wide) in paragraph at lines 1109--1109
+\EU1/lmr/m/it/10 tronice, měřicí technice a silnoproudé elektrotechnice\EU1/lmr
+/m/n/10 . VU-
+) (../src/TEO/chap/intro_TEO.tex [357]
+chapter 9.
+(wiking.mtc62) (../src/TEO/img/TEO_dvojpol.tex
+===== Image 'tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up
+-to-date. ======
+<use  "tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >)
+Underfull \hbox (badness 1028) in paragraph at lines 59--64
+[][]\EU1/lmr/m/n/10 Libovolnou část obvo-
+
+Underfull \hbox (badness 1701) in paragraph at lines 59--64
+\EU1/lmr/m/n/10 zýváme \EU1/lmr/bx/n/10 dvojpólem\EU1/lmr/m/n/10 ; je-
+
+Overfull \hbox (0.17105pt too wide) in paragraph at lines 65--74
+\EU1/lmr/m/n/10 rychlostí světla. Pro jednoduchost předpokládejme, že elektro-
+[358]
+===== Image 'tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1' is up
+-to-date. ======
+<use  "tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1.pdf" >
+(../src/TEO/img/TEO_dvojpol_iu.tex
+===== Image 'tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2' is up
+-to-date. ======
+<use  "tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2.pdf" >)
+===== Image 'tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure3' is up
+-to-date. ======
+<use  "tikz/TEO/ch09_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure3.pdf" >
+[359]
+Overfull \hbox (1.15332pt too wide) in paragraph at lines 201--205
+[]\EU1/lmr/m/n/10 Pokud připojíme k náhradnímu napěťovému schématu zdro-
+
+Overfull \hbox (7.23428pt too wide) in paragraph at lines 219--223
+\EU1/lmr/m/n/10 Definice grafu obvodu. Mějme v prostoru body $\OML/cmm/m/it/10 
+B[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 ; []  ; \OML/cmm/m/it/
+10 B[]$
+<use  "../src/TEO/img/TEO_topo01.jpg" > [360]
+Overfull \hbox (4.91486pt too wide) in paragraph at lines 280--283
+\EU1/lmr/m/n/10 libovolnou uzavřenou orientovanou plochou $\OML/cmm/m/it/10 S$ 
+\EU1/lmr/m/n/10 obr. [][]9.4[][]a). Vzhle-
+<use  "../src/TEO/img/TEO_KZ01.jpg" > <use  "../src/TEO/img/TEO_KZ02.jpg" >
+<use  "../src/TEO/img/TEO_KZ03.jpg" > [361]
+<use  "../src/TEO/img/TEO_KZ04.jpg" >
+<use  "../src/TEO/img/Biolek_Modelovani.jpg" > [362]
+(../src/TEO/img/TEO_circ03.tex) [363]
+Overfull \hbox (3.54337pt too wide) in paragraph at lines 582--584
+[]\EU1/lmr/m/n/10 Prvek $\OML/cmm/m/it/10 i; j$ \EU1/lmr/m/n/10 na hlavní diago
+nále obsahuje součet všech
+<use  "../src/TEO/img/Biolek_MMUN_thev_dvojpol.pdf" >
+<use  "../src/TEO/img/Biolek_MMUN_razitko.pdf" > [364]
+(../src/TEO/img/TEO_circ02.tex) <use  "../src/TEO/img/MMUN_ideal_VFA.pdf" >
+<use  "../src/TEO/img/MMUN_ideal_VFA_matice.pdf" > (../src/TEO/exam/exam001.tex
+<use  "../src/TEO/img/MMUN_inv_OPAMP.pdf" >
+Overfull \hbox (1.15157pt too wide) in paragraph at lines 24--24
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+
+Overfull \hbox (1.91475pt too wide) in paragraph at lines 24--24
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+) (../src/TEO/exam/exam002.tex <use  "../src/TEO/img/MMUN_inv_OPAMP.pdf" >
+Overfull \hbox (1.91475pt too wide) in paragraph at lines 21--21
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+) [365] (../src/TEO/exam/exam003.tex
+<use  "../src/TEO/img/MMUN_diff_OPAMP.pdf" >
+Overfull \hbox (1.72029pt too wide) in paragraph at lines 23--23
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+
+Overfull \hbox (1.15157pt too wide) in paragraph at lines 27--27
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+
+Overfull \hbox (1.91475pt too wide) in paragraph at lines 27--27
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+
+Overfull \hbox (1.72029pt too wide) in paragraph at lines 29--29
+ []|$\OMS/cmsy/m/n/9 ^^@\OML/cmm/m/it/9 G[]$| 
+) (../src/TEO/exam/exam004.tex <use  "../src/TEO/img/voltage_divider.pdf" >
+Overfull \hbox (0.26129pt too wide) detected at line 42
+[]  \OT1/cmr/m/n/8 = []
+)) (../src/TEO/chap/prechod_deje.tex [366]
+chapter 10.
+(wiking.mtc63) <use  "../src/TEO/img/prechodny_dej.pdf" >
+(../src/TEO/exam/exam005.tex
+<use  "../src/TEO/img/Ideal_Trf_step_response_LTspice.pdf" > [367]
+<use  "../src/TEO/img/Ideal_Trf_step_response_K05.pdf" >) [368]
+Underfull \hbox (badness 1342) in paragraph at lines 96--105
+\EU1/lmr/m/n/10 perpozicí nového ustále-
+) (../src/TEO/chap/lin_cir_harm.tex [369]
+chapter 11.
+(wiking.mtc64) (../src/TEO/img/TEO_fce01.tex
+===== Image 'tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up
+-to-date. ======
+<use  "tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >
+Overfull \hbox (8.12262pt too wide) in paragraph at lines 10--60
+ [][] 
+) (../src/TEO/img/TEO_fce02.tex
+===== Image 'tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1' is up
+-to-date. ======
+<use  "tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1.pdf" >)
+Overfull \hbox (19.84712pt too wide) in paragraph at lines 39--44
+[]\EU1/lmr/m/n/10 Veličiny $\OML/cmm/m/it/10 v$\EU1/lmr/m/n/10 , jež během svéh
+o cyklu \EU1/lmr/m/it/10 změní znaménko \EU1/lmr/m/n/10 (obr.[][]11.1[][])
+(../src/TEO/img/TEO_fce03.tex
+===== Image 'tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2' is up
+-to-date. ======
+<use  "tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure2.pdf" >
+===== Image 'tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure3' is up
+-to-date. ======
+<use  "tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure3.pdf" >)
+Overfull \hbox (5.1758pt too wide) in paragraph at lines 58--60
+[]\EU1/lmr/m/it/10 Minimální hodnota $\OML/cmm/m/it/10 V[]$ \EU1/lmr/m/n/10 per
+iodické veličiny $\OML/cmm/m/it/10 v$\EU1/lmr/m/n/10 , tj. nejmen-
+[370] (../src/TEO/img/TEO_fce04.tex
+===== Image 'tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure4' is up
+-to-date. ======
+<use  "tikz/TEO/ch11_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure4.pdf" >)
+(../src/TEO/exam/exam007.tex) [371]) (../src/TEO/chap/kap_optocoupler.tex
+[372]
+chapter 12.
+(wiking.mtc65) <use  "../src/TEO/img/zahlava_optoel_sys.jpg" >
+Overfull \hbox (15.6522pt too wide) in paragraph at lines 47--51
+\EU1/lmr/m/n/10 charakterizuje \EU1/lmr/m/it/10 proudový přenosový poměr CTR \E
+U1/lmr/m/n/10 (Current Transfer
+<use  "../src/TEO/img/ES_opto_CTR01.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR03.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR02.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR04.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR05.jpg" > [373]
+<use  "../src/TEO/img/ES_opto_CTR06.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR07.jpg" > [374]
+<use  "../src/TEO/img/ES_opto_CTR08.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR09.jpg" >
+<use  "../src/TEO/img/ES_opto_CTR10.jpg" >
+<use  "../src/TEO/img/optocoupler_clearance.pdf" >)) [375]
+part VI.
+[376] (../src/AES/AES.tex (../src/AES/chap/spice.tex
+chapter 1.
+(wiking.mtc66) <use  "../src/AES/img/../ltspice/ltc001_RC.pdf" >
+<use  "../src/AES/img/../ltspice/CompAttrEditor.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 56--63
+ [][] 
+<use  "../src/AES/img/../ltspice/ltc003_OSC_Probe_simple.pdf" >
+<use  "../src/AES/img/../ltspice/ltc002_OSC_Probe.pdf" >
+Underfull \vbox (badness 2828) has occurred while \output is active [377]
+<use  "../src/AES/img/beaglebone.jpg" >) (../src/AES//chap/amplifier.tex
+[378]
+chapter 2.
+(wiking.mtc67)) (../src/AES/chap/oscillator.tex [379]
+chapter 3.
+(wiking.mtc68)
+Overfull \hbox (1.37332pt too wide) in paragraph at lines 21--24
+[]\EU1/lmr/m/n/10 funkční generátory - vytvářejí různé periodické prů-
+<use  "../src/AES/img/MUE6_311a.png" > <use  "../src/AES/img/MUE6_311b.png" >
+<use  "../src/AES/img/MUE6_311c.png" > (../src/AES/img/MUE6_311d.tex
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure4' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure4.pdf" >)
+(../src/AES/img/MUE6_311e.tex
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure5' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure5.pdf" >)
+(../src/AES/img/AES_62a.tex
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure6' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure6.pdf" >)
+(../src/AES/img/AES_62b.tex
+===== Image 'tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure7' is up-to
+-date. ======
+<use  "tikz/FYZII/ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure7.pdf" >)
+Overfull \hbox (4.04291pt too wide) in paragraph at lines 117--124
+ [][] 
+(../src/AES/img/AES_63a.tex) (../src/AES/img/AES_63b.tex) [380]
+
+LaTeX Warning: Text page 381 contains only floats.
+
+
+Overfull \vbox (3.7416pt too high) has occurred while \output is active)
+(../src/AES/chap/opamp.tex [381]
+chapter 4.
+(wiking.mtc69) <use  "../src/AES/img/Dosta_OP_znacka.pdf" >
+<use  "../src/AES/img/Dostal_Opamp_model.pdf" > [382]
+<use  "../src/AES/img/opamp_inv01a.pdf" >
+Underfull \hbox (badness 4266) in paragraph at lines 111--111
+[] []\EU1/lmr/bx/n/8 (a)[][] [][]|$\OML/cmm/m/it/8 u[] \OT1/cmr/m/n/8 = \OMS/cm
+sy/m/n/8 ^^@[]\OML/cmm/m/it/8 u[];  R[] \OT1/cmr/m/n/8 =
+<use  "../src/AES/img/opamp_inv01b.pdf" > [383]
+(../src/AES/img/diff_opamp01.tex)) (../src/AES/chap/DA_AD_converter.tex
+[384] [385]
+chapter 5.
+(wiking.mtc70) <use  "../src/AES/img/ADC_DAC_block.pdf" >
+Overfull \hbox (2.31223pt too wide) in paragraph at lines 7--14
+\EU1/lmr/m/n/10 číslicově-analogové převodníky (ADC - Analog-to-Digital Con-
+
+Overfull \hbox (5.45665pt too wide) in paragraph at lines 15--20
+[]\EU1/lmr/bx/n/10 Analogově-číslicové převodníky \EU1/lmr/m/n/10 (Analog-to-Di
+gital Con-
+
+Overfull \hbox (5.55666pt too wide) in paragraph at lines 21--28
+[]\EU1/lmr/bx/n/10 Číslicově-analogové převodníky \EU1/lmr/m/n/10 (Digital-to-A
+nalog Con-
+[386] <use  "../src/AES/img/ADC_DAC_3bit.pdf" >
+<use  "../src/AES/img/Uni_Bi_Converter.pdf" >
+<use  "../src/AES/img/Quantized_signal_wave.pdf" > [387]
+Overfull \hbox (2.85219pt too wide) in paragraph at lines 228--231
+\EU1/lmr/m/n/10 V předchozí kapitole byla nastíněna možnost aproximace kvan-
+
+Overfull \hbox (11.29332pt too wide) in paragraph at lines 232--236
+[]\EU1/lmr/m/n/10 Vyjděme tedy z převodní charakteristiky ideálního N-bitového
+<use  "../src/AES/img/AD_kvantizacni_chyba.pdf" >
+<use  "../src/AES/img/AD_kvantizacni_sum1.pdf" >
+<use  "../src/AES/img/AD_kvantizacni_sum2.pdf" >
+Underfull \hbox (badness 2591) in paragraph at lines 256--256
+[] []\EU1/lmr/bx/n/8 (b)[][] [][]|\EU1/lmr/m/n/8 Kvantizační šum jako
+
+Underfull \vbox (badness 2150) has occurred while \output is active [388]
+<use  "../src/AES/img/AD_SNR.pdf" >
+Overfull \hbox (1.24333pt too wide) in paragraph at lines 346--349
+\EU1/lmr/m/n/10 noty analogové veličiny s vybranými kvantizačními úrov-
+
+Overfull \hbox (1.3733pt too wide) in paragraph at lines 369--370
+\EU1/lmr/m/n/10 Číslicově-analogové převodníky převádějí číslicový signál zpra-
+
+[389] <use  "../src/AES/img/DA_prevodni_charka.pdf" >
+<use  "../src/AES/img/DA_doba_Tu.pdf" >
+<use  "../src/AES/img/DAC0800_block_diagram.pdf" > [390]
+<use  "../src/AES/img/DAC0800_sch1.pdf" >) (../src/AES/chap/filter.tex [391]
+chapter 6.
+(wiking.mtc71
+Overfull \hbox (0.7154pt too wide) in paragraph at lines 6--6
+ [][] [][][]\EU1/lmr/m/n/9 Průchod signálu kmitočtovým filtrem a pře- 
+)
+Overfull \hbox (1.00993pt too wide) in paragraph at lines 27--37
+\EU1/lmr/m/n/10 procházejících harmonických kmitočtových složek signálu. Ty-
+<use  "../src/AES/img/aes_fig007.jpg" > [392]
+<use  "../src/AES/img/KF_sedlacek_kmvhb.jpg" >
+Overfull \hbox (2.6567pt too wide) in paragraph at lines 104--113
+[]\EU1/lmr/m/n/10 Realizace s \EU1/lmr/bx/n/10 číslicovými filtry \EU1/lmr/m/n/
+10 spočívá v číslicovém zpra-
+[393]
+Overfull \hbox (2.87666pt too wide) in paragraph at lines 170--185
+[]\EU1/lmr/bx/n/10 Elektromechanické filtry \EU1/lmr/m/n/10 jsou historicky nej
+starší „in-
+<use  "../src/AES/img/KF_sedlacek_kmtab.jpg" >
+<use  "../src/AES/img/KF_sedlacek_dvjbrn.jpg" > [394])
+(../src/AES/chap/BATT.tex [395]
+chapter 7.
+(wiking.mtc72)) (../src/AES/chap/lin_reg_power.tex [396]
+chapter 8.
+(wiking.mtc73) <use  "../src/AES/img/patocka_jednocestny_1f_usm_LRzatez.pdf" >
+Overfull \hbox (0.78444pt too wide) in paragraph at lines 20--23
+[]\EU1/lmr/m/n/10 Bude-li indukčnost veliká (v limitě nekonečná), pak pod-
+(../src/AES/exam/exam001.tex
+<use  "../src/AES/img/patocka_jednocestny_1f_usm_PSpice.pdf" >
+<use  "../src/AES/img/PSPice_SIM002_usm1f_RL_6mH_5R.pdf" >
+Underfull \vbox (badness 10000) has occurred while \output is active [397])
+<use  "../src/AES/img/patocka_stabilizator_ZD_sch.pdf" >
+<use  "../src/AES/img/patocka_stabilizator_ZD_VA.pdf" >
+(../src/AES/exam/exam002.tex
+<use  "../src/AES/img/stabilizator_ZD_ripple_effect.pdf" >
+<use  "../src/AES/img/stabilizator_ZD_ripple_graph.pdf" > [398]
+<use  "../src/AES/img/stabilizator_ZD_DC_equival.pdf" >
+<use  "../src/AES/img/stabilizator_ZD_AC_equival.pdf" >)
+<use  "../src/AES/img/sig_cir_fuse_failure.pdf" >) (../src/AES/chap/SMPS.tex
+[399]
+chapter 9.
+(wiking.mtc74
+Overfull \hbox (2.1014pt too wide) in paragraph at lines 13--13
+ [][] [][][]\EU1/lmr/m/n/9 Popis činnosti v režimu přerušovaných prou- 
+
+Overfull \hbox (2.1014pt too wide) in paragraph at lines 19--19
+ [][] [][][]\EU1/lmr/m/n/9 Popis činnosti v režimu přerušovaných prou- 
+
+Overfull \hbox (0.31941pt too wide) in paragraph at lines 25--25
+ [][] [][][]\EU1/lmr/m/n/9 Můstkový jednočinný propustný měnič - zá- 
+
+Overfull \hbox (9.4544pt too wide) in paragraph at lines 31--31
+ [][] [][][]\EU1/lmr/m/n/9 Jednočinný propustný měnič s aktivním clam- 
+) <use  "../src/AES/img/hamm_schema_imp_reg.pdf" > [400]
+(../src/AES/exam/exam003.tex <use  "../src/AES/img/LTspice_pwm_gen.pdf" >
+<use  "../src/AES/img/LTspice_pwm_wave.pdf" >)
+<use  "../src/AES/img/patocka_pracovni_kvadranty_sch.pdf" >
+<use  "../src/AES/img/patocka_aktivni_zatez_nahrad_sch.pdf" >
+<use  "../src/AES/img/patocka_aktivni_zatez_ss_mot_nahrad_sch.pdf" > [401]
+<use  "../src/AES/img/patocka_pracovni_kvadranty.pdf" >
+Underfull \hbox (badness 4752) in paragraph at lines 138--138
+[] []\EU1/lmr/bx/n/9 Obrázek 9.6.[][]: [][]|\EU1/lmr/m/n/9 Pracovní
+
+Overfull \hbox (7.60434pt too wide) in paragraph at lines 159--163
+[]\EU1/lmr/m/n/10 Jako akumulační prvek nelze
+
+Overfull \hbox (1.67436pt too wide) in paragraph at lines 159--163
+\EU1/lmr/m/n/10 bíjení kondenzátoru zkrato-
+<use  "../src/AES/img/patocka_step_down_princip.pdf" >
+<use  "../src/AES/img/patocka_step_up_princip.pdf" >
+<use  "../src/AES/img/patocka_buck_boost_princip.pdf" >
+Overfull \hbox (8.79936pt too wide) in paragraph at lines 175--185
+ [][] 
+<use  "../src/AES/img/aes_fig001a.pdf" >
+<use  "../src/AES/img/aes_fig001b.pdf" >
+<use  "../src/AES/img/aes_fig001c.pdf" > [402]
+<use  "../src/AES/img/aes_fig005.pdf" >
+<use  "../src/AES/img/patocka_step_down_sch1.pdf" >
+<use  "../src/AES/img/aes_fig002a.pdf" >
+<use  "../src/AES/img/aes_fig002b.pdf" >
+<use  "../src/AES/img/aes_fig002c.pdf" > [403]
+Overfull \hbox (0.58963pt too wide) in paragraph at lines 387--391
+\EU1/lmr/m/n/10 kami (tedy $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 = 0$\EU1/lmr/m/n
+/10 ). V době $\OML/cmm/m/it/10 t[]$ \EU1/lmr/m/n/10 (tranzistor sepnut) se pro
+ud$\OML/cmm/m/it/10 i[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$
+[404] <use  "../src/AES/img/aes_fig003.pdf" > [405]
+<use  "../src/AES/img/aes_fig004.pdf" >
+<use  "../src/AES/img/aes_fig006.pdf" > [406]
+<use  "../src/AES/img/patocka_buckboost_sch.pdf" >
+<use  "../src/AES/img/patocka_buckboost_pr.pdf" > [407]
+(../src/AES/sec/sec_forward_converter.tex
+Overfull \hbox (24.33215pt too wide) in paragraph at lines 19--26
+[]\EU1/lmr/m/n/10 Stejnosměrný meziobvod (ss. mezilehlý obvod, DC-bus, zwischen
+-
+
+Overfull \hbox (0.38113pt too wide) in paragraph at lines 49--55
+\EU1/lmr/m/n/10 aktance $\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ^^YfL[]$ \EU1/lmr/m/
+n/10 výstupní rozptylové indukčnosti trans-
+<use  "../src/AES/img/patocka_1cinprop_menic.JPG" >
+<use  "../src/AES/img/patocka_1cinprop_menic_w.JPG" > [408]
+Underfull \vbox (badness 1072) has occurred while \output is active
+<use  "../src/AES/img/patocka_1cinprop_syceni.JPG" >
+<use  "../src/AES/img/Forward_converter_topo.pdf" > [409]
+Overfull \hbox (2.38417pt too wide) in paragraph at lines 191--197
+[]\EU1/lmr/m/n/10 Kolektorovým obvodem a primárním vinutím $\OML/cmm/m/it/10 N[
+]$ \EU1/lmr/m/n/10 teče proud
+<use  "../src/AES/img/Forward_converter_wave.pdf" > [410]
+Overfull \hbox (11.96587pt too wide) in paragraph at lines 312--315
+[]\EU1/lmr/m/n/10 Volíme-li $\OML/cmm/m/it/10 N[] < N[]$\EU1/lmr/m/n/10 , je $\
+OML/cmm/m/it/10 U[] > U[]$ \EU1/lmr/m/n/10 a tedy namáhání $\OML/cmm/m/it/10 U[
+] >
+
+Overfull \hbox (1.32298pt too wide) in paragraph at lines 315--318
+[]\EU1/lmr/m/n/10 Volíme-li $\OML/cmm/m/it/10 N[] > N[]$\EU1/lmr/m/n/10 , je $\
+OML/cmm/m/it/10 U[] < U[]$ \EU1/lmr/m/n/10 a je tedy $\OML/cmm/m/it/10 U[] < U[
+] <
+[411] <use  "../src/AES/img/BH_curve_forward_converter.pdf" >
+Underfull \hbox (badness 3291) in paragraph at lines 378--384
+\EU1/lmr/m/n/10 psán jeden z možných
+
+Underfull \hbox (badness 3009) in paragraph at lines 378--384
+\EU1/lmr/m/n/10 zovat jádro transformá-
+
+Underfull \hbox (badness 1052) in paragraph at lines 378--384
+\EU1/lmr/m/n/10 přesycení. Velikost mag-
+
+Underfull \hbox (badness 1997) in paragraph at lines 378--384
+\OML/cmm/m/it/10 t[]$ \EU1/lmr/m/n/10 přiložené na vinutí
+<use  "../src/AES/img/imag_forward_converter.pdf" >
+<use  "../src/AES/img/forward_converter_active_ltspice_model.pdf" >)
+(../src/AES/sec/sec_flyback_converter.tex
+<use  "../src/AES/img/flyback_sch.png" > [412]
+<use  "../src/AES/img/flyback_wave.png" >
+Overfull \hbox (1.05771pt too wide) in paragraph at lines 26--30
+\EU1/lmr/m/it/10 nost transformátoru\EU1/lmr/m/n/10 . Rozptylová indukčnost je 
+nežádoucí, pro-
+<use  "../src/AES/img/flyback_tok.png" > [413]
+Overfull \hbox (0.7233pt too wide) in paragraph at lines 134--136
+\EU1/lmr/m/n/10 Výkon přenášený transformátorem je nutno určit pomocí mag-
+[414] <use  "../src/AES/img/flyback01.png" >
+<use  "../src/AES/img/flyback02.png" > <use  "../src/AES/img/flyback_2T.png" >)
+<use  "../src/AES/img/unitrode_voltage_mode_control.pdf" >
+<use  "../src/AES/img/unitrode_current_mode_control.pdf" >
+Overfull \hbox (1.60332pt too wide) in paragraph at lines 806--807
+[]\EU1/lmr/m/n/10 Current sharing of paralleled supplies for modular power
+[415]
+Overfull \hbox (9.08995pt too wide) in paragraph at lines 812--813
+[]\EU1/lmr/m/n/10 Peak/avg. current error and instability –slope compensati-
+<use  "../src/AES/img/TL431_01a.png" > <use  "../src/AES/img/TL431_01b.png" >
+<use  "../src/AES/img/TL431_03.png" > <use  "../src/AES/img/TL431_02.png" >
+[416] <use  "../src/AES/img/LT1376_dual_output_reg.pdf" >
+<use  "../src/AES/img/LT1376_dual_output_reg_performance.pdf" >)) [417]
+part VII.
+[418] (../src/CES/CES.tex (../src/CES/chap/cis_sig_sys.tex
+chapter 1.
+(wiking.mtc75)
+Overfull \hbox (4.14996pt too wide) in paragraph at lines 57--60
+\EU1/lmr/m/n/10 kladní kombinační logické funkce - např. \EU1/lmtt/m/n/10 AND-O
+R-INVERT\EU1/lmr/m/n/10 ,
+[419] [420]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 244.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 244.
+
+) (../src/CES/chap/mit1ch02.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty)
+[421]
+chapter 2.
+(wiking.mtc76) <use  "../src/CES/img/eniac.jpg" >
+Underfull \vbox (badness 3000) has occurred while \output is active [422]
+<use  "../src/CES/img/EDSAC.jpg" >
+
+LaTeX Warning: Empty bibliography on input line 151.
+
+) (../src/CES/chap/technology.tex [423]
+chapter 3.
+(wiking.mtc77
+Overfull \hbox (1.56842pt too wide) in paragraph at lines 5--5
+ [][] [][][]\EU1/lmr/m/n/9 Přizpůsobení logických obvodů různých napěťových 
+) <use  "../src/CES/img/diodovy_log_OR.pdf" >
+<use  "../src/CES/img/diodovy_log_AND.pdf" > [424]
+Overfull \hbox (5.6433pt too wide) in paragraph at lines 69--74
+\EU1/lmr/m/n/10 problém jejich vzájemného propojení zachovávající jejich funkč-
+
+
+Overfull \hbox (5.99535pt too wide) in paragraph at lines 78--79
+[]\EU1/lmr/m/n/10 maximální úroveň logické ’0’ na výstupu hradla - $[]$ 
+
+Overfull \hbox (4.54837pt too wide) in paragraph at lines 79--80
+[]\EU1/lmr/m/n/10 minimální úroveň logické ’1’ na výstupu hradla - $[]$ 
+<use  "../src/CES/img/digit_cir_output_common.pdf" >
+<use  "../src/CES/img/level_shifting_MOSFET.pdf" >
+<use  "../src/CES/img/level_shifting_diode_offset.pdf" > [425]
+<use  "../src/CES/img/level_shifting_COMP.pdf" >
+<use  "../src/CES/img/direct_connect.pdf" >
+<use  "../src/CES/img/CES_clamp_diodes_input.png" >
+<use  "../src/CES/img/CES_ext_clamp_diodes_input.png" > [426]
+<use  "../src/CES/img/CES_ext_clamp_bjt_input.png" >
+<use  "../src/CES/img/CES_ext_res_divider.png" >
+<use  "../src/CES/img/CES_ext_level_translator1.png" >
+<use  "../src/CES/img/CES_ext_level_translator2.png" > [427])
+(../src/CES/chap/Basic_MCU_Arch.tex [428]
+chapter 4.
+(wiking.mtc78
+Overfull \hbox (3.64938pt too wide) in paragraph at lines 28--28
+ [][] [][][]\EU1/lmr/m/n/9 Využití příznakových bitů v instrukcích pod- 
+) <use  "../src/CES/img/MCU_arch_basic.pdf" > [429]
+<use  "../src/CES/img/intel4004.jpg" > <use  "../src/CES/img/bus_cycle.jpg" >
+[430] <use  "../src/CES/img/periferie.jpg" >
+Overfull \hbox (1.47443pt too wide) in paragraph at lines 221--232
+\EU1/lmr/m/n/10 Periferní obvody tvoří velmi rozmanitou skupinu obvodů, zvlá-
+<use  "../src/CES/img/adresovy_prostor1.jpg" >
+<use  "../src/CES/img/adresovy_prostor2.jpg" >
+Overfull \hbox (4.27472pt too wide) in paragraph at lines 276--282
+ [][] 
+[431] <use  "../src/CES/img/adresovy_prostor3.jpg" >
+<use  "../src/CES/img/adresovy_prostor4.jpg" >
+Overfull \hbox (4.27472pt too wide) in paragraph at lines 302--308
+ [][] 
+<use  "../src/CES/img/adresovy_prostor5.jpg" >
+<use  "../src/CES/img/instrukce1a.pdf" >
+<use  "../src/CES/img/instrukce1b.pdf" >
+<use  "../src/CES/img/instrukce1c.pdf" >
+<use  "../src/CES/img/instrukce2.jpg" > [432]
+Overfull \hbox (10.09552pt too wide) in paragraph at lines 398--406
+\EU1/lmr/m/n/10 děny v \EU1/lmr/bx/n/10 aritmeticko-logické jednotce ALU \EU1/l
+mr/m/n/10 (angl. \EU1/lmr/m/it/10 Arithmetic-
+<use  "../src/CES/img/procesor.jpg" > [433]
+<use  "../src/CES/img/ukazatel.jpg" > <use  "../src/CES/img/podprogram.jpg" >
+[434] <use  "../src/CES/img/mpradic01.png" >
+<use  "../src/CES/img/mpradic02.png" > <use  "../src/CES/img/mpradic03.png" >
+<use  "../src/CES/img/mpradic04.png" > <use  "../src/CES/img/mpradic05.png" >
+<use  "../src/CES/img/mpradic06.png" > [435]
+<use  "../src/CES/img/ALU1bit.png" > <use  "../src/CES/img/ALU_shift.png" >
+[436] <use  "../src/CES/img/pipeline01.jpg" > [437]
+<use  "../src/CES/img/pipeline02.jpg" >
+Overfull \hbox (1.28105pt too wide) in paragraph at lines 909--922
+\EU1/lmr/m/n/10 strukcích současně, však přináší i komplikace. Zřetězená struk-
+
+
+Overfull \hbox (1.79771pt too wide) in paragraph at lines 938--947
+\EU1/lmr/m/n/10 Procesory typu \EU1/lmtt/m/n/10 CISC \EU1/lmr/m/n/10 jsou zákla
+dem počítačů \EU1/lmtt/m/n/10 CISC \EU1/lmr/m/n/10 (angl. \EU1/lmr/m/it/10 Com-
+
+[438]
+Overfull \hbox (2.18443pt too wide) in paragraph at lines 971--973
+[]\EU1/lmr/m/n/10 Kompilátor z vyššího jazyka je složitý, optimalizuje rych-
+[439]
+Overfull \hbox (0.75104pt too wide) in paragraph at lines 1080--1084
+[]\EU1/lmr/m/n/10 Směr přenosu je dán konvencí při psaní instrukcí, tzv. „směr
+[440]
+Underfull \hbox (badness 10000) in alignment at lines 1214--1221
+[][][][][][][][][][] 
+
+Overfull \hbox (128.68098pt too wide) in paragraph at lines 1214--1222
+[][] 
+
+Overfull \hbox (0.88222pt too wide) in paragraph at lines 1237--1239
+[]\EU1/lmr/m/n/10 U některých procesorů jsou možnosti výběru operandů ome-
+<use  "../src/CES/img/pinker_SHL.png" >
+<use  "../src/CES/img/pinker_SHR.png" >
+<use  "../src/CES/img/pinker_ASHR.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 1256--1264
+ [][] 
+<use  "../src/CES/img/pinker_ROL.png" >
+<use  "../src/CES/img/pinker_ROR.png" >
+<use  "../src/CES/img/pinker_RCL.png" >
+<use  "../src/CES/img/pinker_RCR.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 1285--1295
+ [][] 
+
+Overfull \hbox (0.79332pt too wide) in paragraph at lines 1315--1317
+\EU1/lmr/m/n/10 Jsou možné přesuny mezi indexregistry a jinými registry (včet-
+[441] [442]
+Underfull \hbox (badness 10000) in alignment at lines 1456--1464
+[][][] 
+
+Overfull \hbox (139.43835pt too wide) in paragraph at lines 1456--1465
+[][] 
+
+Underfull \hbox (badness 10000) in alignment at lines 1474--1482
+[][][] 
+
+Overfull \hbox (139.43835pt too wide) in paragraph at lines 1474--1483
+[][] 
+
+Underfull \hbox (badness 10000) in alignment at lines 1495--1501
+[][][] 
+
+Overfull \hbox (139.43835pt too wide) in paragraph at lines 1495--1502
+[][] 
+
+Underfull \vbox (badness 4441) has occurred while \output is active [443]
+<use  "../src/CES/img/pinker_ext_sys_radic.png" >
+<use  "../src/CES/img/pinker_int_sys_radic.png" >
+<use  "../src/CES/img/pinker_konfig_sys_radic.png" > [444]
+<use  "../src/CES/img/pinker_sbernice01.png" >
+<use  "../src/CES/img/pinker_sbernice02.png" >
+<use  "../src/CES/img/pinker_sbernice03.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 1657--1663
+ [][] 
+<use  "../src/CES/img/pinker_sbernice04.png" >
+<use  "../src/CES/img/pinker_sbernice05.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 1699--1705
+ [][] 
+
+Overfull \hbox (1.71106pt too wide) in paragraph at lines 1709--1714
+\EU1/lmr/m/n/10 přibližně podle obr. [][]4.24[][], pro periferní obvody jsou zv
+láš-
+[445] <use  "../src/CES/img/pinker_sbernice06.png" >
+<use  "../src/CES/img/pinker_sbernice07.png" >
+<use  "../src/CES/img/pinker_sbernice08.png" >
+Underfull \hbox (badness 10000) in alignment at lines 1813--1819
+[][][] 
+
+Overfull \hbox (139.43835pt too wide) in paragraph at lines 1813--1820
+[][] 
+<use  "../src/CES/img/pinker_sbernice09.png" >
+<use  "../src/CES/img/pinker_sbernice10.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 1835--1841
+ [][] 
+[446] <use  "../src/CES/img/pinker_sbernice11.png" >
+<use  "../src/CES/img/pinker_sbernice12.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 1864--1870
+ [][] 
+<use  "../src/CES/img/pinker_sbernice13.png" > [447]
+<use  "../src/CES/img/pinker_sbernice14.png" >
+<use  "../src/CES/img/pinker_sbernice15.png" > [448]
+<use  "../src/CES/img/pinker_sbernice16.png" >
+<use  "../src/CES/img/pinker_sbernice17.png" > [449]
+Overfull \hbox (0.19778pt too wide) in paragraph at lines 2111--2123
+[]\EU1/lmr/bx/n/10 Vyřazování obvodů \EU1/lmr/m/n/10 z činnosti tím, že se zabl
+okují hodino-
+<use  "../src/CES/img/pinker_sbernice18.png" >
+<use  "../src/CES/img/pinker_sbernice19.png" >
+Overfull \hbox (4.27072pt too wide) in paragraph at lines 2137--2143
+ [][] 
+[450] <use  "../src/CES/img/pinker_sbernice20.png" >
+<use  "../src/CES/img/pinker_sbernice21.png" > [451]
+Overfull \hbox (8.61884pt too wide) in paragraph at lines 2331--2335
+\EU1/lmr/bx/n/10 maskovatelné přerušení \EU1/lmtt/m/n/10 NMI \EU1/lmr/m/n/10 (a
+ngl. \EU1/lmr/m/it/10 Non-Maskable Interrupt\EU1/lmr/m/n/10 ),
+<use  "../src/CES/img/pinker_sbernice22.png" > [452]
+<use  "../src/CES/img/pinker_sbernice23.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active [453]
+<use  "../src/CES/img/pinker_sbernice24.png" >
+<use  "../src/CES/img/pinker_sbernice25.png" > [454]
+<use  "../src/CES/img/pinker_sbernice26.png" >
+<use  "../src/CES/img/pinker_sbernice27.png" > [455] [456]
+<use  "../src/CES/img/pinker_sbernice28.png" >
+<use  "../src/CES/img/pinker_sbernice29.png" >
+<use  "../src/CES/img/pinker_sbernice30.png" > [457]
+<use  "../src/CES/img/pinker_sbernice31.png" >
+<use  "../src/CES/img/pinker_sbernice32.png" >
+<use  "../src/CES/img/pinker_sbernice33.png" >
+<use  "../src/CES/img/pinker_sbernice34.png" > [458]
+<use  "../src/CES/img/pinker_sbernice35.png" >
+<use  "../src/CES/img/pinker_sbernice36.png" >
+Overfull \hbox (0.46553pt too wide) in paragraph at lines 3017--3024
+\EU1/lmr/m/n/10 kropočítače, tak i dodatečnou vnější jednotkou, připojenou na
+
+Underfull \vbox (badness 1424) has occurred while \output is active
+<use  "../src/CES/img/pinker_sbernice37.png" >
+Overfull \hbox (4.64337pt too wide) in paragraph at lines 3045--3047
+[]\EU1/lmr/bx/n/10 Algoritmus pro mazání a programování paměti \EU1/lmtt/b/n/10
+ FLASH
+[459] <use  "../src/CES/img/pinker_sbernice38.png" >
+<use  "../src/CES/img/pinker_sbernice39.png" >
+<use  "../src/CES/img/pinker_sbernice40.png" > [460] [461]
+<use  "../src/CES/img/pinker_sbernice41.png" > [462]
+<use  "../src/CES/img/pinker_sbernice42.png" >
+<use  "../src/CES/img/pinker_sbernice43.png" >
+<use  "../src/CES/img/pinker_sbernice44.png" > [463]
+Overfull \hbox (14.09332pt too wide) in paragraph at lines 3475--3481
+[]$[]$
+<use  "../src/CES/img/pinker_sbernice45.png" > [464]
+<use  "../src/CES/img/pinker_sbernice46.png" >
+Overfull \hbox (4.71333pt too wide) in paragraph at lines 3572--3577
+[]$[]$ \EU1/lmr/m/n/10 Předpo-
+<use  "../src/CES/img/pinker_sbernice47.png" > [465]
+Overfull \hbox (5.92557pt too wide) in paragraph at lines 3669--3670
+[][][][][]  
+
+Overfull \hbox (10.72562pt too wide) in paragraph at lines 3676--3677
+[][][][][]  
+<use  "../src/CES/img/pinker_sbernice48.png" > [466]
+<use  "../src/CES/img/pinker_sbernice49.png" >
+<use  "../src/CES/img/pinker_sbernice50.png" >
+<use  "../src/CES/img/pinker_sbernice51.png" >
+<use  "../src/CES/img/pinker_sbernice52.png" >
+Underfull \vbox (badness 5832) has occurred while \output is active [467]
+<use  "../src/CES/img/pinker_sbernice53.png" >
+<use  "../src/CES/img/pinker_sbernice54.png" >
+<use  "../src/CES/img/pinker_sbernice55.png" >
+<use  "../src/CES/img/pinker_sbernice56.png" > [468]
+<use  "../src/CES/img/pinker_sbernice57.png" >
+<use  "../src/CES/img/pinker_sbernice58.png" >
+<use  "../src/CES/img/pinker_sbernice59.png" >
+<use  "../src/CES/img/pinker_sbernice60.png" > [469]
+<use  "../src/CES/img/pinker_sbernice61.png" >
+<use  "../src/CES/img/pinker_sbernice62.png" >
+<use  "../src/CES/img/pinker_sbernice63.png" >
+Underfull \hbox (badness 6995) in paragraph at lines 4116--4116
+[] []\EU1/lmr/bx/n/8 (b)[][] [][]|\EU1/lmr/m/n/8 náhradní
+[470] <use  "../src/CES/img/pinker_sbernice64.png" >
+<use  "../src/CES/img/pinker_sbernice65.png" >
+Underfull \hbox (badness 6995) in paragraph at lines 4149--4149
+[] []\EU1/lmr/bx/n/8 (b)[][] [][]|\EU1/lmr/m/n/8 náhradní
+<use  "../src/CES/img/pinker_sbernice66.png" > [471]
+<use  "../src/CES/img/pinker_sbernice67.png" >
+<use  "../src/CES/img/pinker_sbernice68.png" >
+<use  "../src/CES/img/pinker_sbernice69.png" > [472]
+<use  "../src/CES/img/pinker_sbernice70.png" > [473]
+<use  "../src/CES/img/pinker_sbernice71.png" >
+<use  "../src/CES/img/pinker_sbernice72.png" >
+Underfull \vbox (badness 10000) has occurred while \output is active
+<use  "../src/CES/img/pinker_sbernice73.png" >
+<use  "../src/CES/img/pinker_sbernice74.png" > [474]
+Underfull \vbox (badness 1502) has occurred while \output is active
+<use  "../src/CES/img/pinker_sbernice75.png" > [475]
+<use  "../src/CES/img/pinker_sbernice76.png" >
+<use  "../src/CES/img/pinker_sbernice77.png" >
+Overfull \hbox (1.90218pt too wide) in paragraph at lines 4656--4660
+\EU1/lmr/m/n/10 Sériová periferie \EU1/lmtt/m/n/10 UART \EU1/lmr/m/n/10 (angl. 
+\EU1/lmr/m/it/10 Universal Asynchronous Receiver-
+<use  "../src/CES/img/pinker_sbernice78.png" > [476]
+Underfull \hbox (badness 10000) in alignment at lines 4710--4718
+[][] 
+
+Overfull \hbox (139.43835pt too wide) in paragraph at lines 4710--4719
+ [][] 
+<use  "../src/CES/img/pinker_sbernice79.png" > [477]
+Overfull \hbox (2.21219pt too wide) in paragraph at lines 4864--4876
+[]\EU1/lmr/m/n/10 V každém přijímači existuje \EU1/lmr/bx/n/10 příjmový filtr \
+EU1/lmr/m/n/10 (angl. \EU1/lmr/m/it/10 acceptan-
+[478] <use  "../src/CES/img/pinker_sbernice80.png" >
+Overfull \hbox (0.11102pt too wide) in paragraph at lines 4938--4955
+\EU1/lmr/m/n/10 toru. Řídicí obvody krátkodobě sepnou spínač, pak ho vypnou
+
+Overfull \hbox (7.98445pt too wide) in paragraph at lines 4959--4962
+[]\EU1/lmr/bx/n/10 Vzorkovač \EU1/lmr/m/n/10 je vybaven operačními zesilovači, 
+takže proud
+
+Overfull \hbox (1.79332pt too wide) in paragraph at lines 4975--4979
+[]\EU1/lmr/m/n/10 Je umožněna individuální úprava signálů ještě před vstu-
+[479] <use  "../src/CES/img/pinker_sbernice81.png" >
+<use  "../src/CES/img/pinker_sbernice82.png" >
+Overfull \hbox (1.96332pt too wide) in paragraph at lines 5034--5044
+\EU1/lmr/m/n/10 sadně aproximační - buď se sítí s přepínanými rezistory (\EU1/l
+mtt/m/n/10 R-2R\EU1/lmr/m/n/10 ),
+
+Overfull \hbox (5.72667pt too wide) in paragraph at lines 5064--5067
+[]\EU1/lmr/bx/n/10 Převod jednoho vstupního kanálu \EU1/lmr/m/n/10 (angl. \EU1/
+lmr/m/it/10 single chan-
+
+Overfull \hbox (1.48671pt too wide) in paragraph at lines 5067--5070
+[]\EU1/lmr/bx/n/10 Opakovaný převod jednoho vstupního kanálu \EU1/lmr/m/n/10 (a
+n-
+[480]) (../src/CES/chap/ANSI_C_MCU.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty)
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty)
+[481]
+chapter 5.
+(wiking.mtc79)
+Overfull \hbox (6.02332pt too wide) in paragraph at lines 34--38
+\EU1/lmr/m/n/10 Preprocesor interpretuje jednoduché direktivy pro vložení zdro-
+
+<use  "../src/CES/img/princip_ukazatele.pdf" > (../src/CES/C/CPYARRY.c
+
+LaTeX Font Warning: Font shape `EU1/lmtt/bx/it' in size <8> not available
+(Font)              Font shape `EU1/lmtt/b/sl' tried instead on input line 8.
+
+[482])
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+
+
+Overfull \hbox (2.03441pt too wide) in paragraph at lines 106--109
+\EU1/lmr/m/n/10 zbytné vstupy a výstupy jsou řešeny tak, že standardní knihov-
+<use  "../src/CES/img/terminalovy_IO_skica.pdf" >
+(../src/CES/C/Cteni_tisk_znaku.c) (../src/CES/C/CPY.c)
+Overfull \hbox (5.33994pt too wide) in paragraph at lines 170--174
+[]\EU1/lmr/m/n/10 Jednoduchost použití skrývá velké nebezpečí. Funkce \EU1/lmtt
+/m/n/10 gets()
+[483] (../src/CES/C/ASCII.c)) (../src/CES/chap/CPP.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty)
+[484]
+chapter 6.
+(wiking.mtc80)
+Overfull \hbox (0.53331pt too wide) in paragraph at lines 66--71
+[]\EU1/lmr/m/n/10 Přestože strukturované programování přinášelo výborné vý-
+[485]
+Overfull \hbox (7.66992pt too wide) in paragraph at lines 155--165
+[][][]\EU1/lmr/m/n/10 . Ovšem funkce [][][][] a [][][][] jsou členy [][][],
+
+Overfull \hbox (15.62329pt too wide) in paragraph at lines 166--175
+[]\EU1/lmr/m/n/10 Ačkoliv jsou funkce [][][][] a [][][][] deklarovány v [][][],
+
+
+Overfull \hbox (14.77364pt too wide) in paragraph at lines 198--199
+[][][]\EU1/lmtt/m/n/8 ř[][][][][][][][][][]  
+(../src/CES/CPP/HS_37_myclass.cpp) [486]
+Overfull \hbox (2.44827pt too wide) in paragraph at lines 305--312
+\EU1/lmr/m/it/9 Protože je v tomto příkladě [][][] deklarováno jako veřejný čle
+n [][][],
+(../src/CES/CPP/HS_39_stack.cpp) [487] (../src/CES/CPP/HS_46_abs.cpp)
+Overfull \hbox (2.68329pt too wide) in paragraph at lines 446--449
+[]\EU1/lmr/m/n/10 Překladač automaticky volá správně jednu ze tří verzí [][][][
+]
+(../src/CES/CPP/HS_47_date.cpp [488]) (../src/CES/CPP/GP_548_point.cpp)
+(../src/CES/CPP/GP_551_swap.cpp) (../src/CES/CPP/WEB_01_pointer_to_func.cpp)
+[489] (../src/CES/CPP/HS_55_myclass.cpp) (../src/CES/CPP/HS_56_myclass.cpp)
+(../src/CES/CPP/HS_57_stack.cpp [490]) (../src/CES/CPP/HS_59_string.cpp))
+(../src/CES/chap/AVR_MCU.tex [491]
+chapter 7.
+(wiking.mtc81)
+Overfull \hbox (0.96889pt too wide) in paragraph at lines 29--31
+\EU1/lmr/m/n/10 Mikrokontroléry AVR používají jednoduchý \EU1/lmr/m/it/10 předv
+ýběr instruk-
+
+Overfull \hbox (8.28665pt too wide) in paragraph at lines 29--31
+\EU1/lmr/m/it/10 ce \EU1/lmr/m/n/10 (\EU1/lmr/bx/n/10 prefetch\EU1/lmr/m/n/10 )
+ umožňující \EU1/lmr/m/it/10 jednofázové zřetězení instrukcí \EU1/lmr/m/n/10 (\
+EU1/lmr/bx/n/10 pipe-
+
+LaTeX Warning: Empty bibliography on input line 34.
+
+) (../src/CES/chap/STM32.tex [492]
+chapter 8.
+<use  "../src/CES/img/CortexM3_block.pdf" >
+===== Image 'tikz/CES/ch08_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0' is up
+-to-date. ======
+<use  "tikz/CES/ch08_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure0.pdf" >
+===== Image 'tikz/CES/ch08_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1' is up
+-to-date. ======
+<use  "tikz/CES/ch08_ch13__ch13_ch09_ch08_ch07_ch07_wiking-figure1.pdf" >
+<use  "../src/CES/img/CortexA8_basicarch.png" >
+<use  "../src/CES/img/CortexM3_basicarch.png" >
+<use  "../src/CES/img/CortexR4_basicarch.png" >
+<use  "../src/CES/img/STM32F100_arch.png" >
+Overfull \hbox (0.3933pt too wide) in paragraph at lines 85--99
+\EU1/lmr/m/n/10 Jádro Cortex-M3 je založeno na Harvardské architektuře (kap.
+) (../src/CES/chap/STM32F100VL_Kit.tex [493] [494]
+chapter 9.
+(wiking.mtc83) <use  "../src/CES/img/board_stm32vl_discovery.jpg" >
+<use  "../src/CES/img/board_stm32vl_desc.jpg" >)
+(../src/CES/chap/architecture_PLD.tex [495] [496]
+chapter 10.
+(wiking.mtc84
+Overfull \hbox (12.95837pt too wide) in paragraph at lines 9--9
+ [][] [][][]\EU1/lmr/m/n/9 Obvody typu Field-Programmable Gate Array 
+)
+Underfull \vbox (badness 2671) has occurred while \output is active [497]
+[498] <use  "../src/CES/img/architektura_PROM.pdf" >
+<use  "../src/CES/img/schema_PROM.pdf" >
+<use  "../src/CES/img/architektura_FPLA.pdf" > [499]
+<use  "../src/CES/img/architektura_PAL.pdf" >
+<use  "../src/CES/img/architektura_GAL.pdf" > [500]
+Overfull \hbox (1.65004pt too wide) in paragraph at lines 275--276
+[]\EU1/lmr/m/n/10 výstupní propojovací pole (\EU1/lmr/m/it/10 Output Routing Po
+ol - ORP\EU1/lmr/m/n/10 ), 
+<use  "../src/CES/img/PLD_ispMACH4000_arch.pdf" >
+<use  "../src/CES/img/architektura_CPLD.pdf" > [501]
+<use  "../src/CES/img/PLD_timing_tpd.pdf" >
+<use  "../src/CES/img/PLD_timing_tsu_th_tco_fmax.pdf" >
+<use  "../src/CES/img/PLD_timing_tsu_tcf_fmax.pdf" >) (../src/CES/chap/VHDL.tex
+(C:\Users\jaros\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty)
+[502]
+chapter 11.
+(wiking.mtc85)
+Overfull \hbox (9.74887pt too wide) in paragraph at lines 51--69
+[]\EU1/lmr/bx/n/10 meziregistrových přenosů \EU1/lmr/m/n/10 - tzv. \EU1/lmtt/m/
+n/10 RTL \EU1/lmr/m/n/10 (\EU1/lmr/m/it/10 Register Transfer
+[503] [504]
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+[]|\EU1/lmr/m/n/10 Positive-edge-triggered
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+[]|\EU1/lmr/m/n/10 Synchronous parallel
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+[]|\EU1/lmr/m/n/10 Asynchronnous clear
+
+Underfull \hbox (badness 1028) in paragraph at lines 272--273
+[]|\EU1/lmr/m/n/10 Synchronous clear in-
+(../src/CES/VHDL/lpm_shiftreg.vhd [505]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 10000) has occurred while \output is active [506])))
+[507]
+part VIII.
+[508] (../src/RAE/RAE.tex (../src/RAE/chap/Antenna_Theory.tex
+chapter 1.
+(wiking.mtc86) <use  "../src/RAE/img/RA001.pdf" > [509])
+(../src/RAE/chap/Modulation.tex [510]
+chapter 2.
+(wiking.mtc87) <use  "../src/RAE/img/shannon_radiokomunikacni_system.png" >
+Underfull \vbox (badness 2671) has occurred while \output is active [511]
+Overfull \hbox (2.22667pt too wide) in paragraph at lines 75--82
+[]\EU1/lmr/bx/n/10 Komunikačním kanálem \EU1/lmr/m/n/10 se obecně rozumí fyziká
+lní pros-
+[512] <use  "../src/RAE/img/shannon_graf_C_N.png" >
+<use  "../src/RAE/img/modulace_prehled.png" > [513]
+<use  "../src/RAE/img/modulace_zakladni_pasmo.png" >
+Overfull \hbox (5.0755pt too wide) in paragraph at lines 333--335
+[]\EU1/lmr/m/it/10 dvoustavové klíčování amplitudovým zdvihem \EU1/lmtt/m/it/10
+ 2-ASK \EU1/lmr/m/it/10 (Am-
+[514]
+Overfull \hbox (17.5855pt too wide) in paragraph at lines 336--338
+[]\EU1/lmr/m/it/10 dvoustavové klíčování kmitočtovým zdvihem \EU1/lmtt/m/it/10 
+2-FSK \EU1/lmr/m/it/10 (Frequen-
+
+Overfull \hbox (0.4233pt too wide) in paragraph at lines 367--372
+[]\EU1/lmr/m/n/10 Vývojově mladší kategorii digitálních modulací potom před-
+[515] <use  "../src/RAE/img/modulace05_AM.png" >
+<use  "../src/RAE/img/modulace06_AM.png" >
+<use  "../src/RAE/img/modulace07_AM.png" >
+<use  "../src/RAE/img/modulace08_AM.png" >
+<use  "../src/RAE/img/modulace09_AM.png" >)) [516]
+part IX.
+[517] (../src/PVE/PVE.tex (../src/PVE/chap/menice_s_vnejsi_komutaci.tex
+chapter 1.
+(wiking.mtc88) <use  "../src/PVE/img/komutace.pdf" >
+Overfull \hbox (1.80333pt too wide) in paragraph at lines 37--39
+\EU1/lmr/m/n/10 mutace) se vyznačuje zdrojem komutačního napětí umís-
+
+LaTeX Warning: Empty bibliography on input line 45.
+
+) (../src/PVE/chap/design_IGBT_driver.tex [518]
+chapter 2.
+(wiking.mtc89) <use  "../src/PVE/img/Resistive_gate_control.pdf" > [519]
+<use  "../src/PVE/img/Eqv_circuit_IGBT_module.pdf" >
+<use  "../src/PVE/img/Eqv_circuit_IGBT_didt.pdf" >
+<use  "../src/PVE/img/IGBT_OC_condition.pdf" >
+<use  "../src/PVE/img/Vge_clamping.pdf" > [520])) [521]
+part X.
+[522] (../src/EPR/EPR.tex (../src/EPR/el_oblouk.tex
+chapter 1.
+(wiking.mtc90)
+<use  "../src/EPR/img/Barta_Vostracky_Komora_jednostrannym_proudenim.pdf" >
+<use  "../src/EPR/img/Barta_Vostracky_Komora_dvoustrannym_proudenim.pdf" >
+<use  "../src/EPR/img/Barta_Vostracky_Zakladni_intervaly_vypinaciho_pochodu.pdf
+" > [523] <use  "../src/EPR/img/char_vodivost_teplota_SF6_N2.pdf" >
+<use  "../src/EPR/img/rozdeleni_teplot_oblouku.pdf" >
+Underfull \hbox (badness 1590) in paragraph at lines 157--157
+\EU1/lmr/m/n/8 teplot oblouku v
+
+Underfull \hbox (badness 3657) in paragraph at lines 157--157
+\EU1/lmr/m/n/8 závislosti na po-
+[524]) (../src/EPR/vypinace_VN_VVN.tex [525]
+chapter 2.
+(wiking.mtc91) <use  "../src/EPR/img/tlumici_rezistor_zhasedlo.pdf" >))
+[526]
+part XI.
+[527] (../src/ZZT/ZZT.tex (../src/ZZT/chap/chap_safety.tex
+chapter 1.
+(wiking.mtc92) [528]
+chapter 2.
+[529]
+Overfull \hbox (0.34985pt too wide) in paragraph at lines 124--126
+[]\EU1/lmr/bx/n/10 EN 50128\EU1/lmr/m/n/10 : Railway applications – Communicati
+on, sig-
+
+Overfull \hbox (0.34985pt too wide) in paragraph at lines 126--138
+[]\EU1/lmr/bx/n/10 EN 50129\EU1/lmr/m/n/10 : Railway applications – Communicati
+on, sig-
+
+Overfull \hbox (1.74333pt too wide) in paragraph at lines 144--145
+[]\EU1/lmr/m/n/10 Bezpečnost (Safety) – nepřítomnost nepřijatelných úrov-
+<use  "../src/ZZT/img/DZT_SRCS_fce.jpg" > [530]
+<use  "../src/ZZT/img/EN50129_SIL_techniques.pdf" >
+Overfull \hbox (0.51329pt too wide) in paragraph at lines 255--275
+[]\EU1/lmr/m/n/10 Následující tabulka shrnuje definované úrovně integrity bez-
+)) [531]
+
+LaTeX Warning: Empty bibliography on input line 212.
+
+(wiking.aux
+
+Package atenddvi Warning: Rerun LaTeX, last page not yet found.
+
+
+Package animate Warning: @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+(animate)                @ Rerun to get internal references right! @
+(animate)                @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+
+*************************************************
+* media9 warning: "rerun"
+* 
+* Rerun to get internal references right!
+*************************************************
+)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.28pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
 
  )
+(\end occurred inside a group at level 6)
+
+### simple group (level 6) entered at line 2 ({)
+### simple group (level 5) entered at line 2 ({)
+### simple group (level 4) entered at line 2 ({)
+### simple group (level 3) entered at line 2 ({)
+### simple group (level 2) entered at line 2 ({)
+### simple group (level 1) entered at line 2 ({)
+### bottom level
 (see the transcript file for additional information)
-Output written on wiking.pdf (16 pages).
+Output written on wiking.pdf (537 pages).
 SyncTeX written on wiking.synctex.gz.
 Transcript written on wiking.log.

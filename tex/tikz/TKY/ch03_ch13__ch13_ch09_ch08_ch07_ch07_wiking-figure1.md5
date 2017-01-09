@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:-> \begin {axis}[scale=0.45, standard, domain = 0:15, samples = 16, xlabel={\(n\)}, ylabel={\(1[n]\)}, ymin=0, ymax=1.1] \addplot +[ycomb,blue,thick] {1}; \end {axis} }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

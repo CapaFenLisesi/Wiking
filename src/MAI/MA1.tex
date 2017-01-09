@@ -1,7 +1,17 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = cs_CZ
+% !TeX root = ../../tex/wiking.tex
+
 %     Mathematical analysis
 %---------------------------------------------------------------------------------------------------
 % file MA.tex
 % Notes>
+% notes:
+%~~~~~~~~~
+% \label{mai:eq037}
+% \label{mai:fig016}
+% \label{mai:exam030}
+% \label{mai:tab}
 % Mezery v matematickém režimu:
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %\! záporná uzká mezera,   \; široká mezera,   \ mezislovní mezera,
@@ -14,36 +24,64 @@
   commentstyle=\color{help}\textit,
   keywordstyle=\color{keyword}\textbf,
   breaklines=true,                       % sets automatic line breaking
-  breakatwhitespace=true,                % sets if automatic breaks should only happen at whitespace
+  breakatwhitespace=true,                % sets if automatic breaks should only happen at 
+                                         % whitespace
   showspaces=false,                      % show spaces adding particular underscores
   showstringspaces=true,                 % underline spaces within strings
   showtabs=true,                         % show tabs within strings adding particular underscores
-  frame=none,	                           % adds a frame around the code - none, single
+  frame=none,                            % adds a frame around the code - none, single
   tabsize=8,                             % sets default tabsize to 8 spaces
   captionpos=b,                          % sets the caption-position to bottom
   numbers=left,                          % where to put the line-numbers -none, left, right
   numberstyle=\footnotesize,             % the size of the fonts that are used for the line-numbers
   stepnumber=1,                          % the step between two line-numbers. If it's 1 each line
                                          % will be numbered
-  xleftmargin=3em,                       % adjust left margin										 
+  xleftmargin=3em,                       % adjust left margin
 }
 %---------------------------------------------------------------------------------------------------
 % Setting path to image 
-\graphicspath{{../src/MAI/img/}}  
-%--------------------Introduction to mathematical analysis -----------------------------------------
-    \input{../src/MAI/intro_MA.tex}  
-%---------------------Reálná a komplexní čísla------------------------------------------------------
-    \input{../src/MAI/chapters/Real_and_Complex_Numbers.tex}     
-%-------------------- Differential calculus --------------------------------------------------------
-    \input{../src/MAI/chapters/Limits_of_Functions.tex} 
-%-------------------- Theory_of_Derivatives --------------------------------------------------------
-    \input{../src/MAI/chapters/Theory_of_Derivatives.tex}  
-%-------------------- Differential Calculus applications -------------------------------------------
-    \input{../src/MAI/chapters/Differential_Calculus_applications.tex}                
-%--------------------Primitive Functions -----------------------------------------------------------
-    \input{../src/MAI/chapters/chap_PrimitivFce.tex}
-%--------------------an Integrals of functions of one real variable --------------------------------
-    \input{../src/MAI/chapters/chap_Int_rfce_1var.tex}
-%---------------------Řady--------------------------------------------------------------------------
-    \input{../src/MAI/chapters/Series.tex}    
-%---------------------------------------------------------------------------------------------------  
+  \graphicspath{{../src/MAI/img/}}
+%---------------------------------------------------------------------------------------------------
+\part{Matematická analýza I}
+\parttoc
+
+\iftoggle{DEBUG}{
+%  DEBUG was on
+% ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%  \input{../src/MAI/intro_MA.tex}  
+%  \input{../src/MAI/chapters/intro_linear_algebra.tex}
+   \input{../src/MAI/chapters/Limits_of_Functions.tex}
+%  \input{../src/MAI/chapters/Theory_of_Derivatives.tex}
+%  \input{../src/MAI/chapters/Differential_Calculus_applications.tex}
+%  \input{../src/MAI/chapters/chap_PrimitivFce.tex}
+%  \input{../src/MAI/chapters/chap_Int_rfce_1var.tex}
+%  \input{../src/MAI/chapters/Series.tex}
+%  \input{../src/MAI/chapters/ODR.tex}
+%  \input{../src/MAI/chapters/ppst.tex}
+%  \input{../src/MAI/chapters/NM.tex}
+}
+{
+% DEBUG was off
+%-------------------Introduction to mathematical analysis -----------------------------------------
+  \input{../src/MAI/intro_MA.tex}  
+%---------------------Reálná a komplexní čísla-----------------------------------------------------
+  \input{../src/MAI/chapters/intro_linear_algebra.tex}
+%------------------- Differential calculus --------------------------------------------------------
+  \input{../src/MAI/chapters/Limits_of_Functions.tex}
+%-------------------- Theory_of_Derivatives -------------------------------------------------------
+  \input{../src/MAI/chapters/Theory_of_Derivatives.tex}
+%-------------------- Differential Calculus applications ------------------------------------------
+  \input{../src/MAI/chapters/Differential_Calculus_applications.tex}
+%--------------------Primitive Functions ----------------------------------------------------------
+  \input{../src/MAI/chapters/chap_PrimitivFce.tex}
+%--------------------an Integrals of functions of one real variable -------------------------------
+  \input{../src/MAI/chapters/chap_Int_rfce_1var.tex}
+%---------------------Řady-------------------------------------------------------------------------
+%  \input{../src/MAI/chapters/Series.tex}
+%---------------------Obyčejné diferenciální rovnice ----------------------------------------------
+  \input{../src/MAI/chapters/ODR.tex}
+%---------------------Numerické metody ------------------------------------------------------------
+  \input{../src/MAI/chapters/ppst.tex}
+%---------------------Numerické metody ------------------------------------------------------------
+  \input{../src/MAI/chapters/NM.tex}
+} % DEBUG was off

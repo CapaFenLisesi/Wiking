@@ -1,0 +1,1 @@
+\begingroup \toks 0={macro:->[scale=0.6] \begin {scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt, y=1pt,x=1pt, scale=\myscale ] \MyXY ; \draw [thick] (\xmin +10, \nula + 40) -- (\xmax -30, \nula + 40); \draw [] (\period + \phase ,0) ++ (0,2) -- +(0,-4) node[below] {$T$}; \end {scope} }\xdef \tikzexternallastkey {\the \toks 0 }\endgroup %

@@ -1,33 +1,52 @@
-%====================================================================================================
-% --------------------------------------------- Definite Integral -----------------------------------
+% !TeX spellcheck = cs_CZ
+{\tikzset{external/prefix={tikz/MAI/}}
+ \tikzset{external/figure name/.add={ch07_}{}}
+%---------------------------------------------------------------------------------------------------
+% file: chap_Int_rfce_1var.tex
+%---------------------------------------------------------------------------------------------------
+%===================================================================================================
+% ------------------------------------------- Definite Integral -----------------------------------
 \chapter{Určitý integrál}
 \minitoc
-\newpage  
+
 \section{Motivace} 
   %----------------------------------
   % image: MAI_animated_integral.tex label: \label{MAI:fig_anim_int}
     \input{../src/MAI/img/MAI_animated_integral.tex}  
   %---------------------------------- 
 
-\subsection{Výpočet integrálu}
-    \begin{example}Metodou per partes spočítejte integrály:$\displaystyle\int_1^{ln5}{(x+1)e^xdx}$
-      \begin{align*}
-        \int{(x+1)e^xdx} &= \int{e^xdx}+\int{x\cdot e^xdx} \\
-                         &= e^x + (x-1)e^x = xe^x \\
-        \int_1^{ln5}{(x+1)e^xdx} &= [xe^x]_1^{ln5} = 5ln5-e\\
-      \end{align*}
-      kde integrál
-      \begin{equation*}
-          \int{xe^xdx}=
-            \left[\begin{array}{cc}
-              u=x   & dv=e^x \\
-              du=dx & v=e^x
-            \end{array}\right]=
-            xe^x-\int{e^xdx} = xe^x - e^x+C
-      \end{equation*}
-    \end{example}
+\begin{tikzpicture}[scale=1]
+  \shade[top color=blue,bottom color=gray!50] (0,0) parabola (1.5,2.25) |- (0,0);
+  \draw (1.05cm,2pt) node[above] {$\displaystyle\int_0^{3/2} \!\!x^2\mathrm{d}x$};
+  \draw[help lines] (0,0) grid (3.9,3.9) [step=0.25cm] (1,2) grid +(1,1);
+  \draw[->] (-0.2,0) -- (4,0) node[right] {$x$};
+  \draw[->] (0,-0.2) -- (0,4) node[above] {$f(x)$};
+  \foreach \x/\xtext in {1/1, 1.5/1\frac{1}{2}, 2/2, 3/3}
+  \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+  \foreach \y/\ytext in {1/1, 2/2, 2.25/2\frac{1}{4}, 3/3}
+  \draw[shift={(0,\y)}] (2pt,0pt) -- (-2pt,0pt) node[left] {$\ytext$};
+  \draw (-.5,.25) parabola bend (0,0) (2,4) node[below right] {$x^2$};
+\end{tikzpicture}
 
-\newpage
+  \subsection{Výpočet integrálu}
+      \begin{example}
+        Spočítejme integrál $\displaystyle \int_1^{ln5}{(x+1)e^xdx}$  metodou per partes: 
+        \begin{align*}
+          \int{(x+1)e^xdx} &= \int{e^xdx}+\int{x\cdot e^xdx}
+                            = e^x + (x-1)e^x = xe^x               \\
+          \int_1^{ln5}{(x+1)e^xdx} &= [xe^x]_1^{ln5} = 5ln5-e     \\
+        \end{align*}
+        kde integrál
+        \begin{equation*}
+            \int{xe^xdx}=
+              \left[\begin{array}{cc}
+                u=x   & dv=e^x \\
+                du=dx & v=e^x
+              \end{array}\right]=
+              xe^x-\int{e^xdx} = xe^x - e^x+C
+        \end{equation*}
+      \end{example}
+
 \section{Vlastnosti určitého integrálu}
   V této kapitole mluvíme o spojitých funkcích $\Rightarrow$ příslušné integrály tedy vždy
   existují. Čerpáno z knih:

@@ -6,6 +6,14 @@
 \graphicspath{{../src/ZZT/img/}}
 %---------------------------------------------------------------------------------------------------
 % file ZZT.tex
+%--------------------------------------------------------------------------------------------------
+\iftoggle{DEBUG}{
+%  DEBUG was on
 %========== Kapitola: Bezpečnost a spolehlivost zabezpečovacích systémů ============================
   \input{../src/ZZT/chap/chap_safety.tex}  
-  
+}
+{
+% DEBUG was off
+%========== Kapitola: Bezpečnost a spolehlivost zabezpečovacích systémů ============================
+  \input{../src/ZZT/chap/chap_safety.tex}  
+} % DEBUG was off

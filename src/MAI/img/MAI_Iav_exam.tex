@@ -6,8 +6,7 @@
 
 % \begin{document}
  
-     \begin{figure}[ht!]
-       \centering
+      {\centering
        \begin{tikzpicture}[domain=0:2*pi] 
          \draw[xstep=pi/4, ystep=0.5, dashed, color=gray] (-0.1,-1.6) grid (2*pi,1.6); 
          \draw[->] (-0.2,0) -- (7,0) node[right] {$t$}; 
@@ -23,8 +22,9 @@
          \node[below right, color=blue, fill=white] at (2.5,1.0) {$i(t) = I_0\sin\omega t$};
          % function 
          \draw[color=blue, smooth]   plot (\x,{sin(\x r)}); 
-       \end{tikzpicture}     
-       \caption{}\label{MA:fig_Iav_exam}
-    \end{figure}
+       \end{tikzpicture}  
+       \captionsetup{type=figure}   
+       \captionof{figure}{}\label{MA:fig_Iav_exam}
+    \par}
   
 %\end{document}

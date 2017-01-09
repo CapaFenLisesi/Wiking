@@ -4,11 +4,18 @@
 %---------------------------------------------------------------------------------------------------
 % Setting path to image 
 \graphicspath{{../src/EPR/img/}}
-%--------------------The theory of electrical arc --------------------------------------------------
-   \input{../src/EPR/el_oblouk.tex}
-%-------------------Construction of high-voltage electrical breakers---------------------------------
-% \chapter{Konstrukce vypínačů VN a VVN}
-% \minitoc
-% \newpage
-%     \input{../src/EPR/vypinace_VN_VVN.tex}
-%------------------------------------------------------------------------------------------------------ 
+%--------------------------------------------------------------------------------------------------
+\iftoggle{DEBUG}{
+%  DEBUG was on
+%========= Kapitola TTeorie elektrického oblouků ===================================================
+  \input{../src/EPR/el_oblouk.tex}
+%========= Kapitola: Konstrukce vypínačů pro VN a VVN ==============================================
+  \input{../src/EPR/vypinace_VN_VVN.tex}
+}
+{
+% DEBUG was off
+%========= Kapitola TTeorie elektrického oblouků ===================================================
+  \input{../src/EPR/el_oblouk.tex}
+%========= Kapitola: Konstrukce vypínačů pro VN a VVN ==============================================
+  \input{../src/EPR/vypinace_VN_VVN.tex}
+} % DEBUG was off

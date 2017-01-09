@@ -62,7 +62,7 @@
   
     \centering
     \begin{tikzpicture}[ 
-        scale=0.8,
+        scale=0.7,
         tangent/.style={
           decoration={
             markings,% switch on markings
@@ -107,10 +107,10 @@
                node[left]  {$v(t)$} coordinate(y axis);     
           \draw[densely dashed, thin, use tangent=1] 
                (0,0) coordinate(vrch) -- (0,-60*\myscale) % firt part
-               (0,0) -- (-82*\myscale,0)    node[left] {$V_m$};     % delka krivky: 0.3667 - 0.3668
+               (0,0) -- (-70*\myscale,0)    node[left] {$V_m$};     % delka krivky: 0.3667 - 0.3668
           \draw[densely dashed, thin, use tangent=2] 
                (0,0) coordinate(dul) --  (0,50*\myscale)  % first part 
-               (0,0) -- (-162.5*\myscale,0) node[left] {$V_{min}$}; %               0.7770 - 0.7775
+               (0,0) -- (-120*\myscale,0) node[left] {$V_{min}$}; %               0.7770 - 0.7775
           \path[name intersections={of=fce1 and axeX, name=point}]; % prusecik osy y s funkcí - posun
           \draw[dotted, name path=line1] (point-1) --+(0,-100) coordinate(Ta);  
           \draw[dotted, name path=line2] (point-2) --+(0,-100) coordinate(Tb);

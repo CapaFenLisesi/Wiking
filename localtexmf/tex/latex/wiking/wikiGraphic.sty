@@ -1,4 +1,5 @@
-% ===================================================================================================
+  % 
+  %===================================================================================================
 %                                     Graphic environment 
 % ===================================================================================================
 \NeedsTeXFormat{LaTeX2e}
@@ -28,8 +29,13 @@
 \usepackage{colortbl}                      % Color tables - this package requires color and arrays
                                            % packages
 \newcolumntype{C}[1]{>{\centering}m{#1}}   % buňka bude centrovaná horizontálně i vertikálně -
-                                           % nutný balík array !
-                                                                                     
+                                           % nutný balík array !  
+% http://tex.stackexchange.com/questions/94799/how-do-i-color-table-columns-and-rows   
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\definecolor{Gray}{gray}{0.85}
+\definecolor{LightCyan}{rgb}{0.88,1,1}
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+\newcolumntype{b}{>{\columncolor{white}}c}                                                                              
 % ~~~~~~~~~~~ 3D object, flash, video ~~~~~~~~~~~
  \usepackage{media9}
 % using ffmpeg convertor and command line (cmd): mpeg -> mp4
@@ -59,11 +65,11 @@
 % ~~~~~~~~~~~ Code Highlighting ~~~~~~~~~~~~~~~~~
 % Highlighting of all the most common languages 
 % \usepackage{listings} 
-  \usepackage{listingsutf8} % UTF8 package load aborted because missnig \pdf@unescapehex
+  \usepackage{listings}        % UTF8 package load aborted because missnig \pdf@unescapehex
   \renewcommand\lstlistingname{Výpis}     % change the caption name for listings
   \renewcommand\lstlistlistingname{Výpis} % header name for the list of listings which is printed
                                           % by the \lstlistoflistings command
-  \def\lstlistingautorefname{Alg.}        % Then when you're referring to a particular listing, e.
+  \def\lstlistingautorefname{Alg.}        % Then when you're referring to a particular listing, e.  
                                           % g. For details see
                                           % \autoref{sec2:bubblesort}. it is written as "For
                                           % details see Alg. 2.1."

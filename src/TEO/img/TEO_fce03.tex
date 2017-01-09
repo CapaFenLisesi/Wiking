@@ -36,7 +36,7 @@
         \def\myscale{0.8}
            
     \subfloat[ ]   { 
-      \begin{tikzpicture}      
+      \begin{tikzpicture}[scale=0.6]
         \begin{scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt, y=1pt,x=1pt, scale=\myscale]  
           \MyXY;         
           \draw[thick, name path=fce1, draw=black,line join=round,even odd rule,line cap=butt,miter   
@@ -45,12 +45,12 @@
           \draw[thick, draw=black,line join=round,even odd rule,line cap=butt,miter   
             limit=4.00] \MyPath{\period}; 
           \draw[thick, draw=black,line join=round,even odd rule,line cap=butt,miter   
-            limit=4.00] \MyPath{2*\period};             
+            limit=4.00] \MyPath{2*\period};
         \end{scope}  
       \end{tikzpicture}
     }
     \subfloat[  ]   { 
-      \begin{tikzpicture}  
+      \begin{tikzpicture}[scale=0.6]
         \begin{scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt, y=1pt,x=1pt, scale=\myscale]  
           \MyXY;     
           \draw[thick] (\xmin+10, \nula + 40) -- (\xmax-30, \nula + 40);  

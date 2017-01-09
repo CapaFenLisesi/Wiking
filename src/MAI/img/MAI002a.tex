@@ -1,0 +1,39 @@
+% xelatex --enable-write18 MAI002a.tex
+\documentclass[11pt]{standalone}
+  \usepackage{helvet}                        % font
+  \usepackage{xltxtra}                       % fontspec package
+  \usepackage{tikz}  
+  \usetikzlibrary{arrows}
+  \usetikzlibrary{intersections}
+  \usetikzlibrary{calc}
+ 
+  \newcommand{\MyXYcross}{%
+    \draw[name path=axeX,->] (\xmin,\zero) -- (\xmax,\zero)   node[right] {$x$} coordinate(x axis);
+    \draw[name path=axeY,->] (\phase,\ymin) -- (\phase,\ymax) node[left]  {$y$} coordinate(y axis);
+    \path[name intersections={of=axeX and axeY, name=pocatek}]; 
+    \node[below left] at (pocatek-1) {$0$};
+    \draw[fill=white] (pocatek-1) circle(2pt);  
+}
+
+\begin{document} 
+  \def\xmin{-80}
+  \def\xmax{80}
+  \def\ymin{-100}
+  \def\ymax{+120}
+  \def\zero{0}
+  \def\phase{0}
+     
+  \begin{tikzpicture}
+    \begin{scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt,y=1pt,x=1pt] 
+      \MyXYcross;   
+    \end{scope}
+    
+    \begin{scope}[domain=-1.2:1.2, line join=round, miter limit=4.00,line width=0.5pt, 
+                  x=50pt,y=50pt, xshift=0, yshift=0]    
+      \node at(1.9,1.6) [left, fill=white] {$f(x): y=x^2$}; %
+      \draw[color=red] plot[id=myfce, samples=2000, smooth] function{x*x}; %
+      \foreach \x/\xtext in {-1/1, 1/1}
+        \draw[shift={(\x,0)}] (0pt,2pt) -- (0pt,-2pt) node[below] {$\xtext$};
+    \end{scope}  
+  \end{tikzpicture}  
+\end{document}

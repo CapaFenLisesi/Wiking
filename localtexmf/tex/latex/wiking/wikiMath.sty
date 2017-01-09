@@ -1,6 +1,6 @@
-% ===================================================================================================
+% ==================================================================================================
 %                                     MATH environment 
-% ===================================================================================================
+% ==================================================================================================
 \NeedsTeXFormat{LaTeX2e}
 % \, = 3/18 \quad
 % \: = 4/18 \quad
@@ -8,16 +8,20 @@
 % \  = corresponds to normal space.
 % \qquad = 2\quad
 % ~~~~~~~~ Libraries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  \RequirePackage{lipsum}
-  \RequirePackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
-  \RequirePackage{mathtools}              % extension package to amsmath  
-  \RequirePackage{mathrsfs}
-  \RequirePackage{etoolbox}
-  \RequirePackage{bigints}                % write big integrals  
-  \RequirePackage{polynom}                % implements macros for manipulating
-                                          % polynomials - command \polylongdiv
-  \usepackage{kvmacros}                   % Karnaugh maps: x:\MANUAL\LaTeX\karnaugh.pdf
-  \usepackage[framemethod=TikZ]{mdframed} % Frames
+\RequirePackage{lipsum}
+\RequirePackage{amsmath, amsthm, amssymb, amsfonts, amsbsy, esint}
+\RequirePackage{mathtools}              % extension package to amsmath  
+\RequirePackage{mathrsfs}
+\RequirePackage{calculator}
+\RequirePackage{etoolbox}
+\RequirePackage{bigints}                % write big integrals  
+\RequirePackage{polynom}                % implements macros for manipulating
+                                        % polynomials - command \polylongdiv
+  \usepackage{kvmacros}                 % Karnaugh maps: x:\MANUAL\LaTeX\karnaugh.pdf
+  \usepackage{mdframed}                 % Frames
+  
+% http://tex.stackexchange.com/questions/51682/
+\allowdisplaybreaks                     % pagebreak aligned equations
 % ~~~~~~~~ Bool switch ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \newbool{pboldvectors}%
 \booltrue{pboldvectors}%
@@ -29,23 +33,25 @@
 %   \itemsep - nastavuje velikost svislé mezery mezi jednotlivými položkami na hodnotu např. 0pt.
 %   \parsep  - vzdálenost mezi odstavci jedné položky,
 %   \itemsep - vzdálenost mezi položkami (přičítá se ještě \parsep),
-\makeatletter
-\def\thm@space@setup{%
-  \thm@preskip=2\topsep \thm@postskip=\thm@preskip
-}
-\makeatother
 % Argument name je krátké jméno, které identifikuje daný teorém. Argument text je skutecné jméno
 % teorému, které bude vysázeno. Argumenty v hranatých závorkách jsou nepovinné. Oba specifikují
 % číslování, které se pro teorém použije. Argumentem counter mužete specifikovat jméno (name) dríve
 % deklarovaného teorému. Nový teorém pak bude číslován ve stejné posloupnosti. Argument section
 % umožnuje specifikovat jednotku o kterou budou císla teorému zvetšována.
-  \newtheorem{theorem}{Teorém}[section]
+%  \newtheorem{theorem}{Teorém}[section]
   \newtheorem{lemma}{Věta}[section]
 % \newtheorem{proof}{Důkaz} % nahrazeno \renewenvironment{proof}[1][Důkaz] v main.tex
   \newtheorem{definition}{Definice}[section]
   \newtheorem{example}{Příklad}[section]
+%    
+%http://tex.stackexchange.com/questions/123528/changing-font-size-in-an-example-environment
+    \AtBeginEnvironment{example}{\small}  % small font; etoolbox
+
+
   \newtheorem{note}{Poznámka}[section]
-  
+ % ~~~~~~~~ České uvozovky ~~~~~~~~~~~~~~~~~~~~~~~ 
+  \newcommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
+%  \renewcommand{\uv}[1]{\quotedblbase #1\textquotedblleft}
 % ~~~~~~~~ Renewcommand ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  \renewcommand{\qedsymbol}{$\blacksquare$} % \heartsuit
@@ -75,9 +81,21 @@
   \newcommand{\ngrad}[1]{\nabla\;#1}                           % nabla gradient
   \newcommand{\ndiver}[1]{\nabla\cdot\vec{#1}}                 % nabla divergence
   \newcommand{\nrot}[1]{\nabla\times\vec{#1}}                  % nabla rotace
-  
+  \DeclareMathOperator\erf{erf}
+
+%  \mathbb{P} for prime numbers using \mathbb{P},
+%  \mathbb{W} for whole numbers using \mathbb{W},
+%  \mathbb{N} for natural numbers using \mathbb{N},
+%  \mathbb{Z} for integers using \mathbb{Z},
+%  \mathbb{I} for irrational numbers using \mathbb{I},
+%  \mathbb{Q} for rational numbers using \mathbb{Q},
+%  \mathbb{R} for real numbers using \mathbb{R} and
+%  \mathbb{C} for complex numbers using \mathbb{C}.
+
   \newcommand{\realset}{\mathbb{R}}
-  \newcommand{\naturalset}{\mathbb{Z}}
+  \newcommand{\naturalset}{\mathbb{N}}
+  \newcommand{\cmplxset}{\mathbb{C}}
+
   \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 
   \ifbool{pboldvectors}%
@@ -102,28 +120,13 @@
   \DeclareRobustCommand{\ammaG}{\text{\reflectbox{$\Gamma$}}}
 
 % ~~~~~~~~~~~ Math functions ~~~~~~~~~~~~~~~~~~~~~
-  \newcommand \tg     {\mathop{\textrm tg}\nolimits}    % tg    = tangens 
-  \newcommand \cotg   {\mathop{\textrm cotg}\nolimits}  % cotg  = kotangens
-  \newcommand \arctg  {\mathop{\textrm arctg}\nolimits} % arctg = arcus tangens
-  \newcommand \tgh    {\mathop{\textrm tgh}\nolimits}   % tg    = tangens hyperb.
-  \newcommand \cotgh  {\mathop{\textrm cotgh}\nolimits} % cotg  = cotangens hyperb.
-  
+%  \newcommand{\tg}{\mathop{\textrm tg}\nolimits}       % tg    = tangens 
+  \newcommand{\cotg}{\mathop{\textrm cotg}\nolimits}   % cotg  = kotangens
+%  \newcommand{\arctg}{\mathop{\textrm arctg}\nolimits} % arctg = arcus tangens
+%  \newcommand{\tgh}{\mathop{\textrm tgh}\nolimits}     % tg    = tangens hyperb.
+%  \newcommand{\cotgh}{\mathop{\textrm cotgh}\nolimits} % cotg  = cotangens hyperb.
 
-% ~~~~~~~~~~~ Frames ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  \mdfdefinestyle{MyFrame}{%
-      linecolor=blue,
-      outerlinewidth=2pt,
-      roundcorner=20pt,
-      innertopmargin=\baselineskip,
-      innerbottommargin=\baselineskip,
-      innerrightmargin=20pt,
-      innerleftmargin=20pt,
-      backgroundcolor=gray!50!white
-  }
-
-  \mdfdefinestyle{MyMarginNoteStyle}{
-     topline=false,
-     bottomline=false,
-     rightline=false,
-     backgroundcolor=yellow!20
-  }
+\newcommand{\wikitextrule}{\noindent\rule[0.5ex]{\linewidth}{1pt}}
+%Strikeout in math mode
+\newcommand\hcancel[2][black]{\setbox0=\hbox{$#2$}%
+\rlap{\raisebox{.45\ht0}{\textcolor{#1}{\rule{\wd0}{1pt}}}}#2}

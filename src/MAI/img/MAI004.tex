@@ -1,0 +1,41 @@
+% xelatex --enable-write18 MAI004.tex
+\documentclass[11pt]{standalone}
+  \usepackage{helvet}                        % font
+  \usepackage{xltxtra}                       % fontspec package
+  \usepackage{tikz}  
+  \usepackage{amsmath, amsthm, amssymb, amsfonts, amsbsy}
+  \usetikzlibrary{arrows}
+  \usetikzlibrary{intersections}
+  \usetikzlibrary{calc}
+
+  \newcommand{\MyXYcross}{%
+    \draw[name path=axeX,->] (\xmin,\zero) -- (\xmax,\zero)   node[right] {$x$} coordinate(x axis);
+    \draw[name path=axeY,->] (\phase,\ymin) -- (\phase,\ymax) node[left]  {$y$} coordinate(y axis);
+    \path[name intersections={of=axeX and axeY, name=pocatek}]; 
+    \node[below left] at (pocatek-1) {$0$};
+    \draw[fill=white] (pocatek-1) circle(2pt);  
+}
+
+\begin{document} 
+  \def\xmin{-100}
+  \def\xmax{100}
+  \def\ymin{-15}
+  \def\ymax{+90}
+  \def\zero{0}
+  \def\phase{0}
+  \begin{tikzpicture}
+    \begin{scope}[draw=black,line join=round, miter limit=4.00,line width=0.5pt,y=1pt,x=1pt] 
+      \MyXYcross;   
+    \end{scope}
+    
+    \begin{scope}[domain=-1:1, line join=round, miter limit=4.00,line width=0.5pt, 
+                  x=50pt,y=50pt, xshift=0, yshift=0]    
+      \node at(2,1.2) [left, fill=white] {$f(x): y=\sqrt{1-x}$};    %                         
+      \draw[color=red] plot[id=myfce, samples=200, smooth] function{sqrt(1-x*x)}; %    
+      \draw[fill=black] (+1,0) node[below] {$1$}  circle(1pt);
+      \draw[fill=black] (-1,0) node[below] {$-1$} circle(1pt);
+      \draw[fill=black] (0,1) circle(1pt);  
+      \node at (0,1) [left] {$1$};        
+    \end{scope}  
+  \end{tikzpicture}
+\end{document}
